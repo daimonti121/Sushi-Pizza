@@ -154,6 +154,15 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .header__box-1 {
+    width: 44px;
+    height: 240px;
+    position: absolute;
+    right: 7px;
+    margin-top: 20px;
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .header__block {
     border: 1px solid #4C4C4C;
     width: 7px;
@@ -167,6 +176,53 @@
   .header__box:hover .header__block--red {
     background-color: transparent; }
 
+@media (min-width: 768px) {
+  .header {
+    min-width: 768px;
+    width: 100%; }
+    .header__title {
+      width: 149px;
+      height: 440px;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0; }
+      .header__title h4 {
+        margin-left: 40px; }
+      .header__title p {
+        margin-left: 40px; }
+      .header__title h1 {
+        margin-left: 40px;
+        font-size: 80px;
+        line-height: 80px;
+        width: 504px; }
+      .header__title h5 {
+        margin-top: -20px;
+        margin-left: 40px; }
+    .header__background-img {
+      height: 488px; }
+    .header__top-info {
+      width: 224px;
+      height: 440px; }
+    .header__list {
+      display: block; }
+    .header__ul {
+      list-style-type: none; }
+    .header__li {
+      font-family: Geometria;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #A7A7A7; }
+    .header__box {
+      display: none; }
+    .header__box-1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 180px;
+      height: 45px; } }
 body {
   font-family: "Geometria", "montserrat", "Monument Extended"; }
 

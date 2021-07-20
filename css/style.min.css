@@ -20,10 +20,26 @@
 .header__list{display:none}
 .header__year{margin-top:64px;margin-right:15px;font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;text-align:right;letter-spacing:.05em;color:#787878}
 .header__box{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.header__box-1{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .header__block{border:1px solid #4c4c4c;width:7px;height:7px;-webkit-transition:.1s;transition:.1s}
 .header__block:hover{background-color:#d1152e}
 .header__block--red{background-color:#d1152e}
 .header__box:hover .header__block--red{background-color:transparent}
+@media (min-width:768px){
+.header{min-width:768px;width:100%}
+.header__title{width:149px;height:440px;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
+.header__title h4{margin-left:40px}
+.header__title p{margin-left:40px}
+.header__title h1{margin-left:40px;font-size:80px;line-height:80px;width:504px}
+.header__title h5{margin-top:-20px;margin-left:40px}
+.header__background-img{height:488px}
+.header__top-info{width:224px;height:440px}
+.header__list{display:block}
+.header__ul{list-style-type:none}
+.header__li{font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:18px;text-transform:uppercase;color:#a7a7a7}
+.header__box{display:none}
+.header__box-1{display:-webkit-box;display:-ms-flexbox;display:flex;width:180px;height:45px}
+}
 body{font-family:Geometria,montserrat,"Monument Extended"}
 .main{min-width:360px;width:100%;height:507px;background:#151414;text-align:c;margin-top:-64px}
 .main-inner{max-width:360px;width:100%;margin:0 auto}
