@@ -1,3 +1,5 @@
+@import "mixins"
+
 .main
     min-width: 360px
     width: 100%
@@ -43,12 +45,9 @@
             list-style: none
             color: #A7A7A7
         .main__li
-            font-family: Geometria
-            font-style: normal
-            font-weight: normal
+            @include list()
             font-size: 11px
-            line-height: 18px
-            text-transform: uppercase
+            line-height: 18px        
         .main__li--last
             margin-top: 18px
             color: #FFFFFF

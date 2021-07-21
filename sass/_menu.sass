@@ -1,2 +1,144 @@
+@import "mixins"
+
 body 
     font-family: "Geometria", "montserrat", "Monument Extended"
+
+.menu
+    min-width: 360px
+    width: 100%
+    height: 2095px
+    background: #252222
+    overflow: hidden
+    position: relative
+    .menu-inner
+        max-width: 360px
+        width: 100%
+        margin: 0 auto
+    &__table
+        width: 190px
+        height: 55px
+        border-spacing: 0px
+        border-collapse: collapse
+    .menu__block
+        border: 1px solid #4C4C4C
+        width: 7px
+        height: 7px
+        transition: .1s 
+    &__first-row
+        display: flex
+        justify-content: space-between
+    &__table
+        margin-top: 50px
+        margin-left: 30px
+        position: relative
+        z-index: 5
+        &::before
+            content: 'address'
+            position: absolute
+            font-family: Monument Extended
+            font-style: normal
+            font-weight: 900
+            font-size: 11px
+            line-height: 20px
+            letter-spacing: 0.05em
+            color: #787878
+            top: 75px
+    &__background-img
+        object-fit: cover
+    &__list
+        margin-top: -72px
+        margin-left: -22px
+    &__ul
+        list-style-type: none
+    &__li
+        @include list()
+        font-size: 11px
+        line-height: 18px 
+    &__li--last
+        margin-top: 15px
+    .display
+        width: 290px
+        height: 540px
+        background: #000000
+        border-radius: 30px
+        border: 10px solid black
+        position: relative
+        z-index: 20
+        &__header
+            width: 281px
+            height: 74px
+            background: #FFFFFF
+            margin: 0 auto
+            border-radius: 25px 25px 0px 0px
+            overflow: hidden
+        &__top
+            position: relative
+            display: flex
+            justify-content: space-around
+            align-items: center
+            width: 100%
+            height: 28px
+            padding-top: 9px
+            padding-bottom: 4px
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                bottom: 0px
+                width: 281px
+                height: 1px
+                background-color: #E4E4E4
+        &__burger-span
+            background: #000000
+            width: 20px
+            height: 1.75px
+            display: block
+            position: relative
+            &::before
+                @include burger()
+                position: absolute
+                top: 5px
+            &::after
+                @include burger()
+                position: absolute
+                bottom: 5px
+        &__shop
+            @include border
+            position: relative
+            &::after
+                content: ""
+                width: 20px
+                height: 20px
+                background-color: #D1152E
+                position: absolute
+                right: -15px
+                top: 5px
+                border-radius: 20px                
+            &::before
+                position: absolute
+                content: "35" 
+                z-index: 1
+                top: 3px
+                right: -11px
+                font-family: Geometria
+                font-style: normal
+                font-weight: bold
+                font-size: 11px
+                line-height: 24px
+                display: flex
+                align-items: center
+                text-transform: uppercase
+                color: #fff          
+        &__icon
+            display: block
+            height: 30px
+        &__icon-logo
+            display: block
+            height: 21px
+        &__local
+            @include border
+        &__call
+            width: 30px
+            height: 30px
+            background-color: #D1152E
+            border-radius: 30px
