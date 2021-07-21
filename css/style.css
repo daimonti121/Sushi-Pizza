@@ -181,6 +181,15 @@
     display: none;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .header__box-4 {
+    width: 379px;
+    height: 83px;
+    position: absolute;
+    right: 255px;
+    margin-top: 36px;
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .header__block {
     border: 1px solid #4C4C4C;
     width: 7px;
@@ -206,6 +215,10 @@
     -webkit-transition: 0.3s;
     transition: 0.3s; }
   .header__box-3:hover .header__block--red {
+    background-color: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .header__box-4:hover .header__block--red {
     background-color: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -594,5 +607,127 @@ body {
         .main .main-inner .main__bottom span {
           margin-top: 7px;
           width: 355px; } }
+@media (min-width: 1400px) {
+  .header {
+    min-width: 1400px; }
+    .header__title h4 {
+      margin-left: 148px; }
+    .header__title p {
+      margin-left: 148px; }
+    .header__title h1 {
+      margin-left: 115px; }
+    .header__title h5 {
+      margin-top: 85px;
+      margin-left: 148px; }
+    .header__top-info {
+      width: 413px;
+      height: 590px; }
+    .header .header__year {
+      margin-right: 115px; }
+    .header .header__box-3 {
+      right: 113px; }
+
+  .main {
+    width: 100%;
+    height: 480px; }
+    .main .main-inner {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto; }
+      .main .main-inner .main__top {
+        margin-left: 298px; }
+        .main .main-inner .main__top .main__ul {
+          margin-top: -7px; }
+      .main .main-inner .main__bottom {
+        margin-left: 573px; }
+        .main .main-inner .main__bottom a {
+          margin-top: -8px; } }
+@media (min-width: 1920px) {
+  .header {
+    min-width: 1920px; }
+    .header__title {
+      width: 455px;
+      height: 780px; }
+      .header__title h4 {
+        margin-left: 255px;
+        font-size: 16px;
+        margin-top: 250px; }
+      .header__title p {
+        margin-left: 255px;
+        margin-top: -14px; }
+      .header__title h1 {
+        margin-left: 255px;
+        margin-top: 58px;
+        font-size: 150px;
+        line-height: 130px;
+        width: 856px; }
+        .header__title h1::before {
+          right: -262px;
+          bottom: -3px; }
+        .header__title h1 span {
+          margin-left: -45px; }
+      .header__title h5 {
+        margin-top: 118px;
+        margin-left: 295px; }
+    .header__background-img {
+      width: 830px;
+      height: 883px; }
+    .header__top-info {
+      width: 635px;
+      height: 780px; }
+    .header__ul {
+      margin-top: 111px;
+      margin-left: 0px; }
+    .header__li {
+      font-size: 16px;
+      line-height: 24px; }
+    .header .header__year {
+      margin-right: 254px;
+      margin-top: 76px; }
+    .header__box-3 {
+      display: none; }
+    .header__box-4 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+
+  .main {
+    height: 605px;
+    margin-top: -107px; }
+    .main .main-inner {
+      max-width: 1920px;
+      width: 100%;
+      margin: 0 auto; }
+      .main .main-inner .main__top {
+        margin-left: 455px;
+        padding-top: 171px; }
+        .main .main-inner .main__top h3 {
+          font-size: 24px;
+          line-height: 26px;
+          margin-left: 224px;
+          margin-top: 72px; }
+        .main .main-inner .main__top .main__ul {
+          margin-top: -70px;
+          margin-left: 560px; }
+        .main .main-inner .main__top .main__li {
+          font-size: 16px;
+          line-height: 24px; }
+        .main .main-inner .main__top .main__li--last {
+          margin-top: 48px; }
+      .main .main-inner .main__bottom {
+        margin-left: 855px; }
+        .main .main-inner .main__bottom a {
+          font-size: 16px;
+          line-height: 24px; }
+        .main .main-inner .main__bottom p {
+          font-size: 14px;
+          line-height: 18px;
+          width: 430px;
+          margin-top: 19px; }
+        .main .main-inner .main__bottom span {
+          width: 430px;
+          margin-top: 11px;
+          font-size: 14px;
+          line-height: 18px; } }
 
 /*# sourceMappingURL=style.css.map */
