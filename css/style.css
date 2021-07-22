@@ -468,9 +468,13 @@ body {
     .menu .display__menu-1 {
       display: none; }
     .menu .display .slick-slide, .menu .display .slick-initialized {
-      outline: none; }
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
     .menu .display .display__slider-button {
-      outline: none; }
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
     .menu .display .display__button {
       border: none;
       background-color: #fff;
@@ -483,7 +487,9 @@ body {
       font-weight: bold;
       font-size: 11px;
       line-height: 1em;
-      outline: none; }
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
       .menu .display .display__button:hover {
         color: #ffffff;
         background: #D1152E; }
