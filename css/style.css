@@ -467,6 +467,8 @@ body {
       position: relative; }
     .menu .display__menu-1 {
       display: none; }
+    .menu .display .slick-slide, .menu .display .slick-initialized {
+      outline: none; }
     .menu .display .display__button {
       border: none;
       background-color: #fff;
