@@ -73,6 +73,7 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .menu .display__menu{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:9px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}
 .menu .display__menu-1{display:none}
 .menu .display .slick-initialized,.menu .display .slick-slide{outline:0}
+.menu .display .display__slider-button{outline:0}
 .menu .display .display__button{border:none;background-color:#fff;height:17px;padding:1px 10px;border-radius:100px;color:grey;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:1em;outline:0}
 .menu .display .display__button:hover{color:#fff;background:#d1152e}
 .menu .display .display__button--active{color:#fff;background:#d1152e;margin-left:3px}
