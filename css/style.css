@@ -470,8 +470,7 @@ body {
     .menu .display .slick-slide, .menu .display .slick-initialized {
       outline: none;
       -webkit-box-shadow: none;
-              box-shadow: none;
-      height: 250px; }
+              box-shadow: none; }
     .menu .display .display__slider-button {
       outline: none;
       -webkit-box-shadow: none;
@@ -1085,6 +1084,8 @@ body {
       .menu .display .display__button {
         font-size: 12px;
         height: 20px; }
+      .menu .display .slick-slide, .menu .display .slick-initialized {
+        height: 280px; }
     .menu__list {
       margin-top: -168px;
       margin-left: 20px; }
