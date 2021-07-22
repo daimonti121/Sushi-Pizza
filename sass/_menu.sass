@@ -1,4 +1,5 @@
 @import "mixins"
+@import "fonts"
 
 body 
     font-family: "Geometria", "montserrat", "Monument Extended"
@@ -21,8 +22,8 @@ body
         border-collapse: collapse
     .menu__block
         border: 1px solid #4C4C4C
-        width: 7px
-        height: 7px
+        width: 6px
+        height: 6px
         transition: .1s 
     &__first-row
         display: flex
@@ -42,12 +43,13 @@ body
             line-height: 20px
             letter-spacing: 0.05em
             color: #787878
-            top: 75px
+            top: 69px
+            left: 1px
     &__background-img
         object-fit: cover
     &__list
-        margin-top: -72px
-        margin-left: -22px
+        margin-top: -85px
+        margin-left: -24px
     &__ul
         list-style-type: none
     &__li
@@ -55,18 +57,20 @@ body
         font-size: 11px
         line-height: 18px 
     &__li--last
-        margin-top: 15px
+        margin-top: 36px
     .display
         width: 290px
-        height: 540px
+        height: 520px
         background: #000000
         border-radius: 30px
         border: 10px solid black
-        position: relative
+        position: absolute
+        top: 78px
+        right: -61px
         z-index: 20
         &__header
-            width: 291px
-            height: 74px
+            width: 290px
+            height: 93px
             background: #FFFFFF
             margin: 0 auto
             border-radius: 25px 25px 0px 0px
@@ -78,14 +82,14 @@ body
             align-items: center
             width: 100%
             height: 28px
-            padding-top: 9px
+            padding-top: 11px
             padding-bottom: 4px
             &::before
                 content: ""
                 display: block
                 position: absolute
-                bottom: 0px
-                width: 281px
+                bottom: -5px
+                width: 288px
                 height: 1px
                 background-color: #E4E4E4
         &__burger-span
@@ -97,29 +101,30 @@ body
             &::before
                 @include burger()
                 position: absolute
-                top: 5px
+                top: 6px
             &::after
                 @include burger()
                 position: absolute
-                bottom: 5px
+                bottom: 6px
         &__shop
             @include border
             position: relative
+            left: -13px
             &::after
                 content: ""
                 width: 20px
                 height: 20px
                 background-color: #D1152E
                 position: absolute
-                right: -15px
-                top: 5px
+                right: -16px
+                top: 4px
                 border-radius: 20px                
             &::before
                 position: absolute
                 content: "35" 
                 z-index: 1
-                top: 3px
-                right: -11px
+                top: 2px
+                right: -12px
                 font-family: Geometria
                 font-style: normal
                 font-weight: bold
@@ -131,14 +136,240 @@ body
                 color: #fff          
         &__icon
             display: block
-            height: 30px
+            height: 28px
         &__icon-logo
             display: block
             height: 21px
         &__local
             @include border
+            position: relative
+            left: -7px
+        &__logo
+            position: relative
+            left: -8px
         &__call
             width: 30px
             height: 30px
             background-color: #D1152E
             border-radius: 30px
+            position: relative
+            left: -8px
+        &__menu
+            display: flex
+            margin-top: 9px
+            justify-content: center
+            position: relative       
+        .display__button
+            border: none
+            background-color: #fff
+            height: 17px
+            padding: 1px 10px           
+            border-radius: 100px
+            color: #808080
+            font-family: Geometria
+            font-style: normal
+            font-weight: bold
+            font-size: 11px
+            line-height: 1em
+            &:hover
+                color: #ffffff
+                background: #D1152E
+        .display__button--active
+            color: #ffffff
+            background: #D1152E
+            margin-left: 3px
+        .display__menu:hover .display__button--active
+            color: #808080
+            background-color: #fff
+        .display__menu .display__button--active:hover
+            color: #ffffff
+            background: #D1152E
+        &__main
+            width: 100%
+            height: 448px
+            background: #232121
+            text-align: center
+            margin-top: -20px
+            border-radius: 0px 0px 25px 25px
+            overflow: hidden
+            position: relativ
+        &__h2
+            font-style: normal
+            font-weight: 800
+            font-size: 30px
+            line-height: 37px
+            text-transform: uppercase
+            color: #FFFFFF
+            letter-spacing: 0.05em
+            margin: 30px 0 0 -10px
+        &__p
+            font-family: Geometria
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 15px
+            text-align: center
+            color: #FFFFFF
+            width: 181px
+            margin: 14px auto 
+            margin-left: 52px          
+        &__p--red
+            color: #D1152E
+            font-style: normal
+            font-weight: 500
+            font-size: 12px
+            line-height: 15px
+        &__proposition
+            font-family: Geometria
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 18px            
+            letter-spacing: 0.03em
+            color: #FFFFFF
+            margin: 0 auto
+            width: 235px
+            margin-top: -9px
+        &__slider-button
+            background: #D1152E
+            border-radius: 100px
+            padding: 6px 50px
+            border: none
+            font-family: Geometria
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+            margin-top: 17px
+            margin-left: -13px
+        &__background-img
+            object-fit: cover
+            max-width: 100%
+            height: auto
+            margin: 0 auto
+            margin-top: 26px
+        .slick-list
+            position: relative
+        .slick-dots
+            position: absolute
+            top: 404px
+            left: 76px
+            z-index: 50    
+            display: flex 
+            justify-content: center
+            list-style: none
+        .slick-dots button
+            background: #6B6B6B
+            color: transparent
+            border: none
+            border-radius: 50%
+            width: 0px
+            height: 11px
+            outline: none
+        .slick-dots li
+            margin-right: 5px
+        .slick-dots li[class="slick-active"] button
+            background: #D1152E
+    &__center
+        width: 100%
+        margin-top: 250px
+        margin-left: 30px
+    &__center-title
+        width: 212px
+        font-family: Monument Extended
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-left: 71px
+        margin-top: 34px
+        position: relative
+        &::before
+            content: "03 /10"
+            font-family: Monument Extended
+            font-style: normal
+            font-weight: 900
+            font-size: 11px
+            line-height: 16px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            position: absolute
+            top: -52px
+            left: -71px
+    &__center-table
+        width: 39px
+        height: 19px
+        border-spacing: 0px
+        border-collapse: collapse
+        position: relative
+        top: 87px
+    &__center-block
+        border: 1px solid #4C4C4C
+        width: 6px
+        height: 6px
+        transition: 0.1s
+    &__center-block--active
+        background: #D1152E
+    &__center-table:hover .menu__center-block--active
+        background: transparent
+    &__center-block:hover
+        background: #D1152E
+    .menu__center-block--active:hover
+        background: #D1152E
+    &__center-description
+        font-family: Geometria
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #A7A7A7
+        width: 233px
+        margin-top: 49px
+    &__grey-block
+        width: 330px
+        height: 15px
+        background: #808080
+        margin-top: 29px
+        margin-left: -15px
+        position: relative
+        &::before
+            content: "#808080"
+            @include colors-before
+            top: 22px
+    &__colors
+        margin-top: 52px
+        margin-left: 86px
+    &__colors-description
+        width: 248px
+        font-family: Geometria
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #A7A7A7
+        margin-left: -15px
+    &__red-block
+        width: 245px
+        height: 15px
+        margin-left: -15px
+        margin-top: 31px
+        background: #D1152E
+        position: relative
+        &::before
+            content: "#D1152E"
+            @include colors-before
+            top: 26px
+    &__black-grey-block
+        width: 245px
+        height: 15px
+        margin-top: 70px
+        margin-left: -15px
+        background: #4B4B4B
+        position: relative
+        &::before
+            content: "#4B4B4B"
+            @include colors-before
+            top: 26px
