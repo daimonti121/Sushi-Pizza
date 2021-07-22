@@ -15,11 +15,6 @@ body
         max-width: 360px
         width: 100%
         margin: 0 auto
-    &__table
-        width: 190px
-        height: 55px
-        border-spacing: 0px
-        border-collapse: collapse
     .menu__block
         border: 1px solid #4C4C4C
         width: 6px
@@ -28,27 +23,27 @@ body
     &__first-row
         display: flex
         justify-content: space-between
+        height: 390px
     &__table
         margin-top: 50px
         margin-left: 30px
         position: relative
         z-index: 5
+        width: 190px
+        height: 55px
+        border-spacing: 0px
+        border-collapse: collapse
         &::before
-            content: 'address'
-            position: absolute
-            font-family: Monument Extended
-            font-style: normal
-            font-weight: 900
-            font-size: 11px
-            line-height: 20px
-            letter-spacing: 0.05em
-            color: #787878
-            top: 69px
-            left: 1px
+            @include table-before 
+    &__table-1
+        display: none
+    &__picture
+        position: absolute
+        right: 0
     &__background-img
         object-fit: cover
     &__list
-        margin-top: -85px
+        margin-top: -82px
         margin-left: -24px
     &__ul
         list-style-type: none
@@ -65,8 +60,8 @@ body
         border-radius: 30px
         border: 10px solid black
         position: absolute
-        top: 78px
-        right: -61px
+        top: 77px
+        right: -60px
         z-index: 20
         &__header
             width: 290px
@@ -158,7 +153,9 @@ body
             display: flex
             margin-top: 9px
             justify-content: center
-            position: relative       
+            position: relative    
+        &__menu-1
+            display: none 
         .display__button
             border: none
             background-color: #fff
@@ -183,7 +180,13 @@ body
             background-color: #fff
         .display__menu .display__button--active:hover
             color: #ffffff
-            background: #D1152E
+            background: #D1152E          
+        .display__menu-1:hover .display__button--active
+            color: #808080
+            background-color: #fff
+        .display__menu-1 .display__button--active:hover
+            color: #ffffff
+            background: #D1152E 
         &__main
             width: 100%
             height: 448px
@@ -192,7 +195,7 @@ body
             margin-top: -20px
             border-radius: 0px 0px 25px 25px
             overflow: hidden
-            position: relativ
+            position: relative
         &__h2
             font-style: normal
             font-weight: 800
@@ -201,7 +204,7 @@ body
             text-transform: uppercase
             color: #FFFFFF
             letter-spacing: 0.05em
-            margin: 30px 0 0 -10px
+            margin: 30px 0 0 0px
         &__p
             font-family: Geometria
             font-style: normal
@@ -211,8 +214,8 @@ body
             text-align: center
             color: #FFFFFF
             width: 181px
-            margin: 14px auto 
-            margin-left: 52px          
+            margin: 15px auto 
+            margin-left: 58px          
         &__p--red
             color: #D1152E
             font-style: normal
@@ -228,8 +231,9 @@ body
             letter-spacing: 0.03em
             color: #FFFFFF
             margin: 0 auto
-            width: 235px
-            margin-top: -9px
+            width: 227px
+            margin-top: -10px
+            margin-left: 35px        
         &__slider-button
             background: #D1152E
             border-radius: 100px
@@ -241,8 +245,8 @@ body
             font-size: 14px
             line-height: 17px
             color: #FFFFFF
-            margin-top: 17px
-            margin-left: -13px
+            margin-top: 16px
+            margin-left: -3px
         &__background-img
             object-fit: cover
             max-width: 100%
@@ -253,8 +257,8 @@ body
             position: relative
         .slick-dots
             position: absolute
-            top: 404px
-            left: 76px
+            top: 406px
+            left: 77px
             z-index: 50    
             display: flex 
             justify-content: center
@@ -306,6 +310,8 @@ body
         border-collapse: collapse
         position: relative
         top: 87px
+    &__center-table-1
+        display: none
     &__center-block
         border: 1px solid #4C4C4C
         width: 6px
@@ -314,6 +320,8 @@ body
     &__center-block--active
         background: #D1152E
     &__center-table:hover .menu__center-block--active
+        background: transparent
+    &__center-table-1:hover .menu__center-block--active
         background: transparent
     &__center-block:hover
         background: #D1152E
