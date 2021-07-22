@@ -478,7 +478,8 @@ body {
       font-style: normal;
       font-weight: bold;
       font-size: 11px;
-      line-height: 1em; }
+      line-height: 1em;
+      outline: none; }
       .menu .display .display__button:hover {
         color: #ffffff;
         background: #D1152E; }
