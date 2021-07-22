@@ -470,7 +470,8 @@ body {
     .menu .display .slick-slide, .menu .display .slick-initialized {
       outline: none;
       -webkit-box-shadow: none;
-              box-shadow: none; }
+              box-shadow: none;
+      height: 250px; }
     .menu .display .display__slider-button {
       outline: none;
       -webkit-box-shadow: none;
