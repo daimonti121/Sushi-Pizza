@@ -387,7 +387,7 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .header__top-info{width:635px;height:780px}
 .header__ul{margin-top:111px;margin-left:0}
 .header__li{font-size:16px;line-height:24px}
-.header .header__year{margin-right:254px;margin-top:76px}
+.header .header__year{margin-right:237px;margin-top:76px}
 .header__box-3{display:none}
 .header__box-4{display:-webkit-box;display:-ms-flexbox;display:flex}
 .main{height:605px;margin-top:-107px}
@@ -406,7 +406,7 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .menu__table-2{display:none}
 .menu__table-3{display:block;position:absolute;z-index:5;width:343px;height:109px;border-spacing:0;border-collapse:collapse;margin:99px 0 0 295px}
 .menu__table-3::before{content:"address";position:absolute;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:20px;letter-spacing:.05em;color:#787878;top:69px;left:1px;font-size:12px;left:0;top:124px}
-.menu .display{width:1120px;height:630px;top:137px;right:325px}
+.menu .display{width:1120px;height:630px;top:137px;right:308px}
 .menu .display__header{width:880px;height:110px;top:433px;left:39px}
 .menu .display__main{width:1110px;height:620px;top:-87px;left:6px}
 .menu .display .display__h2{top:78px;left:120px;font-size:40px;line-height:49px;letter-spacing:.08em}
