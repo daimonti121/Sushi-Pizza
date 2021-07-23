@@ -49,6 +49,7 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .menu__table{margin-top:50px;margin-left:30px;position:relative;z-index:5;width:190px;height:55px;border-spacing:0;border-collapse:collapse}
 .menu__table::before{content:"address";position:absolute;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:20px;letter-spacing:.05em;color:#787878;top:69px;left:1px}
 .menu__table-1{display:none}
+.menu__table-2{display:none}
 .menu__picture{position:absolute;right:0}
 .menu__background-img{-o-object-fit:cover;object-fit:cover}
 .menu__list{margin-top:-82px;margin-left:-24px}
@@ -72,25 +73,30 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .menu .display__call{width:30px;height:30px;background-color:#d1152e;border-radius:30px;position:relative;left:-8px}
 .menu .display__menu{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:9px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}
 .menu .display__menu-1{display:none}
+.menu .display__menu-2{display:none}
+.menu .display .display__slidear-one,.menu .display .display__slidear-two{position:relative}
 .menu .display .slick-initialized,.menu .display .slick-slide{outline:0;-webkit-box-shadow:none;box-shadow:none}
-.menu .display .display__slider-button{outline:0;-webkit-box-shadow:none;box-shadow:none}
-.menu .display .display__button{border:none;background-color:#fff;height:17px;padding:1px 10px;border-radius:100px;color:grey;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:1em;outline:0;-webkit-box-shadow:none;box-shadow:none}
+.menu .display .display__slider-button{outline:0;-webkit-box-shadow:none;box-shadow:none;cursor:pointer}
+.menu .display .display__button{border:none;background-color:#fff;height:17px;padding:1px 10px;border-radius:100px;color:grey;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:1em;outline:0;-webkit-box-shadow:none;box-shadow:none;cursor:pointer}
 .menu .display .display__button:hover{color:#fff;background:#d1152e}
 .menu .display .display__button--active{color:#fff;background:#d1152e;margin-left:3px}
 .menu .display .display__menu:hover .display__button--active{color:grey;background-color:#fff}
 .menu .display .display__menu .display__button--active:hover{color:#fff;background:#d1152e}
 .menu .display .display__menu-1:hover .display__button--active{color:grey;background-color:#fff}
+.menu .display .display__menu-2:hover .display__button--active{color:grey;background-color:#fff}
 .menu .display .display__menu-1 .display__button--active:hover{color:#fff;background:#d1152e}
+.menu .display .display__menu-2 .display__button--active:hover{color:#fff;background:#d1152e}
 .menu .display__main{width:100%;height:448px;background:#232121;text-align:center;margin-top:-20px;border-radius:0 0 25px 25px;overflow:hidden;position:relative}
 .menu .display__h2{font-style:normal;font-weight:800;font-size:30px;line-height:37px;text-transform:uppercase;color:#fff;letter-spacing:.05em;margin:30px 0 0 0}
 .menu .display__p{font-family:Geometria;font-style:normal;font-weight:500;font-size:12px;line-height:15px;text-align:center;color:#fff;width:181px;margin:15px auto;margin-left:58px}
+.menu .display__number{display:none}
 .menu .display__p--red{color:#d1152e;font-style:normal;font-weight:500;font-size:12px;line-height:15px}
 .menu .display__proposition{font-family:Geometria;font-style:normal;font-weight:700;font-size:18px;line-height:18px;letter-spacing:.03em;color:#fff;margin:0 auto;width:227px;margin-top:-10px;margin-left:35px}
 .menu .display__slider-button{background:#d1152e;border-radius:100px;padding:6px 50px;border:none;font-family:Geometria;font-style:normal;font-weight:500;font-size:14px;line-height:17px;color:#fff;margin-top:16px;margin-left:-3px}
 .menu .display__background-img{-o-object-fit:cover;object-fit:cover;max-width:100%;height:auto;margin:0 auto;margin-top:26px}
 .menu .display .slick-list{position:relative}
 .menu .display .slick-dots{position:absolute;top:406px;left:77px;z-index:50;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;list-style:none}
-.menu .display .slick-dots button{background:#6b6b6b;color:transparent;border:none;border-radius:50%;width:0;height:11px;outline:0}
+.menu .display .slick-dots button{background:#6b6b6b;color:transparent;border:none;border-radius:50%;width:0;height:11px;outline:0;cursor:pointer}
 .menu .display .slick-dots li{margin-right:5px}
 .menu .display .slick-dots li[class=slick-active] button{background:#d1152e}
 .menu__center{width:100%;margin-top:250px;margin-left:30px}
@@ -98,10 +104,12 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .menu__center-title::before{content:"03 /10";font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:16px;letter-spacing:.05em;color:#fff;position:absolute;top:-52px;left:-71px}
 .menu__center-table{width:39px;height:19px;border-spacing:0;border-collapse:collapse;position:relative;top:87px}
 .menu__center-table-1{display:none}
+.menu__center-table-2{display:none}
 .menu__center-block{border:1px solid #4c4c4c;width:6px;height:6px;-webkit-transition:.1s;transition:.1s}
 .menu__center-block--active{background:#d1152e}
 .menu__center-table:hover .menu__center-block--active{background:0 0}
 .menu__center-table-1:hover .menu__center-block--active{background:0 0}
+.menu__center-table-2:hover .menu__center-block--active{background:0 0}
 .menu__center-block:hover{background:#d1152e}
 .menu .menu__center-block--active:hover{background:#d1152e}
 .menu__center-description{font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:15px;color:#a7a7a7;width:233px;margin-top:49px}
@@ -171,7 +179,8 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .menu .display__slider{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .menu .display .slick-dots{top:112px;left:-31px;-webkit-transform:rotate(89deg);transform:rotate(89deg)}
 .menu .display__background-img{-o-object-fit:contain;object-fit:contain;width:194px;height:176px;margin:0 auto;position:relative;top:-151px;left:-117px}
-.menu .display__h2{position:relative;top:30px;left:69px;font-size:26px}
+.menu .display__h2{top:30px;left:69px;font-size:26px;position:relative}
+.menu .display__number{display:block;position:absolute;left:14px;bottom:142px;font-family:Geometria;font-style:normal;font-weight:500;font-size:10px;line-height:13px;color:#888}
 .menu .display__p{position:relative;top:24px;left:111px;width:189px;margin:15px auto;text-align:left}
 .menu .display__proposition{position:relative;top:21px;left:127px;width:222px;text-align:left;margin:0 auto;font-size:20px;letter-spacing:.05em}
 .menu .display__slider-button{position:relative;left:97px;top:24px}
@@ -218,6 +227,37 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .main .main-inner .main__bottom{margin-left:410px}
 .main .main-inner .main__bottom a{margin-top:-21px}
 .main .main-inner .main__bottom p{margin-top:14px}
+.menu{min-width:960px}
+.menu .menu-inner{max-width:960px;width:100%;margin:0 auto}
+.menu__table-1{margin:36px 0 0 40px}
+.menu__table-1::before{content:"address";position:absolute;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:20px;letter-spacing:.05em;color:#787878;top:69px;left:1px;left:0;top:78px}
+.menu__background-img{width:582px;height:422px}
+.menu__list{margin-top:-145px;margin-left:0}
+.menu .display{width:330px;height:680px;top:-103px;right:307px}
+.menu .display__header{width:679px;height:35px;top:321px;left:-322px}
+.menu .display__menu-1{display:none}
+.menu .display__menu-2{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:8px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}
+.menu .display .display__button{padding:1px 7px}
+.menu .display .slick-initialized{height:300px;width:681px;border-radius:0 0 30px 30px}
+.menu .display__main{width:680px;height:294px;border-radius:0 0 30px 30px;top:176px;left:-158px;background:#151414}
+.menu .display .display__h2{top:12px;left:82px;font-weight:900;font-size:30px;line-height:37px;letter-spacing:.08em}
+.menu .display .display__p{width:221px;top:2px;left:129px}
+.menu .display .display__proposition{top:0;left:167px;letter-spacing:.05em;font-size:25px;line-height:27px;width:299px}
+.menu .display .display__slider-button{left:99px;top:2px}
+.menu .display .display__background-img{width:257px;height:208px;top:-190px;left:-144px}
+.menu .display .display__number{left:12px;bottom:148px}
+.menu .display .slick-dots{top:106px;left:-32px}
+.menu .display .display__background-img--size{top:-139px}
+.menu__center-title{margin-left:48px;margin-top:-134px}
+.menu__grey-block{width:165px;height:196px;top:-194px;right:-211px}
+.menu__grey-block::before{top:215px;left:90px}
+.menu__center-description{width:289px;left:114px;top:-82px}
+.menu__colors-description{width:256px;top:-288px;left:59px}
+.menu__center-table-1{display:none}
+.menu__center-table-2{display:block;border-collapse:collapse;position:relative;width:82px;height:19px;left:10px;top:-10px}
+.menu__red-block{width:145px;height:20px;bottom:237px;left:-101px}
+.menu__red-block::before{top:35px}
+.menu__black-grey-block{width:285px;height:20px;bottom:257px;left:293px;background:grey}
 }
 @media (min-width:1366px){
 .header{min-width:1366px}
@@ -235,7 +275,7 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .header__li{font-size:14px;line-height:22px}
 .header__box-1{display:none}
 .header__box-2{display:none}
-.header__box-3{display:-webkit-box;display:-ms-flexbox;display:flex;width:316px;height:81px;right:95px;margin-top:44px}
+.header__box-3{display:-webkit-box;display:-ms-flexbox;display:flex;width:316px;height:80px;right:95px;margin-top:45px}
 .main{height:480px;margin-top:-93px}
 .main .main-inner{max-width:1366px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:282px;padding-top:96px}
@@ -247,6 +287,15 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .main .main-inner .main__bottom a{margin-top:0;font-size:14px;line-height:24px}
 .main .main-inner .main__bottom p{width:357px}
 .main .main-inner .main__bottom span{margin-top:7px;width:355px}
+.menu{min-width:1366px}
+.menu .menu-inner{max-width:1366px;width:100%;margin:0 auto}
+.menu__background-img{width:767px;height:572px}
+.menu__table-1{display:none}
+.menu__table-2{display:block;position:relative;z-index:5;width:289px;height:82px;border-spacing:0;border-collapse:collapse;margin:85px 0 0 132px}
+.menu__table-2::before{content:"address";position:absolute;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:20px;letter-spacing:.05em;color:#787878;top:69px;left:1px;font-size:12px;left:0;top:97px}
+.menu__list{margin-top:28px;margin-left:59px}
+.menu__li{font-size:14px;line-height:22px}
+.menu__li--last{margin-top:44px}
 }
 @media (min-width:1400px){
 .header{min-width:1400px}

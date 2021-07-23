@@ -37,6 +37,8 @@ body
             @include table-before 
     &__table-1
         display: none
+    &__table-2
+        display: none
     &__picture
         position: absolute
         right: 0
@@ -156,12 +158,17 @@ body
             position: relative    
         &__menu-1
             display: none 
+        &__menu-2
+            display: none 
+        .display__slidear-one, .display__slidear-two 
+            position: relative
         .slick-slide, .slick-initialized
             outline: none
             box-shadow: none
         .display__slider-button
             outline: none
             box-shadow: none
+            cursor: pointer
         .display__button
             border: none
             background-color: #fff
@@ -176,6 +183,7 @@ body
             line-height: 1em
             outline: none
             box-shadow: none
+            cursor: pointer
             &:hover
                 color: #ffffff
                 background: #D1152E
@@ -192,7 +200,13 @@ body
         .display__menu-1:hover .display__button--active
             color: #808080
             background-color: #fff
+        .display__menu-2:hover .display__button--active
+            color: #808080
+            background-color: #fff
         .display__menu-1 .display__button--active:hover
+            color: #ffffff
+            background: #D1152E 
+        .display__menu-2 .display__button--active:hover
             color: #ffffff
             background: #D1152E 
         &__main
@@ -223,7 +237,9 @@ body
             color: #FFFFFF
             width: 181px
             margin: 15px auto 
-            margin-left: 58px          
+            margin-left: 58px  
+        &__number
+            display: none        
         &__p--red
             color: #D1152E
             font-style: normal
@@ -271,6 +287,7 @@ body
             display: flex 
             justify-content: center
             list-style: none
+            
         .slick-dots button
             background: #6B6B6B
             color: transparent
@@ -279,6 +296,7 @@ body
             width: 0px
             height: 11px
             outline: none
+            cursor: pointer
         .slick-dots li
             margin-right: 5px
         .slick-dots li[class="slick-active"] button
@@ -320,6 +338,8 @@ body
         top: 87px
     &__center-table-1
         display: none
+    &__center-table-2
+        display: none
     &__center-block
         border: 1px solid #4C4C4C
         width: 6px
@@ -330,6 +350,8 @@ body
     &__center-table:hover .menu__center-block--active
         background: transparent
     &__center-table-1:hover .menu__center-block--active
+        background: transparent
+    &__center-table-2:hover .menu__center-block--active
         background: transparent
     &__center-block:hover
         background: #D1152E
