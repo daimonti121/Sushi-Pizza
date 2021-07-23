@@ -3,6 +3,7 @@
 
 body 
     font-family: "Geometria", "montserrat", "Monument Extended"
+    will-change: transform
 
 .menu
     min-width: 360px
@@ -38,6 +39,8 @@ body
     &__table-1
         display: none
     &__table-2
+        display: none
+    &__table-3
         display: none
     &__picture
         position: absolute
@@ -160,6 +163,8 @@ body
             display: none 
         &__menu-2
             display: none 
+        &__menu-3
+            display: none
         .display__slidear-one, .display__slidear-two 
             position: relative
         .slick-slide, .slick-initialized
@@ -187,6 +192,7 @@ body
             &:hover
                 color: #ffffff
                 background: #D1152E
+        
         .display__button--active
             color: #ffffff
             background: #D1152E
@@ -340,6 +346,12 @@ body
         display: none
     &__center-table-2
         display: none
+    &__center-table-3
+        display: none
+    &__center-table-4
+        display: none
+        position: relative   
+        z-index: 50   
     &__center-block
         border: 1px solid #4C4C4C
         width: 6px
@@ -352,6 +364,10 @@ body
     &__center-table-1:hover .menu__center-block--active
         background: transparent
     &__center-table-2:hover .menu__center-block--active
+        background: transparent
+    &__center-table-3:hover .menu__center-block--active
+        background: transparent
+    &__center-table-4:hover .menu__center-block--active
         background: transparent
     &__center-block:hover
         background: #D1152E
