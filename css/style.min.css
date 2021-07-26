@@ -79,7 +79,7 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .menu .display .display__slidear-one,.menu .display .display__slidear-two{position:relative}
 .menu .display .slick-initialized,.menu .display .slick-slide{outline:0;-webkit-box-shadow:none;box-shadow:none}
 .menu .display .display__slider-button{outline:0;-webkit-box-shadow:none;box-shadow:none;cursor:pointer}
-.menu .display .display__button{border:none;background-color:#fff;height:17px;padding:1px 10px;border-radius:100px;color:grey;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:1em;outline:0;-webkit-box-shadow:none;box-shadow:none;cursor:pointer}
+.menu .display .display__button{border:none;background-color:#fff;height:17px;padding:1px 10px;border-radius:100px;color:grey;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:1.5em;outline:0;-webkit-box-shadow:none;box-shadow:none;cursor:pointer}
 .menu .display .display__button:hover{color:#fff;background:#d1152e}
 .menu .display .display__button--active{color:#fff;background:#d1152e;margin-left:3px}
 .menu .display .display__menu:hover .display__button--active{color:grey;background-color:#fff}
@@ -303,7 +303,7 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .menu__li{font-size:14px;line-height:22px}
 .menu__li--last{margin-top:44px}
 .menu .display{width:906px;height:510px;top:111px;right:158px}
-.menu .display__header{width:720px;height:91px;top:354px;left:-12px;border-radius:15px}
+.menu .display__header{width:720px;height:91px;top:354px;left:-12px;border-radius:20px}
 .menu .display__menu-2{display:none}
 .menu .display__menu-3{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .menu .display__big-button{width:90px;height:91px;border-radius:15px;border:none;background-color:transparent;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:700;font-size:11px;line-height:20px;letter-spacing:-.08em;color:#000;font-family:Geometria;font-style:normal;cursor:pointer;outline:0}

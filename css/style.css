@@ -490,7 +490,7 @@ body {
       font-style: normal;
       font-weight: bold;
       font-size: 11px;
-      line-height: 1em;
+      line-height: 1.5em;
       outline: none;
       -webkit-box-shadow: none;
               box-shadow: none;
@@ -1558,7 +1558,7 @@ body {
         height: 91px;
         top: 354px;
         left: -12px;
-        border-radius: 15px; }
+        border-radius: 20px; }
       .menu .display__menu-2 {
         display: none; }
       .menu .display__menu-3 {
