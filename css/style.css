@@ -1403,9 +1403,9 @@ body {
       left: 293px;
       background: #808080; } }
 @media (min-width: 1024px) {
-  .header__box-1 {
+  .header .header__box-1 {
     display: none; }
-  .header__box-2 {
+  .header .header__box-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1461,9 +1461,9 @@ body {
     .header__li {
       font-size: 14px;
       line-height: 22px; }
-    .header__box-1 {
+    .header .header__box-1 {
       display: none; }
-    .header__box-2 {
+    .header .header__box-2 {
       display: none; }
     .header__box-3 {
       display: -webkit-box;
