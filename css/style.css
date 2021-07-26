@@ -333,7 +333,8 @@ body {
     font-size: 11px;
     line-height: 18px; }
   .menu__li--last {
-    margin-top: 36px; }
+    margin-top: 36px;
+    color: #fff; }
   .menu .display {
     width: 290px;
     height: 520px;
