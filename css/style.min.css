@@ -222,8 +222,7 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .header__top-info{width:297px;height:480px}
 .header .header__year{margin-top:35px;margin-right:52px}
 .header__ul{margin-top:39px;margin-left:-16px}
-.header__box-1{display:none}
-.header__box-2{display:-webkit-box;display:-ms-flexbox;display:flex;width:244px;height:63px;right:53px;margin-top:15px}
+.header .header__box-1{display:block;right:53px}
 .main{width:100%;height:402px}
 .main .main-inner{max-width:960px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:160px}
@@ -264,6 +263,10 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .menu__red-block{width:145px;height:20px;bottom:237px;left:-101px}
 .menu__red-block::before{top:35px}
 .menu__black-grey-block{width:285px;height:20px;bottom:257px;left:293px;background:grey}
+}
+@media (min-width:1024px){
+.header__box-1{display:none}
+.header__box-2{display:-webkit-box;display:-ms-flexbox;display:flex;width:244px;height:63px;right:53px;margin-top:15px}
 }
 @media (min-width:1366px){
 .header{min-width:1366px}

@@ -329,14 +329,9 @@
         &__ul
             margin-top: 39px
             margin-left: -16px
-        &__box-1
-            display: none
-        &__box-2
-            display: flex
-            width: 244px
-            height: 63px
-            right: 53px
-            margin-top: 15px
+        .header__box-1
+            display: block   
+            right: 53px    
     .main
         width: 100%
         height: 402px
@@ -484,6 +479,16 @@
             bottom: 257px
             left: 293px
             background: #808080
+@media ( min-width: 1024px )
+    .header
+        &__box-1
+            display: none
+        &__box-2
+            display: flex
+            width: 244px
+            height: 63px
+            right: 53px
+            margin-top: 15px
 @media ( min-width: 1366px )
     .header
         min-width: 1366px
