@@ -6,24 +6,24 @@
 @font-face{font-family:montserrat;src:url(../fonts/montserrat-regular-webfont.woff);font-weight:400;font-style:normal}
 @font-face{font-family:"Monument Extended";src:url(../fonts/monumentextended-ultrabold-webfont.woff);font-weight:900;font-style:normal}
 @font-face{font-family:"Monument Extended";src:url(../fonts/monumentextended-regular-webfont.woff);font-weight:400;font-style:normal}
-.header{min-width:360px;width:100%}
+.header{min-width:360px;width:100%;background:#151414}
 .header__top{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.header__title{width:100px;height:480px;background:#d1152e;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
-.header__title h4{margin-top:97px;margin-left:15px;font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:16px;text-transform:uppercase;color:#fff}
-.header__title p{margin-top:-12px;margin-left:15px;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:16px;letter-spacing:.05em;color:#fff}
-.header__title h1{margin-top:78px;margin-left:15px;width:254px;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:37px;line-height:37px;letter-spacing:.1em;color:#fff;position:relative;z-index:20;position:relative}
-.header__title h1::before{content:"01 /10";font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:16px;text-align:right;letter-spacing:.05em;color:#fff;position:absolute;right:96px;bottom:-28px}
-.header__title h5{margin-top:132px;margin-left:15px;font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;letter-spacing:.05em;text-transform:uppercase;color:#fff}
+.header__title{width:100px;height:480px;background:#d1152e;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-animation:scale-up-hor-left 1s cubic-bezier(.39,.575,.565,1);animation:scale-up-hor-left 1s cubic-bezier(.39,.575,.565,1)}
+.header__title h4{margin-top:97px;margin-left:15px;font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:16px;text-transform:uppercase;color:#fff;-webkit-animation:fadeInRight 1s both 2s;animation:fadeInRight 1s both 2s}
+.header__title p{margin-top:-12px;margin-left:15px;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:16px;letter-spacing:.05em;color:#fff;-webkit-animation:fadeInRight 1s both 2s;animation:fadeInRight 1s both 2s}
+.header__title h1{-webkit-animation:slideInUp 1s both 1s;animation:slideInUp 1s both 1s;margin-top:78px;margin-left:15px;width:254px;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:37px;line-height:37px;letter-spacing:.1em;color:#fff;position:relative;z-index:20}
+.header__title h1::before{content:"01 /10";font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:16px;text-align:right;letter-spacing:.05em;color:#fff;position:absolute;right:96px;bottom:-28px;-webkit-animation:fadeInRight 1s both 2s;animation:fadeInRight 1s both 2s}
+.header__title h5{margin-top:132px;margin-left:15px;font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;letter-spacing:.05em;text-transform:uppercase;color:#fff;-webkit-animation:fadeInRight 1s both 2s;animation:fadeInRight 1s both 2s}
 .header__title span{color:transparent;-webkit-text-stroke-width:1px;-webkit-text-stroke-color:#fff}
-.header__background-img{height:520px;-o-object-fit:cover;object-fit:cover}
-.header__top-info{width:97px;height:480px;background:#252222;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;position:relative}
-.header__list{display:none}
-.header__year{margin-top:64px;margin-right:15px;font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;text-align:right;letter-spacing:.05em;color:#787878}
-.header__box{width:37px;height:244px;position:absolute;right:15px;margin-top:20px;border-collapse:collapse}
-.header__box-1{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
-.header__box-2{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
-.header__box-3{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
-.header__box-4{width:379px;height:109px;position:absolute;right:238px;margin-top:35px;display:none;border-collapse:collapse}
+.header__background-img{height:520px;-o-object-fit:cover;object-fit:cover;-webkit-animation:scale-up-hor-left 1s cubic-bezier(.39,.575,.565,1);animation:scale-up-hor-left 1s cubic-bezier(.39,.575,.565,1)}
+.header__top-info{width:97px;height:480px;background:#252222;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;position:relative;-webkit-animation:scale-up-hor-left 1s cubic-bezier(.39,.575,.565,1);animation:scale-up-hor-left 1s cubic-bezier(.39,.575,.565,1)}
+.header__list{display:none;-webkit-animation:fadeInRight .7s both 2s;animation:fadeInRight .7s both 2s}
+.header__year{margin-top:64px;margin-right:15px;font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;text-align:right;letter-spacing:.05em;color:#787878;-webkit-animation:Tableleft .3s both 2.5s;animation:Tableleft .3s both 2.5s}
+.header__box{width:37px;height:244px;position:absolute;right:15px;margin-top:20px;border-collapse:collapse;-webkit-animation:Tableleft .3s both 2.5s;animation:Tableleft .3s both 2.5s}
+.header__box-1{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse;-webkit-animation:Tableleft .3s both 2.5s;animation:Tableleft .3s both 2.5s}
+.header__box-2{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse;-webkit-animation:Tableleft .3s both 2.5s;animation:Tableleft .3s both 2.5s}
+.header__box-3{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse;-webkit-animation:Tableleft .3s both 2.5s;animation:Tableleft .3s both 2.5s}
+.header__box-4{width:379px;height:109px;position:absolute;right:238px;margin-top:35px;display:none;border-collapse:collapse;-webkit-animation:Tableleft .3s both 2.5s;animation:Tableleft .3s both 2.5s}
 .header__block{border:1px solid #4c4c4c;width:6px;height:6px;-webkit-transition:.1s;transition:.1s}
 .header__block:hover{background-color:#d1152e}
 .header__block--red{background-color:#d1152e;-webkit-transition:.1s;transition:.1s}
@@ -442,4 +442,36 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .menu__red-block::before{top:45px}
 .menu__black-grey-block{width:431px;height:30px;bottom:98px;left:738px}
 .menu__black-grey-block::before{top:45px;left:1px}
+}
+@-webkit-keyframes scale-up-hor-left{
+0%{-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0}
+100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0}
+}
+@keyframes scale-up-hor-left{
+0%{-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0}
+100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0}
+}
+@-webkit-keyframes slideInUp{
+0%{opacity:0;-webkit-transform:translate3d(0,30%,0);transform:translate3d(0,30%,0)}
+100%{opacity:1;-webkit-transform:none;transform:none}
+}
+@keyframes slideInUp{
+0%{opacity:0;-webkit-transform:translate3d(0,30%,0);transform:translate3d(0,30%,0)}
+100%{opacity:1;-webkit-transform:none;transform:none}
+}
+@-webkit-keyframes fadeInRight{
+0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}
+100%{opacity:1;-webkit-transform:none;transform:none}
+}
+@keyframes fadeInRight{
+0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}
+100%{opacity:1;-webkit-transform:none;transform:none}
+}
+@-webkit-keyframes Tableleft{
+0%{opacity:0;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0}
+100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}
+}
+@keyframes Tableleft{
+0%{opacity:0;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0}
+100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}
 }

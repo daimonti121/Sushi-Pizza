@@ -1,6 +1,7 @@
 .header
     min-width: 360px
     width: 100%
+    background: #151414
     &__top
         width: 100%
         display: flex
@@ -9,7 +10,8 @@
         width: 100px
         height: 480px
         background: #D1152E
-        flex-grow: 1
+        flex-grow: 1      
+        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000)  
         h4
             margin-top: 97px
             margin-left: 15px
@@ -20,6 +22,7 @@
             line-height: 16px
             text-transform: uppercase
             color: #FFFFFF
+            animation: fadeInRight 1s both 2s      
         p
             margin-top: -12px
             margin-left: 15px
@@ -30,7 +33,9 @@
             line-height: 16px
             letter-spacing: 0.05em
             color: #FFFFFF
+            animation: fadeInRight 1s both 2s      
         h1
+            animation: slideInUp 1s both 1s 
             margin-top: 78px
             margin-left: 15px
             width: 254px
@@ -43,7 +48,6 @@
             color: #FFFFFF
             position: relative
             z-index: 20
-            position: relative
             &::before
                 content: '01 /10' 
                 font-family: Monument Extended
@@ -56,7 +60,8 @@
                 color: #FFFFFF
                 position: absolute
                 right: 96px
-                bottom: -28px
+                bottom: -28px   
+                animation: fadeInRight 1s both 2s                              
         h5
             margin-top: 132px
             margin-left: 15px
@@ -68,6 +73,7 @@
             letter-spacing: 0.05em
             text-transform: uppercase
             color: #FFFFFF
+            animation: fadeInRight 1s both 2s      
         span
             color: transparent
             -webkit-text-stroke-width: 1px
@@ -75,14 +81,17 @@
     &__background-img
         height: 520px
         object-fit: cover
+        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000)  
     &__top-info
         width: 97px
         height: 480px
         background: #252222
         flex-grow: 1
         position: relative
+        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000)
     &__list
         display: none
+        animation: fadeInRight .7s both 2s      
     &__year
         margin-top: 64px
         margin-right: 15px
@@ -94,6 +103,7 @@
         text-align: right
         letter-spacing: 0.05em
         color: #787878
+        animation: Tableleft .3s both 2.5s      
     &__box
         width: 37px
         height: 244px
@@ -101,6 +111,7 @@
         right: 15px
         margin-top: 20px
         border-collapse: collapse
+        animation: Tableleft .3s both 2.5s      
     &__box-1
         width: 44px
         height: 240px
@@ -109,6 +120,7 @@
         margin-top: 20px
         display: none
         border-collapse: collapse
+        animation: Tableleft .3s both 2.5s      
     &__box-2
         width: 44px
         height: 240px
@@ -117,6 +129,7 @@
         margin-top: 20px
         display: none
         border-collapse: collapse
+        animation: Tableleft .3s both 2.5s      
     &__box-3
         width: 44px
         height: 240px
@@ -125,6 +138,7 @@
         margin-top: 20px
         display: none
         border-collapse: collapse
+        animation: Tableleft .3s both 2.5s      
     &__box-4
         width: 379px
         height: 109px
@@ -133,6 +147,7 @@
         margin-top: 35px
         display: none
         border-collapse: collapse
+        animation: Tableleft .3s both 2.5s      
     &__block
         border: 1px solid #4C4C4C
         width: 6px
