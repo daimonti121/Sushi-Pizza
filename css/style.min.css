@@ -25,13 +25,13 @@
 .header__box-3{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
 .header__box-4{width:379px;height:109px;position:absolute;right:238px;margin-top:35px;display:none;border-collapse:collapse}
 .header__block{border:1px solid #4c4c4c;width:6px;height:6px;-webkit-transition:.1s;transition:.1s}
-.header__block:hover{background-color:#d1152e}
-.header__block--red{background-color:#d1152e;-webkit-transition:.1s;transition:.1s}
-.header__box:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
-.header__box-1:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
-.header__box-2:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
-.header__box-3:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
-.header__box-4:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
+.header .header__block:hover{background-color:#d1152e}
+.header .header__block--red{background-color:#d1152e;-webkit-transition:.1s;transition:.1s}
+.header .header__box:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
+.header .header__box-1:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
+.header .header__box-2:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
+.header .header__box-3:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
+.header .header__box-4:hover .header__block--red{background-color:transparent;-webkit-transition:.3s;transition:.3s}
 .header .header__block--red:hover{background-color:#d1152e}
 @font-face{font-family:Geometria;src:url(../fonts/Geometria-Heavy.woff);font-weight:900;font-style:normal}
 @font-face{font-family:Geometria;src:url(../fonts/Geometria-Bold.woff);font-weight:700;font-style:normal}
@@ -105,18 +105,18 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .menu__center-title{font-family:Monument Extended;font-style:normal;font-weight:400;font-size:16px;line-height:19px;text-transform:uppercase;color:#fff;margin-left:71px;margin-top:34px;position:relative}
 .menu__center-title::before{content:"03 /10";font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:16px;letter-spacing:.05em;color:#fff;position:absolute;top:-52px;left:-71px}
 .menu__center-table{width:37px;height:19px;border-spacing:0;border-collapse:collapse;position:relative;top:87px}
-.menu__center-table-1{display:none}
-.menu__center-table-2{display:none}
-.menu__center-table-3{display:none}
-.menu__center-table-4{display:none;position:relative;z-index:50}
-.menu__center-block{border:1px solid #4c4c4c;width:6px;height:6px;-webkit-transition:.1s;transition:.1s}
-.menu__center-block--active{background:#d1152e}
-.menu__center-table:hover .menu__center-block--active{background:0 0}
-.menu__center-table-1:hover .menu__center-block--active{background:0 0}
-.menu__center-table-2:hover .menu__center-block--active{background:0 0}
-.menu__center-table-3:hover .menu__center-block--active{background:0 0}
-.menu__center-table-4:hover .menu__center-block--active{background:0 0}
-.menu__center-block:hover{background:#d1152e}
+.menu .menu__center-table-1{display:none}
+.menu .menu__center-table-2{display:none}
+.menu .menu__center-table-3{display:none}
+.menu .menu__center-table-4{display:none;position:relative;z-index:50}
+.menu .menu__center-block{border:1px solid #4c4c4c;width:6px;height:6px;-webkit-transition:.1s;transition:.1s}
+.menu .menu__center-block--active{background:#d1152e}
+.menu .menu__center-table:hover .menu__center-block--active{background:0 0}
+.menu .menu__center-table-1:hover .menu__center-block--active{background:0 0}
+.menu .menu__center-table-2:hover .menu__center-block--active{background:0 0}
+.menu .menu__center-table-3:hover .menu__center-block--active{background:0 0}
+.menu .menu__center-table-4:hover .menu__center-block--active{background:0 0}
+.menu .menu__center-block:hover{background:#d1152e}
 .menu .menu__center-block--active:hover{background:#d1152e}
 .menu__center-description{font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:15px;color:#a7a7a7;width:233px;margin-top:49px}
 .menu__grey-block{width:330px;height:15px;background:grey;margin-top:29px;margin-left:-15px;position:relative}

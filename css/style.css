@@ -188,29 +188,29 @@
     height: 6px;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
-  .header__block:hover {
+  .header .header__block:hover {
     background-color: #D1152E; }
-  .header__block--red {
+  .header .header__block--red {
     background-color: #D1152E;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
-  .header__box:hover .header__block--red {
+  .header .header__box:hover .header__block--red {
     background-color: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .header__box-1:hover .header__block--red {
+  .header .header__box-1:hover .header__block--red {
     background-color: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .header__box-2:hover .header__block--red {
+  .header .header__box-2:hover .header__block--red {
     background-color: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .header__box-3:hover .header__block--red {
+  .header .header__box-3:hover .header__block--red {
     background-color: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-  .header__box-4:hover .header__block--red {
+  .header .header__box-4:hover .header__block--red {
     background-color: transparent;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -653,35 +653,35 @@ body {
     border-collapse: collapse;
     position: relative;
     top: 87px; }
-  .menu__center-table-1 {
+  .menu .menu__center-table-1 {
     display: none; }
-  .menu__center-table-2 {
+  .menu .menu__center-table-2 {
     display: none; }
-  .menu__center-table-3 {
+  .menu .menu__center-table-3 {
     display: none; }
-  .menu__center-table-4 {
+  .menu .menu__center-table-4 {
     display: none;
     position: relative;
     z-index: 50; }
-  .menu__center-block {
+  .menu .menu__center-block {
     border: 1px solid #4C4C4C;
     width: 6px;
     height: 6px;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
-  .menu__center-block--active {
+  .menu .menu__center-block--active {
     background: #D1152E; }
-  .menu__center-table:hover .menu__center-block--active {
+  .menu .menu__center-table:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-1:hover .menu__center-block--active {
+  .menu .menu__center-table-1:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-2:hover .menu__center-block--active {
+  .menu .menu__center-table-2:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-3:hover .menu__center-block--active {
+  .menu .menu__center-table-3:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-4:hover .menu__center-block--active {
+  .menu .menu__center-table-4:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-block:hover {
+  .menu .menu__center-block:hover {
     background: #D1152E; }
   .menu .menu__center-block--active:hover {
     background: #D1152E; }
