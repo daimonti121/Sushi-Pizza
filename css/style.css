@@ -187,7 +187,8 @@
     width: 6px;
     height: 6px;
     -webkit-transition: 0.1s;
-    transition: 0.1s; }
+    transition: 0.1s;
+    outline: none; }
 
 .header__block:hover {
   background-color: #D1152E; }
@@ -226,7 +227,8 @@
   transition: 0.3s; }
 
 .header__block--red:hover {
-  background-color: #D1152E; }
+  background-color: #D1152E;
+  outline: none; }
 
 @font-face {
   font-family: "Geometria";
@@ -681,7 +683,8 @@ body {
     width: 6px;
     height: 6px;
     -webkit-transition: 0.1s;
-    transition: 0.1s; }
+    transition: 0.1s;
+    outline: none; }
   .menu__center-block--active {
     background: #D1152E; }
   .menu__center-table:hover .menu__center-block--active {
@@ -699,7 +702,8 @@ body {
   .menu__center-block:focus {
     background: #D1152E; }
   .menu__center-block--active:hover {
-    background: #D1152E; }
+    background: #D1152E;
+    outline: none; }
   .menu__center-description {
     font-family: Geometria;
     font-style: normal;
