@@ -14,8 +14,10 @@
     <div class="header">
         <div class="header__top">
             <div class="header__title">
-                <h4>Aleksandr Sann</h4>
-                <p>sushi bar</p>
+                <div class="header__shadow-block-h4">
+                    <h4 class="header__h4">Aleksandr Sann</h4>   
+                    <p class="header__p">sushi bar</p>                 
+                </div>
                 <h1>SUSHI <span>&</span> PIZZA</h1>
                 <h5>kherson</h5>
             </div>
@@ -3015,6 +3017,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/lazyload.min.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
         $('.display__slider').slick({
@@ -3026,6 +3029,29 @@
             slidesToShow: 1,
             slidesToScroll: 1
         });
+    </script>
+    <script>
+            let list = anime({
+                targets: '.header__li',
+                translateX: -200,                
+                delay: anime.stagger(100, {
+                    start: 2000,
+                }),
+                easing: 'easeInOutQuad'           
+            });    
+
+            let span = anime({
+                targets: '.header__h4',
+                translateX: -200,                
+                delay: 2000,
+                easing: 'easeInOutQuad'           
+            }); 
+            let p = anime({
+                targets: '.header__p',
+                translateX: -200,                
+                delay: 2100,
+                easing: 'easeInOutQuad'           
+            });            
     </script>
 </body>
 </html>
