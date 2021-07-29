@@ -5,7 +5,7 @@
         &__title
             width: 149px
             height: 440px
-            flex-grow: 0
+            flex-grow: 1
             h4
                 margin-left: 40px
                 margin-top: 90px
@@ -43,10 +43,14 @@
             line-height: 18px            
         .header__year
             margin-top: 33px 
-            margin-right: 42px
+            margin-right: 0px
+            text-align: inherit
+            position: absolute
+            left: 140px
+            top: 130px
         .header__box-1
-            right: 42px
-            margin-top: 15px
+            left: 0px
+            margin-top: 48px
         &__box
             display: none
         &__box-1
@@ -162,9 +166,16 @@
                 display: flex
                 flex-direction: row
             .slick-dots
-                top: 112px
-                left: -31px
-                transform: rotate(89deg)  
+                top: 25px
+                left: 9px
+                display: flex
+                flex-direction: column
+            .slick-dots li 
+                margin: 4px 5px
+                cursor: auto
+            .slick-dots button 
+                position: relative
+                top: -14px
             &__background-img 
                 object-fit: contain
                 width: 194px
@@ -287,8 +298,6 @@
             &::before
                 content: "#808080"
                 top: 30px
-        
-
 @media ( min-width: 960px )
     .header
         min-width: 960px
@@ -324,14 +333,14 @@
             width: 297px
             height: 480px
         .header__year
-            margin-top: 35px
-            margin-right: 52px
+            left: 142px
+            top: 132px
         &__ul
             margin-top: 39px
             margin-left: -16px
         .header__box-1
             display: block   
-            right: 53px    
+            left: 0px 
     .main
         width: 100%
         height: 402px
@@ -433,8 +442,13 @@
                 left: 12px
                 bottom: 148px
             .slick-dots
-                top: 106px
-                left: -32px
+                top: 0px
+                left: 9px       
+            .slick-dots li
+                margin: 4px
+            .slick-dots button 
+                position: relative
+                top: -14px
             .display__background-img--size
                 top: -139px
         &__center-title
@@ -444,7 +458,7 @@
             width: 165px
             height: 196px
             top: -194px
-            right: -211px
+            right: -174px
             &::before 
                 top: 215px
                 left: 90px
@@ -470,7 +484,7 @@
             width: 145px
             height: 20px
             bottom: 237px
-            left: -101px
+            left: -76px
             &::before
                 top: 35px
         &__black-grey-block
@@ -479,56 +493,68 @@
             bottom: 257px
             left: 293px
             background: #808080
+            &::before
+                top: 36px
 @media ( min-width: 1024px )
     .header
+        .header__year 
+            left: 204px
         .header__box-1
             display: none
         .header__box-2
             display: flex
             width: 244px
-            height: 63px
-            right: 53px
-            margin-top: 15px
-@media ( min-width: 1366px )
+            left: 0px 
+            margin-top: 50px
+    .menu
+        &__grey-block
+            right: -211px
+        &__red-block
+            left: -101px
+@media ( min-width: 1280px )
     .header
-        min-width: 1366px
+        min-width: 1280px
         &__title
             width: 281px
             height: 590px
+            flex-grow: 1
             h4
-                margin-left: 133px
+                margin-left: 75px
                 margin-top: 117px
                 font-size: 14px
                 line-height: 16px
             p
-                margin-left: 132px
+                margin-left: 75px
                 margin-top: -13px
                 font-size: 12px
                 line-height: 16px
             h1
-                margin-left: 98px
+                margin-left: 49px
                 margin-top: 84px
                 font-size: 115px
                 line-height: 110px
                 &::before 
-                    right: -223px
+                    right: -263px
                     bottom: 11px
                 span
                     margin-left: -34px
             h5
-                margin-top: 85px
+                margin-top: 42px
                 font-size: 12px
                 line-height: 16px
                 margin-left: 131px
         &__background-img
             width: 673px
             height: 680px
+        &__picture
+            flex-grow: 0
         &__top-info
             width: 413px
             height: 590px
+            flex-grow: 1
         .header__year
-            margin-top: 49px
-            margin-right: 97px
+            left: 272px
+            top: 146px
             font-size: 12px
             line-height: 16px
         &__ul
@@ -545,11 +571,12 @@
             display: flex
             width: 316px
             height: 82px
-            right: 96px
-            margin-top: 44px
+            left: 0px 
+            margin-top: 93px
     .main
         height: 480px
         margin-top: -93px
+        padding-top: 0
         .main-inner
             max-width: 1366px
             width: 100%
@@ -582,9 +609,9 @@
                     margin-top: 7px
                     width: 355px
     .menu
-        min-width: 1366px
+        min-width: 1280px
         .menu-inner
-            max-width: 1366px
+            max-width: 1280px
             width: 100%
             margin: 0 auto
         &__background-img
@@ -695,8 +722,8 @@
                 width: 274px
                 height: 246.77px       
             .slick-dots 
-                top: 132px
-                left: -26px
+                top: 0px
+                left: 14px
             .display__number 
                 left: 17px
                 bottom: 198px
@@ -740,6 +767,201 @@
                 z-index: -1
                 top: -210px
                 left: -157px
+        &__center
+            margin-left: -15px
+        &__center-title 
+            margin-left: 160px
+            margin-top: -21px
+            font-size: 20px
+            line-height: 24px
+            width: 174px 
+            &::before
+                top: -71px
+                left: -49px
+        &__center-description 
+            width: 391px
+            left: 103px
+            top: 46px
+        &__grey-block
+            width: 207px
+            height: 226px
+            top: -120px
+            right: -230px
+            &::before
+                top: 238px
+                left: 132px
+        &__colors-description 
+            width: 256px
+            top: -205px
+            left: 181px
+        &__center-table-2
+            display: none
+        &__center-table-3
+            display: block
+            border-collapse: collapse
+            position: relative
+            width: 92px
+            height: 19px
+            left: 102px
+            top: 103px
+        &__red-block 
+            width: 183px
+            height: 25px
+            bottom: 159px
+            left: -17px
+        &__black-grey-block
+            width: 395px
+            height: 25px
+            bottom: 184px
+            left: 443px
+            &::before
+                top: 36px
+@media ( min-width: 1366px )
+    .header
+        min-width: 1366px
+        &__title
+            width: 281px
+            height: 590px
+            flex-grow: 1
+            h4
+                margin-left: 133px
+                margin-top: 117px
+                font-size: 14px
+                line-height: 16px
+            p
+                margin-left: 132px
+                margin-top: -13px
+                font-size: 12px
+                line-height: 16px
+            h1
+                margin-left: 98px
+                margin-top: 84px
+                font-size: 115px
+                line-height: 110px
+                &::before 
+                    right: -223px
+                    bottom: 11px
+                span
+                    margin-left: -34px
+            h5
+                margin-top: 85px
+                font-size: 12px
+                line-height: 16px
+                margin-left: 131px
+        &__background-img
+            width: 673px
+            height: 680px
+        &__picture
+            flex-grow: 0
+        &__top-info
+            width: 413px
+            height: 590px
+            flex-grow: 1
+        .header__year
+            left: 272px
+            top: 146px
+            font-size: 12px
+            line-height: 16px
+        &__ul
+            margin-top: 36px
+            margin-left: -7px
+        &__li
+            font-size: 14px
+            line-height: 22px
+        .header__box-1
+            display: none
+        .header__box-2
+            display: none
+        &__box-3
+            display: flex
+            width: 316px
+            height: 82px
+            left: 0px 
+            margin-top: 93px
+    .main
+        height: 480px
+        margin-top: -93px
+        padding-top: 0
+        .main-inner
+            max-width: 1366px
+            width: 100%
+            margin: 0 auto
+            .main__top
+                margin-left: 282px
+                padding-top: 96px
+                h3
+                    margin-left: 100px
+                    margin-top: 72px
+                    font-size: 20px
+                    line-height: 24px
+                .main__ul 
+                    margin-left: 504px
+                    margin-top: -57px
+                .main__li
+                    font-size: 14px
+                    line-height: 22px
+                .main__li--last 
+                    margin-top: 44px
+            .main__bottom
+                margin-left: 558px
+                a
+                    margin-top: 0px
+                    font-size: 14px
+                    line-height: 24px
+                p
+                    width: 357px
+                span
+                    margin-top: 7px
+                    width: 355px
+    .menu
+        min-width: 1366px
+        .menu-inner
+            max-width: 1366px
+            width: 100%
+            margin: 0 auto
+        &__background-img
+            width: 767px
+            height: 572px
+        &__table-1
+            display: none
+        &__table-2
+            display: block
+            position: relative
+            z-index: 5
+            width: 289px
+            height: 82px
+            border-spacing: 0px
+            border-collapse: collapse
+            margin: 85px 0 0 132px
+            &::before
+                @include table-before
+                font-size: 12px
+                left: 0px
+                top: 97px
+        &__list 
+            margin-top: 28px
+            margin-left: 59px
+        &__li 
+            font-size: 14px
+            line-height: 22px
+        &__li--last 
+            margin-top: 44px
+        .display 
+            width: 906px
+            height: 510px
+            top: 111px
+            right: 158px
+            .slick-dots 
+                top: 145px
+                left: 0px
+            .slick-initialized
+                height: 320px
+                width: 891px
+            .slick-dots button 
+                top: -71px
+                left: 15px
+        &__center
+            margin-left: 30px
         &__center-title 
             margin-left: 160px
             margin-top: -21px
@@ -806,7 +1028,7 @@
         .header__year
             margin-right: 115px
         .header__box-3
-            right: 113px
+            left: 0px 
     .main
         width: 100%
         height: 480px
@@ -900,12 +1122,14 @@
             font-size: 16px
             line-height: 24px
         .header__year 
-            margin-right: 237px
-            margin-top: 76px
+            left: 336px
+            top: 274px
         &__box-3
             display: none
         &__box-4
             display: flex
+            left: 0px 
+            margin-top: 111px
     .main 
         height: 605px
         margin-top: -107px
@@ -949,36 +1173,17 @@
             max-width: 1920px
             width: 100%
             margin: 0 auto
-        &__background-img 
-            width: 1064px
-            height: 690px
-        &__table-2
-            display: none
-        &__table-3
-            display: block
-            position: absolute
-            z-index: 5
-            width: 343px
-            height: 109px
-            border-spacing: 0px
-            border-collapse: collapse
-            margin: 99px 0 0 295px
-            &::before
-                @include table-before
-                font-size: 12px
-                left: 0px
-                top: 124px
-        .display 
-            width: 1120px
-            height: 630px
-            top: 137px
-            right: 308px
-            &__header 
+            .display 
+                width: 1120px
+                height: 630px
+                top: 137px
+                right: 308px
+            .display__header 
                 width: 880px
                 height: 110px
                 top: 433px
                 left: 39px
-            &__main 
+            .display__main 
                 width: 1110px
                 height: 620px
                 top: -87px
@@ -1023,7 +1228,7 @@
                 margin-bottom: 8px
             .slick-initialized
                 width: 1110px
-                height: 740px
+                height: 384px
             .slick-slide
                 width: 1110px
                 height: 740px
@@ -1036,10 +1241,14 @@
                 width: 332px
                 height: 299px
             .slick-dots 
-                top: 200px
-                left: -6px
+                top: 202px
+                left: -8px
             .slick-dots li 
+                margin: 6px
                 margin-right: 9px
+            .slick-dots button 
+                top: -65px
+                left: 48px
             .display__number 
                 left: 43px
                 bottom: 520px
@@ -1049,64 +1258,83 @@
                 left: -148px
                 width: 489px
                 height: 391px
-        &__list 
-            margin-top: 138px
-            margin-left: 215px
-        &__li 
-            font-size: 16px
-            line-height: 24px
-        &__li--last 
-            margin-top: 48px
-        &__center-table-3
-            display: none
-        &__center-table-4
-            display: block
-            border-collapse: collapse
-            position: relative
-            width: 100px
-            height: 19px
-            left: 265px
-            top: 205px
-        &__center-title 
-            margin-left: 325px
-            margin-top: 54px
-            font-size: 24px
-            line-height: 29px
-            width: 204px
-            &::before 
-                top: -75px
-        &__colors-description 
-            width: 361px
-            top: -152px
-            left: 354px
-            font-size: 14px
-            line-height: 18px
-        &__center-description 
-            width: 428px
-            left: 196px
-            top: 138px
-            font-size: 14px
-            line-height: 18px
-        &__grey-block 
-            width: 250px
-            height: 275px
-            top: -49px
-            right: -343px
-            &::before 
-                top: 292px
-                left: 175px
-        &__red-block 
-            width: 200px
-            height: 30px
-            bottom: 68px
-            left: 139px
-            &::before 
-                top: 45px
-        &__black-grey-block 
-            width: 431px
-            height: 30px
-            bottom: 98px
-            left: 738px
-            &::before 
-                top: 45px
-                left: 1px
+            .menu__background-img 
+                width: 1064px
+                height: 690px
+            .menu__table-2
+                display: none
+            .menu__table-3
+                display: block
+                position: absolute
+                z-index: 5
+                width: 343px
+                height: 109px
+                border-spacing: 0px
+                border-collapse: collapse
+                margin: 99px 0 0 295px
+                &::before
+                    @include table-before
+                    font-size: 12px
+                    left: 0px
+                    top: 124px
+            .menu__list 
+                margin-top: 138px
+                margin-left: 215px
+            .menu__li 
+                font-size: 16px
+                line-height: 24px
+            .menu__li--last 
+                margin-top: 48px
+            .menu__center-table-3
+                display: none
+            .menu__center-table-4
+                display: block
+                border-collapse: collapse
+                position: relative
+                width: 100px
+                height: 19px
+                left: 265px
+                top: 205px
+            .menu__center-title 
+                margin-left: 325px
+                margin-top: 54px
+                font-size: 24px
+                line-height: 29px
+                width: 204px
+                &::before 
+                    top: -75px
+            .menu__colors-description 
+                width: 361px
+                top: -152px
+                left: 354px
+                font-size: 14px
+                line-height: 18px
+            .menu__center-description 
+                width: 428px
+                left: 196px
+                top: 138px
+                font-size: 14px
+                line-height: 18px
+            .menu__grey-block 
+                width: 250px
+                height: 275px
+                top: -49px
+                right: -343px
+                &::before 
+                    top: 292px
+                    left: 175px
+            .menu__red-block 
+                width: 200px
+                height: 30px
+                bottom: 68px
+                left: 139px
+                &::before 
+                    top: 45px
+            .menu__black-grey-block 
+                width: 431px
+                height: 30px
+                bottom: 98px
+                left: 738px
+                &::before 
+                    top: 45px
+                    left: 1px
