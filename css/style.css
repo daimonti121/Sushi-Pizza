@@ -188,34 +188,42 @@
     height: 6px;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
-  .header .header__block:hover {
-    background-color: #D1152E; }
-  .header .header__block--red {
-    background-color: #D1152E;
-    -webkit-transition: 0.1s;
-    transition: 0.1s; }
-  .header .header__box:hover .header__block--red {
-    background-color: transparent;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .header .header__box-1:hover .header__block--red {
-    background-color: transparent;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .header .header__box-2:hover .header__block--red {
-    background-color: transparent;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .header .header__box-3:hover .header__block--red {
-    background-color: transparent;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .header .header__box-4:hover .header__block--red {
-    background-color: transparent;
-    -webkit-transition: 0.3s;
-    transition: 0.3s; }
-  .header .header__block--red:hover {
-    background-color: #D1152E; }
+
+.header__block:hover {
+  background-color: #D1152E; }
+
+.header__block--red {
+  background-color: #D1152E;
+  -webkit-transition: 0.1s;
+  transition: 0.1s; }
+
+.header__box:hover .header__block--red {
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.header__box-1:hover .header__block--red {
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.header__box-2:hover .header__block--red {
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.header__box-3:hover .header__block--red {
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.header__box-4:hover .header__block--red {
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.header__block--red:hover {
+  background-color: #D1152E; }
 
 @font-face {
   font-family: "Geometria";
@@ -619,6 +627,8 @@ body {
       height: 8px; }
     .menu .display .slick-dots li[class="slick-active"] button {
       background: #D1152E; }
+    .menu .display .slick-dots li button:before {
+      color: transparent; }
   .menu__center {
     width: 100%;
     margin-top: 250px;
@@ -669,23 +679,7 @@ body {
     height: 6px;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
-  .menu .menu__center-block--active {
-    background: #D1152E; }
-  .menu .menu__center-table:hover .menu__center-block--active {
-    background: transparent; }
-  .menu .menu__center-table-1:hover .menu__center-block--active {
-    background: transparent; }
-  .menu .menu__center-table-2:hover .menu__center-block--active {
-    background: transparent; }
-  .menu .menu__center-table-3:hover .menu__center-block--active {
-    background: transparent; }
-  .menu .menu__center-table-4:hover .menu__center-block--active {
-    background: transparent; }
-  .menu .menu__center-block:hover {
-    background: #D1152E; }
-  .menu .menu__center-block--active:hover {
-    background: #D1152E; }
-  .menu__center-description {
+  .menu .menu__center-description {
     font-family: Geometria;
     font-style: normal;
     font-weight: normal;
@@ -694,14 +688,14 @@ body {
     color: #A7A7A7;
     width: 233px;
     margin-top: 49px; }
-  .menu__grey-block {
+  .menu .menu__grey-block {
     width: 330px;
     height: 15px;
     background: #808080;
     margin-top: 29px;
     margin-left: -15px;
     position: relative; }
-    .menu__grey-block::before {
+    .menu .menu__grey-block::before {
       content: "#808080";
       font-family: Monument Extended;
       font-style: normal;
@@ -712,10 +706,10 @@ body {
       color: #A7A7A7;
       position: absolute;
       top: 22px; }
-  .menu__colors {
+  .menu .menu__colors {
     margin-top: 52px;
     margin-left: 86px; }
-  .menu__colors-description {
+  .menu .menu__colors-description {
     width: 248px;
     font-family: Geometria;
     font-style: normal;
@@ -724,14 +718,14 @@ body {
     line-height: 15px;
     color: #A7A7A7;
     margin-left: -15px; }
-  .menu__red-block {
+  .menu .menu__red-block {
     width: 245px;
     height: 15px;
     margin-left: -15px;
     margin-top: 31px;
     background: #D1152E;
     position: relative; }
-    .menu__red-block::before {
+    .menu .menu__red-block::before {
       content: "#D1152E";
       font-family: Monument Extended;
       font-style: normal;
@@ -742,14 +736,14 @@ body {
       color: #A7A7A7;
       position: absolute;
       top: 26px; }
-  .menu__black-grey-block {
+  .menu .menu__black-grey-block {
     width: 245px;
     height: 15px;
     margin-top: 70px;
     margin-left: -15px;
     background: #4B4B4B;
     position: relative; }
-    .menu__black-grey-block::before {
+    .menu .menu__black-grey-block::before {
       content: "#4B4B4B";
       font-family: Monument Extended;
       font-style: normal;
@@ -760,6 +754,30 @@ body {
       color: #A7A7A7;
       position: absolute;
       top: 26px; }
+
+.menu__center-block--active {
+  background: #D1152E; }
+
+.menu__center-table:hover .menu__center-block--active {
+  background: transparent; }
+
+.menu__center-table-1:hover .menu__center-block--active {
+  background: transparent; }
+
+.menu__center-table-2:hover .menu__center-block--active {
+  background: transparent; }
+
+.menu__center-table-3:hover .menu__center-block--active {
+  background: transparent; }
+
+.menu__center-table-4:hover .menu__center-block--active {
+  background: transparent; }
+
+.menu__center-block:hover {
+  background: #D1152E; }
+
+.menu__center-block--active:hover {
+  background: #D1152E; }
 
 .main {
   min-width: 360px;

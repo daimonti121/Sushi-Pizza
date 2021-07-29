@@ -309,6 +309,8 @@ body
             height: 8px
         .slick-dots li[class="slick-active"] button
             background: #D1152E
+        .slick-dots li button:before
+            color: transparent
     &__center
         width: 100%
         margin-top: 250px
@@ -358,23 +360,7 @@ body
         width: 6px
         height: 6px
         transition: 0.1s
-    .menu__center-block--active
-        background: #D1152E
-    .menu__center-table:hover .menu__center-block--active
-        background: transparent
-    .menu__center-table-1:hover .menu__center-block--active
-        background: transparent
-    .menu__center-table-2:hover .menu__center-block--active
-        background: transparent
-    .menu__center-table-3:hover .menu__center-block--active
-        background: transparent
-    .menu__center-table-4:hover .menu__center-block--active
-        background: transparent
-    .menu__center-block:hover
-        background: #D1152E
-    .menu__center-block--active:hover
-        background: #D1152E
-    &__center-description
+    .menu__center-description
         font-family: Geometria
         font-style: normal
         font-weight: normal
@@ -383,7 +369,7 @@ body
         color: #A7A7A7
         width: 233px
         margin-top: 49px
-    &__grey-block
+    .menu__grey-block
         width: 330px
         height: 15px
         background: #808080
@@ -394,10 +380,10 @@ body
             content: "#808080"
             @include colors-before
             top: 22px
-    &__colors
+    .menu__colors
         margin-top: 52px
         margin-left: 86px
-    &__colors-description
+    .menu__colors-description
         width: 248px
         font-family: Geometria
         font-style: normal
@@ -406,7 +392,7 @@ body
         line-height: 15px
         color: #A7A7A7
         margin-left: -15px
-    &__red-block
+    .menu__red-block
         width: 245px
         height: 15px
         margin-left: -15px
@@ -417,7 +403,7 @@ body
             content: "#D1152E"
             @include colors-before
             top: 26px
-    &__black-grey-block
+    .menu__black-grey-block
         width: 245px
         height: 15px
         margin-top: 70px
@@ -428,3 +414,19 @@ body
             content: "#4B4B4B"
             @include colors-before
             top: 26px
+.menu__center-block--active
+    background: #D1152E
+.menu__center-table:hover .menu__center-block--active
+    background: transparent
+.menu__center-table-1:hover .menu__center-block--active
+    background: transparent
+.menu__center-table-2:hover .menu__center-block--active
+    background: transparent
+.menu__center-table-3:hover .menu__center-block--active
+    background: transparent
+.menu__center-table-4:hover .menu__center-block--active
+    background: transparent
+.menu__center-block:hover
+    background: #D1152E
+.menu__center-block--active:hover
+    background: #D1152E
