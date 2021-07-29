@@ -192,6 +192,9 @@
 .header__block:hover {
   background-color: #D1152E; }
 
+.header__block:focus {
+  background-color: #D1152E; }
+
 .header__block--red {
   background-color: #D1152E;
   -webkit-transition: 0.1s;
@@ -663,23 +666,41 @@ body {
     border-collapse: collapse;
     position: relative;
     top: 87px; }
-  .menu .menu__center-table-1 {
+  .menu__center-table-1 {
     display: none; }
-  .menu .menu__center-table-2 {
+  .menu__center-table-2 {
     display: none; }
-  .menu .menu__center-table-3 {
+  .menu__center-table-3 {
     display: none; }
-  .menu .menu__center-table-4 {
+  .menu__center-table-4 {
     display: none;
     position: relative;
     z-index: 50; }
-  .menu .menu__center-block {
+  .menu__center-block {
     border: 1px solid #4C4C4C;
     width: 6px;
     height: 6px;
     -webkit-transition: 0.1s;
     transition: 0.1s; }
-  .menu .menu__center-description {
+  .menu__center-block--active {
+    background: #D1152E; }
+  .menu__center-table:hover .menu__center-block--active {
+    background: transparent; }
+  .menu__center-table-1:hover .menu__center-block--active {
+    background: transparent; }
+  .menu__center-table-2:hover .menu__center-block--active {
+    background: transparent; }
+  .menu__center-table-3:hover .menu__center-block--active {
+    background: transparent; }
+  .menu__center-table-4:hover .menu__center-block--active {
+    background: transparent; }
+  .menu__center-block:hover {
+    background: #D1152E; }
+  .menu__center-block:focus {
+    background: #D1152E; }
+  .menu__center-block--active:hover {
+    background: #D1152E; }
+  .menu__center-description {
     font-family: Geometria;
     font-style: normal;
     font-weight: normal;
@@ -688,14 +709,14 @@ body {
     color: #A7A7A7;
     width: 233px;
     margin-top: 49px; }
-  .menu .menu__grey-block {
+  .menu__grey-block {
     width: 330px;
     height: 15px;
     background: #808080;
     margin-top: 29px;
     margin-left: -15px;
     position: relative; }
-    .menu .menu__grey-block::before {
+    .menu__grey-block::before {
       content: "#808080";
       font-family: Monument Extended;
       font-style: normal;
@@ -706,10 +727,10 @@ body {
       color: #A7A7A7;
       position: absolute;
       top: 22px; }
-  .menu .menu__colors {
+  .menu__colors {
     margin-top: 52px;
     margin-left: 86px; }
-  .menu .menu__colors-description {
+  .menu__colors-description {
     width: 248px;
     font-family: Geometria;
     font-style: normal;
@@ -718,14 +739,14 @@ body {
     line-height: 15px;
     color: #A7A7A7;
     margin-left: -15px; }
-  .menu .menu__red-block {
+  .menu__red-block {
     width: 245px;
     height: 15px;
     margin-left: -15px;
     margin-top: 31px;
     background: #D1152E;
     position: relative; }
-    .menu .menu__red-block::before {
+    .menu__red-block::before {
       content: "#D1152E";
       font-family: Monument Extended;
       font-style: normal;
@@ -736,14 +757,14 @@ body {
       color: #A7A7A7;
       position: absolute;
       top: 26px; }
-  .menu .menu__black-grey-block {
+  .menu__black-grey-block {
     width: 245px;
     height: 15px;
     margin-top: 70px;
     margin-left: -15px;
     background: #4B4B4B;
     position: relative; }
-    .menu .menu__black-grey-block::before {
+    .menu__black-grey-block::before {
       content: "#4B4B4B";
       font-family: Monument Extended;
       font-style: normal;
@@ -754,30 +775,6 @@ body {
       color: #A7A7A7;
       position: absolute;
       top: 26px; }
-
-.menu__center-block--active {
-  background: #D1152E; }
-
-.menu__center-table:hover .menu__center-block--active {
-  background: transparent; }
-
-.menu__center-table-1:hover .menu__center-block--active {
-  background: transparent; }
-
-.menu__center-table-2:hover .menu__center-block--active {
-  background: transparent; }
-
-.menu__center-table-3:hover .menu__center-block--active {
-  background: transparent; }
-
-.menu__center-table-4:hover .menu__center-block--active {
-  background: transparent; }
-
-.menu__center-block:hover {
-  background: #D1152E; }
-
-.menu__center-block--active:hover {
-  background: #D1152E; }
 
 .main {
   min-width: 360px;
