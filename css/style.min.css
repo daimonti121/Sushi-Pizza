@@ -10,16 +10,16 @@
 .header__top{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .header__shadow-block-h4{width:100px;overflow:hidden}
 .header__shadow-block-h6{width:189px;height:56px;position:absolute;right:-80px;bottom:125px;overflow:hidden}
-.header__shadow-block-h5{width:80px;height:100px;position:relative;overflow:hidden;top:254px;left:15px}
+.header__shadow-block-h5{width:80px;height:100px;position:relative;overflow:hidden;top:256px;left:15px}
 .header__title{width:100px;height:480px;background:#d1152e;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;position:relative;z-index:1;-webkit-animation:scale-up-hor-left .5s cubic-bezier(.39,.575,.565,1) both;animation:scale-up-hor-left .5s cubic-bezier(.39,.575,.565,1) both}
 .header__title h4{margin-top:97px;margin-left:15px;font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:16px;text-transform:uppercase;display:block;color:#fff;position:relative;left:200px}
 .header__title p{margin-top:-12px;margin-left:15px;font-family:Geometria;font-style:normal;font-weight:700;font-size:11px;line-height:16px;letter-spacing:.05em;color:#fff;position:relative;left:200px}
-.header__title h5{font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;letter-spacing:.05em;text-transform:uppercase;color:#fff;position:absolute;left:80px}
+.header__title h5{font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;letter-spacing:.05em;text-transform:uppercase;color:#fff;position:absolute;left:120px}
 .header__title span{color:transparent;-webkit-text-stroke-width:1.5px;-webkit-text-stroke-color:#fff}
 .header__title h6{content:"01 /10";font-family:Monument Extended;font-style:normal;font-weight:900;font-size:11px;line-height:16px;text-align:right;letter-spacing:.05em;color:#fff;position:absolute;left:193px;top:-12px;width:48px}
-.header__h2{width:233px;margin-left:15px;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:37px;line-height:37px;letter-spacing:.1em;color:#fff;position:relative;z-index:20;top:50px}
+.header__h2{width:233px;margin-left:15px;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:37px;line-height:37px;letter-spacing:.1em;color:#fff;position:relative;z-index:20;top:432px}
 .header__h2-second{width:233px;font-family:Monument Extended;font-style:normal;font-weight:900;font-size:37px;line-height:37px;letter-spacing:.1em;color:#fff;position:absolute;z-index:20;margin-left:15px;top:35px}
-.header__shadow-block-h2{overflow:hidden;height:68px;position:absolute;margin-top:36px}
+.header__shadow-block-h2{overflow:hidden;height:300px;position:absolute;top:-36px}
 .header__shadow-block-h2-second{overflow:hidden;width:200px;height:53px;position:absolute;margin-top:88px}
 .header__background-img{height:520px;-o-object-fit:cover;object-fit:cover;-webkit-animation:scale-up-hor-left .5s cubic-bezier(.39,.575,.565,1) both;animation:scale-up-hor-left .5s cubic-bezier(.39,.575,.565,1) both}
 .header__top-info{width:97px;height:480px;background:#252222;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;position:relative;overflow:hidden;-webkit-animation:scale-up-hor-left .5s cubic-bezier(.39,.575,.565,1) both;animation:scale-up-hor-left .5s cubic-bezier(.39,.575,.565,1) both}
@@ -28,11 +28,15 @@
 .header__shadow-block-year{width:83px;height:16px;margin-top:64px;margin-right:15px;overflow:hidden}
 .header__year{font-family:Monument Extended;font-style:normal;font-weight:400;font-size:11px;line-height:16px;text-align:right;letter-spacing:.05em;color:#787878;position:relative;left:80px}
 .header__box{width:37px;height:244px;position:absolute;right:15px;margin-top:20px;border-collapse:collapse}
-.header__box::before{content:"";width:120%;height:102%;background-color:#252222;display:block;position:absolute;left:-5px;top:-1px;-webkit-animation:push-left .5s cubic-bezier(.39,.575,.565,1) 1s both;animation:push-left .5s cubic-bezier(.39,.575,.565,1) 1s both}
+.header__box::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;left:-5px;top:-1px;-webkit-animation:push-left .9s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left .9s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__box-1{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
-.header__box-2{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
+.header__box-1::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;-webkit-animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both}
+.header__box-2{position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
+.header__box-2::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;-webkit-animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__box-3{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
+.header__box-3::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;top:-1px;-webkit-animation:push-left-2 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-2 .5s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__box-4{width:379px;height:109px;position:absolute;right:238px;margin-top:35px;display:none;border-collapse:collapse}
+.header__box-4::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;top:-1px;-webkit-animation:push-left-2 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-2 .5s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__block{border:1px solid #4c4c4c;width:6px;height:6px;-webkit-transition:.1s;transition:.1s;outline:0}
 .header__block:hover{background-color:#d1152e}
 .header__block:focus{background-color:#d1152e}
@@ -151,29 +155,41 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .main .main__bottom p{width:248px;display:block;font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:15px;color:#a7a7a7;margin-top:14px;margin-left:2px}
 .main .main__bottom a{margin-left:72px;margin-top:21px;display:block;font-family:Monument Extended;font-style:normal;font-weight:400;font-size:12px;line-height:24px;-webkit-text-decoration-line:underline;text-decoration-line:underline;color:#fff}
 .main .main__bottom span{margin-left:72px;margin-top:10px;display:block;width:227px;font-family:Geometria;font-style:normal;font-weight:400;font-size:12px;line-height:15px;color:#a7a7a7}
+@media (min-width:375px){
+.header__shadow-block-year{width:92px}
+}
+@media (min-width:425px){
+.header__shadow-block-year{width:117px}
+}
 @media (min-width:768px){
 .header{min-width:768px;width:100%}
 .header__title{width:149px;height:440px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
 .header__title h4{margin-left:40px;margin-top:90px}
 .header__title p{margin-left:40px}
-.header__title h1{margin-left:40px;font-size:80px;line-height:80px;width:504px;letter-spacing:0;margin-top:41px}
-.header__title h1 span{margin-left:-24px}
-.header__title h5{margin-top:57px;margin-left:60px}
+.header__title h5{margin-top:58px;margin-left:60px;left:120px}
+.header__title h6{top:-11px}
+.header__h2{margin-left:40px;font-size:80px;line-height:80px;width:504px;letter-spacing:0;top:357px}
+.header__h2 span{margin-left:-24px}
+.header__shadow-block-h4{width:135px}
 .header__background-img{height:488px}
 .header__top-info{width:224px;height:440px}
 .header__list{display:block}
-.header__ul{list-style-type:none;margin-top:40px;margin-left:-22px}
+.header__ul{list-style-type:none;margin-top:41px;margin-left:-21px}
 .header__li{font-family:Geometria;font-style:normal;font-weight:400;color:#a7a7a7;text-transform:uppercase;font-size:12px;line-height:18px}
-.header .header__year{margin-top:33px;margin-right:0;text-align:inherit;position:absolute;left:140px;top:130px}
-.header .header__box-1{left:0;margin-top:48px}
+.header__shadow-block-year{width:184px;height:80px;margin-top:0;margin-right:15px;overflow:hidden;position:relative}
+.header__year{margin-top:33px;margin-right:0;text-align:inherit;position:absolute;left:221px;top:-16px}
+.header__box-1{left:0;margin-top:-32px;width:181px;height:46px;display:block}
 .header__box{display:none}
-.header__box-1{display:-webkit-box;display:-ms-flexbox;display:flex;width:181px;height:46px}
+.header .header__shadow-block-h5{width:135px;top:190px;left:0}
+.header .header__shadow-block-h5{top:190px;left:0}
+.header .header__shadow-block-h6{right:-473px;bottom:70px}
+.header .header__shadow-block-h2{top:-40px}
 .main{width:100%;height:415px}
 .main .main-inner{max-width:768px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:100px}
 .main .main-inner .main__top h4{margin-top:90px}
 .main .main-inner .main__top h3{margin-left:59px;margin-top:91px;text-align:right}
-.main .main-inner .main__ul{margin-left:275px;margin-top:-17px}
+.main .main-inner .main__ul{margin-left:275px;margin-top:-17px;position:relative}
 .main .main-inner .main__li--last{margin-top:37px}
 .main .main-inner .main__li{font-size:12px}
 .main .main-inner .main__bottom{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-left:335px}
@@ -224,17 +240,24 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 }
 @media (min-width:960px){
 .header{min-width:960px}
-.header__title{width:192px;height:480px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
-.header__title h4{margin-left:47px;margin-top:110px}
-.header__title p{margin-left:47px;margin-top:-15px}
-.header__title h1{font-size:98px;line-height:98px;width:680px;margin-left:44px;margin-top:36px}
-.header__title h1 span{margin-left:-28px}
-.header__title h5{margin-top:-2px;margin-left:72px}
+.header__title{width:172px;height:480px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
+.header__title h4{margin-left:15px;margin-top:110px}
+.header__title p{margin-left:15px;margin-top:-15px}
+.header__title h5{margin-top:-2px;margin-left:39px}
+.header__h2{font-size:98px;line-height:98px;width:680px;margin-left:12px;top:311px}
+.header__h2 span{margin-left:-28px}
+.header .header__box-2{margin-top:-30px;left:0}
+.header .header__shadow-block-h2{top:-13px}
+.header__shadow-block-h2{top:-12px;height:290px}
 .header__background-img{height:540px}
 .header__top-info{width:297px;height:480px}
-.header .header__year{left:142px;top:132px}
+.header__year{left:284px;top:-14px}
 .header__ul{margin-top:39px;margin-left:-16px}
-.header .header__box-1{display:block;left:0}
+.header .header__box-1{display:none;left:0}
+.header .header__box-2{display:block}
+.header .header__shadow-block-h4{width:160px}
+.header .header__shadow-block-h5{top:287px;width:151px}
+.header .header__shadow-block-year{width:246px;height:80px}
 .main{width:100%;height:402px}
 .main .main-inner{max-width:960px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:160px}
@@ -280,20 +303,23 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .menu__black-grey-block::before{top:36px}
 }
 @media (min-width:1024px){
-.header .header__year{left:204px}
 .header .header__box-1{display:none}
-.header .header__box-2{display:-webkit-box;display:-ms-flexbox;display:flex;width:244px;left:0;margin-top:50px}
+.header .header__box-2{display:-webkit-box;display:-ms-flexbox;display:flex;width:244px;left:0}
+.header .header__shadow-block-h6{right:-617px;bottom:78px}
 .menu__grey-block{right:-211px}
 .menu__red-block{left:-101px}
 }
 @media (min-width:1280px){
 .header{min-width:1280px}
 .header__title{width:281px;height:590px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
-.header__title h4{margin-left:75px;margin-top:117px;font-size:14px;line-height:16px}
-.header__title p{margin-left:75px;margin-top:-13px;font-size:12px;line-height:16px}
-.header__title h1{margin-left:49px;margin-top:84px;font-size:115px;line-height:110px}
-.header__title h1 span{margin-left:-34px}
-.header__title h5{margin-top:42px;font-size:12px;line-height:16px;margin-left:131px}
+.header__title h4{margin-left:97px;margin-top:117px;font-size:14px;line-height:16px}
+.header__title p{margin-left:97px;margin-top:-13px;font-size:12px;line-height:16px}
+.header__title h5{margin-top:41px;font-size:12px;line-height:16px;margin-left:136px}
+.header .header__h2{margin-left:64px;font-size:115px;line-height:110px;top:286px}
+.header .header__h2 span{margin-left:-34px}
+.header .header__shadow-block-h2{top:56px}
+.header .header__shadow-block-h4{width:238px}
+.header .header__shadow-block-h5{top:336px;width:180px}
 .header__background-img{width:673px;height:680px}
 .header__picture{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
 .header__top-info{width:413px;height:590px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
@@ -301,13 +327,14 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .header__ul{margin-top:36px;margin-left:-7px}
 .header__li{font-size:14px;line-height:22px}
 .header .header__box-1{display:none}
-.header .header__box-2{display:none}
-.header__box-3{display:-webkit-box;display:-ms-flexbox;display:flex;width:316px;height:82px;left:0;margin-top:93px}
+.header .header__box-2{display:none;left:0}
+.header__box-3{display:-webkit-box;display:-ms-flexbox;display:flex;width:316px;height:82px;left:0;margin-top:13px}
+.header .header__shadow-block-h6{right:-763px;bottom:117px}
 .main{height:480px;margin-top:-93px;padding-top:0}
 .main .main-inner{max-width:1366px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:282px;padding-top:96px}
 .main .main-inner .main__top h3{margin-left:100px;margin-top:72px;font-size:20px;line-height:24px}
-.main .main-inner .main__top .main__ul{margin-left:504px;margin-top:-57px}
+.main .main-inner .main__top .main__ul{margin-left:504px;margin-top:-57px;position:relative}
 .main .main-inner .main__top .main__li{font-size:14px;line-height:22px}
 .main .main-inner .main__top .main__li--last{margin-top:44px}
 .main .main-inner .main__bottom{margin-left:558px}
@@ -372,18 +399,22 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .header__title{width:281px;height:590px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
 .header__title h4{margin-left:133px;margin-top:117px;font-size:14px;line-height:16px}
 .header__title p{margin-left:132px;margin-top:-13px;font-size:12px;line-height:16px}
-.header__title h1{margin-left:98px;margin-top:84px;font-size:115px;line-height:110px}
-.header__title h1 span{margin-left:-34px}
-.header__title h5{margin-top:85px;font-size:12px;line-height:16px;margin-left:131px}
+.header__title p span{margin-left:-34px}
+.header__title h5{margin-top:42px;font-size:12px;line-height:16px;margin-left:172px}
+.header .header__shadow-block-h4{width:279px}
+.header .header__shadow-block-h2{top:57px}
+.header .header__h2{margin-left:99px;font-size:115px;line-height:110px}
+.header .header__shadow-block-h5{width:220px}
 .header__background-img{width:673px;height:680px}
 .header__picture{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
 .header__top-info{width:413px;height:590px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
-.header .header__year{left:272px;top:146px;font-size:12px;line-height:16px}
+.header .header__shadow-block-year{width:320px}
+.header .header__year{left:353px;top:0;font-size:12px;line-height:16px}
 .header__ul{margin-top:36px;margin-left:-7px}
 .header__li{font-size:14px;line-height:22px}
 .header .header__box-1{display:none}
 .header .header__box-2{display:none}
-.header__box-3{display:-webkit-box;display:-ms-flexbox;display:flex;width:316px;height:82px;left:0;margin-top:93px}
+.header__box-3{display:-webkit-box;display:-ms-flexbox;display:flex;width:316px;height:82px;left:0;margin-top:13px}
 .main{height:480px;margin-top:-93px;padding-top:0}
 .main .main-inner{max-width:1366px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:282px;padding-top:96px}
@@ -427,10 +458,12 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 .header__title h4{margin-left:148px}
 .header__title p{margin-left:148px}
 .header__title h1{margin-left:115px}
-.header__title h5{margin-top:85px;margin-left:148px}
+.header__title h5{margin-top:41px;margin-left:188px}
 .header__top-info{width:413px;height:590px}
 .header .header__year{margin-right:115px}
 .header .header__box-3{left:0}
+.header .header__shadow-block-h5{width:235px}
+.header .header__h2{margin-left:115px}
 .main{width:100%;height:480px}
 .main .main-inner{max-width:1400px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:298px}
@@ -454,19 +487,23 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 }
 @media (min-width:1920px){
 .header .header__shadow-block-h4{width:421px}
-.header__title{width:455px;height:780px}
+.header__title{width:467px;height:780px}
 .header__title h4{margin-left:255px;font-size:16px;margin-top:250px}
 .header__title p{margin-left:255px;margin-top:-14px}
-.header__title h1{margin-left:255px;margin-top:46px;font-size:150px;line-height:130px;width:856px}
-.header__title h1 span{margin-left:-45px}
-.header__title h5{margin-top:118px;margin-left:295px}
+.header__title h5{margin-top:79px;margin-left:335px}
+.header .header__h2{margin-left:255px;font-size:150px;line-height:130px;width:856px;top:238px}
+.header .header__h2 span{margin-left:-45px}
+.header .header__shadow-block-h2{top:184px}
+.header .header__shadow-block-h5{width:86%;top:345px}
+.header .header__shadow-block-h6{right:-926px;bottom:145px}
 .header__background-img{width:830px;height:883px}
 .header__top-info{width:635px;height:780px}
 .header__ul{margin-top:111px;margin-left:0}
 .header__li{font-size:16px;line-height:24px}
-.header .header__year{left:336px;top:274px}
+.header .header__shadow-block-year{width:387px}
+.header .header__year{left:417px;top:27px}
 .header__box-3{display:none}
-.header__box-4{display:-webkit-box;display:-ms-flexbox;display:flex;left:0;margin-top:111px}
+.header__box-4{display:-webkit-box;display:-ms-flexbox;display:flex;left:0;margin-top:31px}
 .main{height:605px;margin-top:-107px}
 .main .main-inner{max-width:1920px;width:100%;margin:0 auto}
 .main .main-inner .main__top{margin-left:455px;padding-top:171px}
@@ -528,9 +565,25 @@ body{font-family:Geometria,montserrat,"Monument Extended";will-change:transform}
 }
 @-webkit-keyframes push-left{
 0%{-webkit-transform:translateX(0);transform:translateX(0)}
-100%{-webkit-transform:translateX(44px);transform:translateX(44px)}
+100%{-webkit-transform:translateX(144px);transform:translateX(144px)}
 }
 @keyframes push-left{
 0%{-webkit-transform:translateX(0);transform:translateX(0)}
-100%{-webkit-transform:translateX(44px);transform:translateX(44px)}
+100%{-webkit-transform:translateX(144px);transform:translateX(144px)}
+}
+@-webkit-keyframes push-left-1{
+0%{-webkit-transform:translateX(0);transform:translateX(0)}
+100%{-webkit-transform:translateX(244px);transform:translateX(244px)}
+}
+@keyframes push-left-1{
+0%{-webkit-transform:translateX(0);transform:translateX(0)}
+100%{-webkit-transform:translateX(244px);transform:translateX(244px)}
+}
+@-webkit-keyframes push-left-2{
+0%{-webkit-transform:translateX(0);transform:translateX(0)}
+100%{-webkit-transform:translateX(384px);transform:translateX(384px)}
+}
+@keyframes push-left-2{
+0%{-webkit-transform:translateX(0);transform:translateX(0)}
+100%{-webkit-transform:translateX(384px);transform:translateX(384px)}
 }
