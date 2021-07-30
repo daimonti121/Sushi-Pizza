@@ -18,8 +18,18 @@
                     <h4 class="header__h4">Aleksandr Sann</h4>   
                     <p class="header__p">sushi bar</p>                 
                 </div>
-                <h1>SUSHI <span>&</span> PIZZA</h1>
-                <h5>kherson</h5>
+                <div class="header__shadow-block-h2">
+                    <h2 class="header__h2">SUSHI <span>&</span></h2>
+                </div>
+                <div class="header__shadow-block-h2-second">
+                    <h2 class="header__h2-second">PIZZA</h2>
+                </div>
+                <div class="header__shadow-block-h5">
+                    <h5 class="header__h5">kherson</h5>
+                </div>
+                <div class="header__shadow-block-h6">
+                    <h6 class="header__h6">01 /10</h6>
+                </div>
             </div>
             <picture class="header__picture">
                 <source class="header__background-img lazyload" media='(min-width:1920px)' srcset="img/1920/images/photo_01_1920.jpg">
@@ -38,7 +48,9 @@
                         <li class="header__li">SALADS</li>
                     </ul>
                 </div>
-                <div class="header__year">2020</div>                
+                <div class="header__shadow-block-year">
+                    <div class="header__year">2020</div>
+                </div>                
                 <table class="header__box">
                     <tr>
                         <td tabindex="0" class="header__block"></td>
@@ -195,55 +207,7 @@
                         <td tabindex="0" class="header__block"></td>
                         <td tabindex="0" class="header__block"></td>
                         <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
-                    <tr>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                        <td tabindex="0" class="header__block"></td>
-                    </tr>
+                    </tr>          
                 </table>
                 <table class="header__box-1">
                     <tr>
@@ -3034,8 +2998,8 @@
             let list = anime({
                 targets: '.header__li',
                 translateX: -200,                
-                delay: anime.stagger(100, {
-                    start: 2000,
+                delay: anime.stagger(50, {
+                    start: 500,
                 }),
                 easing: 'easeInOutQuad'           
             });    
@@ -3043,15 +3007,45 @@
             let span = anime({
                 targets: '.header__h4',
                 translateX: -200,                
-                delay: 2000,
+                delay: 500,
                 easing: 'easeInOutQuad'           
             }); 
             let p = anime({
                 targets: '.header__p',
                 translateX: -200,                
-                delay: 2100,
+                delay: 700,
                 easing: 'easeInOutQuad'           
-            });            
+            });      
+            let h6 = anime({
+                targets: '.header__h6',
+                translateX: -60,                
+                delay: 1000,
+                easing: 'easeInOutQuad'           
+            });   
+            let h5 = anime({
+                targets: '.header__h5',
+                translateX: -80,                
+                delay: 1000,
+                easing: 'easeInOutQuad'           
+            }); 
+            let year = anime({
+                targets: '.header__year',
+                translateX: -80,                
+                delay: 800,
+                easing: 'easeInOutQuad'           
+            });     
+            let h2 = anime({
+                targets: '.header__h2',
+                translateY: -50,                
+                delay: 300,
+                easing: 'easeInOutQuad'           
+            });     
+            let h2Second = anime({
+                targets: '.header__h2-second',
+                translateY: -50,                
+                delay: 300,
+                easing: 'easeInOutQuad'           
+            });  
     </script>
 </body>
 </html>
