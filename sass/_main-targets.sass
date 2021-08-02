@@ -1,0 +1,271 @@
+@import "mixins"
+
+.main
+    min-width: 360px
+    width: 100%
+    height: 508px
+    background: #151414
+    margin-top: -64px
+    .main-inner
+        max-width: 360px
+        width: 100%
+        margin: 0 auto
+    &__top
+        display: flex
+        margin: 60px 0 0 29px
+        h4  
+            display: block
+            margin-top: 73px
+            font-family: Monument Extended
+            font-weight: 900
+            font-size: 11px
+            line-height: 16px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+        h3  
+            display: block
+            width: 127px
+            margin: 119px 0 0 23px
+            font-family: Monument Extended
+            font-size: 16px
+            line-height: 19px
+            text-transform: uppercase
+            color: #FFFFFF
+    &__ul
+        margin: 19px 0 0 52px
+        padding: 0
+        list-style: none
+        color: #A7A7A7
+    &__li
+        @include list()
+        font-size: 11px
+        line-height: 18px        
+    &__li--last
+        margin-top: 18px
+        color: #FFFFFF
+    &__bottom
+        margin-left: 29px
+        p   
+            width: 248px
+            display: block
+            font-family: Geometria
+            font-size: 12px
+            line-height: 15px
+            color: #A7A7A7
+            margin: 30px 0 0 2px
+        a   
+            margin: 21px 0 0 72px
+            display: block
+
+            font-family: Monument Extended
+            font-size: 12px
+            line-height: 24px
+            text-decoration-line: underline
+            color: #FFFFFF
+        span   
+            margin: 10px 0 0 72px
+            display: block
+            width: 227px
+
+            font-family: Geometria
+            font-size: 12px
+            line-height: 15px
+            color: #A7A7A7
+
+@media ( min-width: 768px )
+    .main
+        width: 100%
+        height: 415px
+        .main-inner
+            max-width: 768px
+            width: 100%
+            margin: 0 auto
+            .main__top
+                margin-left: 100px
+                h4
+                    margin-top: 90px
+                h3
+                    margin-left: 59px
+                    margin-top: 91px
+                    text-align: right 
+            .main__ul
+                margin-left: 275px
+                margin-top: -17px
+                position: relative
+            .main__li--last 
+                margin-top: 37px
+            .main__li
+                    font-size: 12px
+            .main__bottom
+                display: flex
+                flex-direction: column
+                margin-left: 335px
+                p 
+                    order: 2
+                    margin-left: 0
+                    margin-top: 11px
+                    width: 285px
+                a
+                    order: 1
+                    font-family: Geometria
+                    font-style: normal
+                    font-weight: normal
+                    margin-left: 0
+                    margin-top: -16px
+                span 
+                    order: 3
+                    margin-left: 0
+                    margin-top: 3px
+                    width: 283px
+@media ( min-width: 960px )
+    .main
+        width: 100%
+        height: 402px
+        .main-inner
+            max-width: 960px
+            width: 100%
+            margin: 0 auto
+            .main__top
+                margin-left: 160px
+                h4
+                    margin-top: 79px
+                h3
+                    margin-left: 74px
+                    margin-top: 76px
+                .main__ul 
+                    margin-left: 370px
+                    margin-top: -30px
+            .main__bottom
+                margin-left: 410px
+                a
+                    margin-top: -21px
+                p
+                    margin-top: 14px
+@media ( min-width: 1280px )
+    .main
+        height: 480px
+        margin-top: -93px
+        padding-top: 0
+        .main-inner
+            max-width: 1366px
+            width: 100%
+            margin: 0 auto
+            .main__top
+                margin-left: 282px
+                padding-top: 96px
+                h3
+                    margin-left: 100px
+                    margin-top: 72px
+                    font-size: 20px
+                    line-height: 24px
+                .main__ul 
+                    margin-left: 504px
+                    margin-top: -57px
+                    position: relative 
+                .main__li
+                    font-size: 14px
+                    line-height: 22px
+                .main__li--last 
+                    margin-top: 44px
+            .main__bottom
+                margin-left: 558px
+                a
+                    margin-top: 0px
+                    font-size: 14px
+                    line-height: 24px
+                p
+                    width: 357px
+                span
+                    margin-top: 7px
+                    width: 355px
+@media ( min-width: 1366px )
+    .main
+        height: 480px
+        margin-top: -93px
+        padding-top: 0
+        .main-inner
+            max-width: 1366px
+            width: 100%
+            margin: 0 auto
+            .main__top
+                margin-left: 282px
+                padding-top: 96px
+                h3
+                    margin-left: 100px
+                    margin-top: 72px
+                    font-size: 20px
+                    line-height: 24px
+                .main__ul 
+                    margin-left: 504px
+                    margin-top: -57px
+                .main__li
+                    font-size: 14px
+                    line-height: 22px
+                .main__li--last 
+                    margin-top: 44px
+            .main__bottom
+                margin-left: 558px
+                a
+                    margin-top: 0px
+                    font-size: 14px
+                    line-height: 24px
+                p
+                    width: 357px
+                span
+                    margin-top: 7px
+                    width: 355px
+@media ( min-width: 1400px )
+    .main
+        width: 100%
+        height: 480px
+        .main-inner
+            max-width: 1400px
+            width: 100%
+            margin: 0 auto
+            .main__top
+                margin-left: 298px
+                .main__ul
+                    margin-top: -7px
+            .main__bottom 
+                margin-left: 573px
+                a
+                    margin-top: -8px
+@media ( min-width: 1920px )   
+    .main 
+        height: 605px
+        margin-top: -107px
+        .main-inner
+            max-width: 1920px
+            width: 100%
+            margin: 0 auto
+            .main__top
+                margin-left: 455px
+                padding-top: 171px
+                h3
+                    font-size: 24px
+                    line-height: 26px
+                    margin-left: 224px
+                    margin-top: 72px
+                .main__ul 
+                    margin-top: -70px
+                    margin-left: 560px
+                .main__li
+                    font-size: 16px
+                    line-height: 24px
+                .main__li--last 
+                    margin-top: 48px
+            .main__bottom 
+                margin-left: 855px
+                a
+                    font-size: 16px
+                    line-height: 24px
+                p 
+                    font-size: 14px
+                    line-height: 18px
+                    width: 430px
+                    margin-top: 19px
+                span 
+                    width: 430px
+                    margin-top: 11px
+                    font-size: 14px
+                    line-height: 18px
