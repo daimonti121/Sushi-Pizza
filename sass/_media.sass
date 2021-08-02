@@ -32,6 +32,16 @@
             top: 357px
             span
                 margin-left: -24px
+        &__slider
+            width: 600px
+            height: 88px
+            top: 257px
+        &__h3
+            font-size: 80px
+            margin-left: 40px
+            line-height: 80px
+            letter-spacing: 0px
+            top: 126px            
         &__shadow-block-h4
             width: 135px
         &__background-img
@@ -351,6 +361,14 @@
             top: 311px
             span 
                 margin-left: -28px
+        &__h3
+            font-size: 98px
+            line-height: 98px
+            margin-left: 15px
+            top: 122px
+        &__slider
+            width: 700px
+            height: 115px
         .header__box-2
             margin-top: -30px
             left: 0px 
@@ -359,6 +377,9 @@
         &__shadow-block-h2
             top: -12px
             height: 290px
+        .header__shadow-block-h6 
+            right: -735px
+            bottom: 78px
         &__background-img
             height: 540px
         &__top-info
@@ -428,7 +449,7 @@
             width: 680px
             height: 330px
             top: 73px
-            right: 133px
+            right: 100px
             &__header
                 width: 679px
                 height: 35px
@@ -500,7 +521,7 @@
             width: 165px
             height: 196px
             top: -194px
-            right: -174px
+            right: -211px
             &::before 
                 top: 215px
                 left: 90px
@@ -526,7 +547,7 @@
             width: 145px
             height: 20px
             bottom: 237px
-            left: -76px
+            left: -101px
             &::before
                 top: 35px
         &__black-grey-block
@@ -539,8 +560,6 @@
                 top: 36px
 @media ( min-width: 1024px )
     .header
-        // .header__year 
-        //     left: 204px
         .header__box-1
             display: none
         .header__box-2
@@ -550,25 +569,47 @@
         .header__shadow-block-h6 
             right: -617px
             bottom: 78px
+        .header__title
+            width: 187px
+            h4
+                margin-left: 46px
+            p
+                margin-left: 46px
+            h5
+                margin-left: 71px
+        .header__shadow-block-h4 
+            width: 185px
+        .header__h2
+            margin-left: 46px
+        .header__h3
+            margin-left: 46px
+        .header__slider 
+            width: 720px
+        .header__ul
+            margin-left: -15px
+        .header__year 
+            left: 286px
     .menu
         &__grey-block
             right: -211px
         &__red-block
             left: -101px
+        .display
+            right: 134px
 @media ( min-width: 1280px )
     .header
         min-width: 1280px
-        &__title
-            width: 281px
+        .header__title
+            width: 282px
             height: 590px
             flex-grow: 1
             h4
-                margin-left: 97px
+                margin-left: 132px
                 margin-top: 117px
                 font-size: 14px
                 line-height: 16px
             p
-                margin-left: 97px
+                margin-left: 132px
                 margin-top: -13px
                 font-size: 12px
                 line-height: 16px
@@ -576,21 +617,36 @@
                 margin-top: 41px
                 font-size: 12px
                 line-height: 16px
-                margin-left: 136px
+                margin-left: 132px
         .header__h2
-            margin-left: 64px
+            margin-left: 99px
             font-size: 115px
             line-height: 110px
             top: 286px
             span
                 margin-left: -34px
+        .header__h3
+            font-size: 115px
+            line-height: 110px
+            top: 175px
+            margin-left: 98px
+        .header__slider
+            width: 900px
+            height: 200px
         .header__shadow-block-h2 
             top: 56px
         .header__shadow-block-h4 
-            width: 238px
+            width: 280px
         .header__shadow-block-h5 
             top: 336px
-            width: 180px
+            width: 248px
+        .header__shadow-block-year
+            width: 320px
+        .header__year 
+            left: 352px
+            top: 0px
+            font-size: 12px
+            line-height: 16px
         &__background-img
             width: 673px
             height: 680px
@@ -600,12 +656,7 @@
             width: 413px
             height: 590px
             flex-grow: 1
-        .header__year
-            left: 272px
-            top: 146px
-            font-size: 12px
-            line-height: 16px
-        &__ul
+        .header__ul
             margin-top: 36px
             margin-left: -7px
         &__li
@@ -698,7 +749,7 @@
             width: 906px
             height: 510px
             top: 111px
-            right: 158px
+            right: 71px
             &__header 
                 width: 720px
                 height: 91px
@@ -823,7 +874,7 @@
         &__center
             margin-left: -15px
         &__center-title 
-            margin-left: 160px
+            margin-left: 205px
             margin-top: -21px
             font-size: 20px
             line-height: 24px
@@ -839,14 +890,14 @@
             width: 207px
             height: 226px
             top: -120px
-            right: -230px
+            right: -200px
             &::before
                 top: 238px
                 left: 132px
         &__colors-description 
             width: 256px
             top: -205px
-            left: 181px
+            left: 226px
         &__center-table-2
             display: none
         &__center-table-3
@@ -855,24 +906,24 @@
             position: relative
             width: 92px
             height: 19px
-            left: 102px
+            left: 147px
             top: 103px
         &__red-block 
             width: 183px
             height: 25px
             bottom: 159px
-            left: -17px
+            left: 28px
         &__black-grey-block
             width: 395px
             height: 25px
             bottom: 184px
-            left: 443px
+            left: 488px
             &::before
                 top: 36px
 @media ( min-width: 1366px )
     .header
         min-width: 1366px
-        &__title
+        .header__title
             width: 281px
             height: 590px
             flex-grow: 1
@@ -892,7 +943,7 @@
                 margin-top: 42px
                 font-size: 12px
                 line-height: 16px
-                margin-left: 172px
+                margin-left: 132px
         .header__shadow-block-h4 
             width: 279px
         .header__shadow-block-h2 
@@ -1071,7 +1122,7 @@
         min-width: 1400px
         .header__shadow-block-h4
             width: 288px
-        &__title
+        .header__title
             h4
                 margin-left: 148px
             p
@@ -1080,7 +1131,7 @@
                 margin-left: 115px
             h5
                 margin-top: 41px
-                margin-left: 188px
+                margin-left: 148px
         &__top-info
             width: 413px
             height: 590px
@@ -1092,6 +1143,10 @@
             width: 235px
         .header__h2 
             margin-left: 115px
+        .header__h3
+            margin-left: 115px
+        .header__slider
+            width: 915px
     .main
         width: 100%
         height: 480px
@@ -1150,9 +1205,9 @@
     .header       
         .header__shadow-block-h4
             width: 421px
-        &__title
+        .header__title
             width: 467px
-            height: 780px
+            height: 782px
             h4
                 margin-left: 255px
                 font-size: 16px
@@ -1162,7 +1217,9 @@
                 margin-top: -14px
             h5
                 margin-top: 79px
-                margin-left: 335px  
+                margin-left: 295px  
+            h6 
+                top: -13px
         .header__h2
             margin-left: 255px
             font-size: 150px
@@ -1173,22 +1230,30 @@
                 margin-left: -45px
         .header__shadow-block-h2
             top: 184px 
+        .header__h3
+            margin-left: 255px
+            font-size: 150px
+            line-height: 130px
+        .header__slider 
+            width: 1292px
+            height: 250px
+            top: 352px
         .header__shadow-block-h5 
             width: 86%
             top: 345px
         .header__shadow-block-h6 
             right: -926px
             bottom: 145px
-        &__background-img
+        .header__background-img
             width: 830px
             height: 883px
-        &__top-info
+        .header__top-info
             width: 635px
-            height: 780px
-        &__ul 
+            height: 782px
+        .header__ul 
             margin-top: 111px
             margin-left: 0px
-        &__li 
+        .header__li 
             font-size: 16px
             line-height: 24px
         .header__shadow-block-year 
@@ -1196,9 +1261,9 @@
         .header__year 
             left: 417px
             top: 27px
-        &__box-3
+        .header__box-3
             display: none
-        &__box-4
+        .header__box-4
             display: flex
             left: 0px 
             margin-top: 31px

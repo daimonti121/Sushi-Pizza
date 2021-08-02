@@ -21,8 +21,11 @@
                 <div class="header__shadow-block-h2">
                     <h2 class="header__h2">SUSHI <span>&</span></h2>
                 </div>
-                <div class="header__shadow-block-h2-second">
-                    <h2 class="header__h2-second">PIZZA</h2>
+                <div class="header__slider">
+                    <h3 class="header__h3">SALADS</h3>
+                    <h3 class="header__h3">DESSERTS</h3>
+                    <h3 class="header__h3">DRINKS</h3>
+                    <h3 class="header__h3">PIZZA</h3>
                 </div>
                 <div class="header__shadow-block-h5">
                     <h5 class="header__h5">kherson</h5>
@@ -3035,17 +3038,20 @@
                 easing: 'easeInOutQuad'           
             });     
             let h2 = anime({
-                targets: '.header__h2',
+                targets: '.header__h2, .header__h3',
                 translateY: -200,                
                 delay: 220,
                 easing: 'easeInOutQuad'           
             });     
-            let h2Second = anime({
-                targets: '.header__h2-second',
-                translateY: -200,                
-                delay: 300,
-                easing: 'easeInOutQuad'           
-            });  
     </script>
+    <script>
+        $('.header__slider').slick({
+            infinite: true,
+            dots: false,
+            prevArrow: false,
+            nextArrow: false
+        });
+    </script>
+
 </body>
 </html>
