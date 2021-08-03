@@ -1481,13 +1481,13 @@ body {
       .menu .display__number {
         display: block;
         position: absolute;
-        left: 14px;
         bottom: 142px;
         font-family: "Geometria", sans-serif;
         font-weight: 500;
         font-size: 10px;
         line-height: 1.3;
-        color: #888888; }
+        color: #888888;
+        margin-left: 13px; }
       .menu .display__p {
         position: relative;
         top: 32px;
@@ -1689,7 +1689,6 @@ body {
         top: -174px;
         left: -144px; }
       .menu .display__number {
-        left: 12px;
         bottom: 148px; }
       .menu .display .slick-dots {
         top: 138px;
@@ -1902,7 +1901,7 @@ body {
         top: 162px;
         left: 14px; }
       .menu .display__number {
-        left: 17px;
+        margin-left: 17px;
         bottom: 198px; }
       .menu .display__h2 {
         top: 53px;
@@ -2220,7 +2219,7 @@ body {
       top: -65px;
       left: 48px; }
     .menu .display__number {
-      left: 43px;
+      margin-left: 43px;
       bottom: 520px;
       font-size: 12px; }
   .menu__background-img--size {
