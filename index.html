@@ -2635,7 +2635,7 @@
                                 <div class="display__button">Японская кухня</div>
                                 <div class="display__button">Пицца</div>
                             </div>
-                            <div class="display__menu-1">                                
+                            <div class="display__table">                                
                                 <div class="display__button display__button--active display__button--padding">Mеню</div>
                                 <div class="display__button display__button--padding">Новинки</div>
                                 <div class="display__button display__button--padding">Японская кухня</div>
@@ -2644,7 +2644,7 @@
                                 <div class="display__button display__button--padding">Горячие блюда</div>
                                 <div class="display__button display__button--padding">Блины</div>
                             </div>
-                            <div class="display__menu-2">                                
+                            <div class="display__laptop">                                
                                 <div class="display__button display__button--active display__button--padding">Mеню</div>
                                 <div class="display__button display__button--padding">Новинки</div>
                                 <div class="display__button display__button--padding">Японская кухня</div>
@@ -2655,7 +2655,7 @@
                                 <div class="display__button display__button--padding">Десерты</div>
                                 <div class="display__button display__button--padding">Закуски к пиву</div>
                             </div>
-                            <div class="display__menu-3">
+                            <div class="display__desk">
                                 <div class="display__big-button display__big-button--active">
                                     <svg class="display__icon display__icon--active" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="23" cy="23" r="23" fill="#D1152E"/>
@@ -2778,7 +2778,7 @@
                                         <img class="display__background-img lazyload" src="img/360/images/sushi_photo_360.png" alt="no-image">
                                     </picture>
                                 </div>
-                                <div class="display__slidear-two">
+                                <div class="display__slider-two">
                                     <h2 class="display__h2">акция</h2>
                                     <p class="display__p"><span class="display__p--red">ежедневно</span> для заказов на сумму <span class="display__p--red">свыше 400 грн</span></p>
                                     <p class="display__proposition">доставка бесплатна в черте города</p>
@@ -2986,74 +2986,6 @@
     <script type="text/javascript" src="js/lazyload.min.js"></script>
     <script type="text/javascript" src="js/anime.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $('.display__slider').slick({
-            infinite: true,
-            dots: true,
-            dotsClass: 'slick-dots',
-            prevArrow: false,
-            nextArrow: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        });
-    </script>
-    <script>
-            let list = anime({
-                targets: '.header__li',
-                translateX: -200,                
-                delay: anime.stagger(50, {
-                    start: 1000,
-                }),
-                easing: 'easeInOutQuad'           
-            });    
-
-            let span = anime({
-                targets: '.header__h4',
-                translateX: -200,                
-                delay: 1000,
-                easing: 'easeInOutQuad'           
-            }); 
-            let p = anime({
-                targets: '.header__p',
-                translateX: -200,                
-                delay: 1000,
-                easing: 'easeInOutQuad'           
-            });      
-            let h6 = anime({
-                targets: '.header__h6',
-                translateX: -60,                
-                delay: 1150,
-                easing: 'easeInOutQuad'           
-            });   
-            let h5 = anime({
-                targets: '.header__h5',
-                translateX: -120,                
-                delay: 1100,
-                easing: 'easeInOutQuad'           
-            }); 
-            let year = anime({
-                targets: '.header__year',
-                translateX: -80,                
-                delay: 1000,
-                easing: 'easeInOutQuad'           
-            });     
-            let h2 = anime({
-                targets: '.header__h2, .header__h3',
-                translateY: -200,                
-                delay: 220,
-                easing: 'easeInOutQuad'           
-            });     
-    </script>
-    <script>
-        $('.header__slider').slick({
-            infinite: true,
-            dots: false,
-            prevArrow: false,
-            nextArrow: false,
-            touchMove: true,
-            touchThreshold: 30,
-            speed: 500
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

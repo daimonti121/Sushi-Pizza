@@ -1,4 +1,6 @@
 @import "mixins"
+@import "fonts"
+@import "vars"
 
 .header
     min-width: 360px
@@ -36,46 +38,46 @@
         animation: scale-up-hor-left .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
         h4
             margin: 97px 0 0 15px
-            font-family: Geometria
+            font-family: $Geometria
             font-size: 12px
-            line-height: 16px
+            line-height: 1.4
             text-transform: uppercase
             display: block
-            color: #FFFFFF  
+            color: $white  
             position: relative
             left: 200px
         p
             margin: 4px 0 0 16px
-            font-family: Geometria
+            font-family: $Geometria
             font-weight: bold
             font-size: 11px
-            line-height: 16px
+            line-height: 1.5
             letter-spacing: 0.05em
-            color: #FFFFFF  
+            color: $white  
             position: relative
             left: 200px                           
         h5
-            font-family: Monument Extended
+            font-family: $Monument
             font-size: 11px
-            line-height: 16px
-            letter-spacing: 0.05em
+            line-height: 1.5
+            letter-spacing: 0.1em
             text-transform: uppercase
-            color: #FFFFFF    
+            color: $white
             position: absolute 
             left: 120px
         span
             color: transparent
             -webkit-text-stroke-width: 1.5px
-            -webkit-text-stroke-color: #FFFFFF
+            -webkit-text-stroke-color: $white
         h6
             content: '01 /10' 
-            font-family: Monument Extended
+            font-family: $Monument
             font-weight: 900
             font-size: 11px
-            line-height: 16px
+            line-height: 1.5
             text-align: right
             letter-spacing: 0.05em
-            color: #FFFFFF
+            color: $white
             position: absolute
             left: 193px
             top: -12px
@@ -83,23 +85,23 @@
     &__h2
         width: 233px
         margin-left: 15px
-        font-family: Monument Extended
+        font-family: $Monument
         font-weight: 900
         font-size: 37px
-        line-height: 37px
+        line-height: 1
         letter-spacing: 0.1em
-        color: #FFFFFF
+        color: $white
         position: relative
         z-index: 20  
         top: 432px
     &__h3
         margin-left: 15px
-        font-family: Monument Extended
+        font-family: $Monument
         font-weight: 900
         font-size: 37px
-        line-height: 37px
+        line-height: 1
         letter-spacing: 0.1em
-        color: #FFFFFF
+        color: $white
         position: relative
         z-index: 20  
         top: 200px
@@ -111,12 +113,12 @@
         top: 227px
     &__h2-second
         width: 233px
-        font-family: Monument Extended
+        font-family: $Monument
         font-weight: 900
         font-size: 37px
-        line-height: 37px
+        line-height: 1
         letter-spacing: 0.1em
-        color: #FFFFFF
+        color: $white
         position: absolute
         z-index: 20
         margin-left: 15px
@@ -152,9 +154,9 @@
         margin: 64px 15px 0 0
         overflow: hidden
     &__year
-        font-family: Monument Extended
+        font-family: $Monument
         font-size: 11px
-        line-height: 16px
+        line-height: 1.5
         text-align: right
         letter-spacing: 0.05em
         color: #787878
@@ -223,11 +225,11 @@
         transition: .1s 
         outline: none
 .header__block:hover
-    background-color: #D1152E
+    background-color: $red
 .header__block:focus
-    background-color: #D1152E
+    background-color: $red
 .header__block--red
-    background-color: #D1152E
+    background-color: $red
     transition: .1s  
 .header__box:hover .header__block--red
     background-color: transparent
@@ -245,7 +247,7 @@
     background-color: transparent
     transition: .3s  
 .header__block--red:hover
-    background-color: #D1152E
+    background-color: $red
     outline: none
 
 @media ( min-width: 375px )
@@ -282,7 +284,7 @@
         &__h2
             margin-left: 40px
             font-size: 80px
-            line-height: 80px
+            line-height: 1
             width: 504px
             letter-spacing: 0px
             top: 357px
@@ -294,7 +296,7 @@
             top: 257px
         &__h3
             font-size: 80px
-            line-height: 80px
+            line-height: 1
             letter-spacing: 0px
             top: 126px        
             margin-left: 40px    
@@ -313,7 +315,7 @@
         &__li
             @include list()
             font-size: 12px
-            line-height: 18px               
+            line-height: 1.5             
         &__year
             margin: 33px 0
             text-align: inherit
@@ -348,14 +350,17 @@
             height: 480px
             flex-grow: 1
             h4 
-                margin: 110px 0 0 14px
+                margin: 112px 0 0 14px
             p
                 margin: 1px  0 0 15px
             h5
                 margin: 9px 0 0 39px
+            h6
+                top: -9px
+                left: 195px
         &__h2
             font-size: 98px
-            line-height: 98px
+            line-height: 1
 
             width: 680px
 
@@ -365,12 +370,15 @@
                 margin-left: -28px
         &__h3
             font-size: 98px
-            line-height: 98px
+            line-height: 1
             margin-left: 15px
             top: 122px
         &__slider
             width: 700px
             height: 115px
+        &__li
+            font-size: 0.78rem
+            line-height: 1.5   
         &__box-2
             margin-top: -30px
             left: 0px 
@@ -420,15 +428,17 @@
         &__title
             width: 187px
             h4
-                margin-left: 46px
+                margin: 110px 0 0 44px
             p
-                margin: 0 0 0 46px
+                margin: 1px 0 0 45px
             h5
                 margin-left: 71px
         &__shadow-block-h4 
             width: 185px
+        &__shadow-block-h5
+            top: 289px
         &__h2
-            margin-left: 46px
+            margin-left: 42px
         &__h3
             margin-left: 46px
         &__slider 
@@ -445,27 +455,30 @@
             height: 590px
             flex-grow: 1
             h4
-                margin: 117px 0 0 132px
+                margin: 117px 0 0 130px
                 font-size: 14px
-                line-height: 16px
+                line-height: 1.2
             p
-                margin: 6px  0px 0px 132px
+                margin: 6px 0px 0px 131px
                 font-size: 12px
-                line-height: 16px
+                line-height: 1.3
             h5  
-                margin: 53px 0px 0px 133px
+                margin: 54px 0px 0px 131px
                 font-size: 12px
-                line-height: 16px
+                line-height: 1.3
         &__h2
             margin-left: 99px
             font-size: 115px
-            line-height: 110px
+            line-height: 1
             top: 286px
             span
                 margin-left: -34px
+        &__title h6 
+            top: -11px
+            left: 193px
         &__h3
             font-size: 115px
-            line-height: 110px
+            line-height: 1
             top: 175px
             margin-left: 98px
         &__slider
@@ -484,7 +497,7 @@
             left: 352px
             top: 0px
             font-size: 12px
-            line-height: 16px
+            line-height: 1.3
         &__background-img
             width: 673px
             height: 680px
@@ -498,7 +511,7 @@
             margin: 36px 0 0 -7px
         &__li
             font-size: 14px
-            line-height: 22px
+            line-height: 1.6
         .header__box-1
             display: none
         .header__box-2
@@ -521,19 +534,19 @@
             height: 590px
             flex-grow: 1
             h4
-                margin: 117px 0 0 133px
+                margin: 118px ​0 0 131px
                 font-size: 14px
-                line-height: 16px
+                line-height: 1.1
             p
-                margin: 6px 0 0 133px
+                margin: 7px 0 0 133px
                 font-size: 12px
-                line-height: 16px            
+                line-height: 1.1          
                 span
                     margin-left: -34px
             h5
-                margin: 53px 0 0 133px
+                margin: 56px 0 0 132px
                 font-size: 12px
-                line-height: 16px               
+                line-height: 1.1             
         &__shadow-block-h4 
             width: 279px
         &__shadow-block-h2 
@@ -541,7 +554,7 @@
         &__h2
             margin-left: 99px
             font-size: 115px
-            line-height: 110px
+            line-height: 1
         &__shadow-block-h5
             width: 220px
         &__background-img
@@ -559,12 +572,12 @@
             left: 353px
             top: 0px
             font-size: 12px
-            line-height: 16px
+            line-height: 1.3
         &__ul
             margin: 36px 0 0 -7px
         &__li
             font-size: 14px
-            line-height: 22px
+            line-height: 1.6
         &__box-1
             display: none
         &__box-2
@@ -588,7 +601,7 @@
             h1
                 margin-left: 115px
             h5
-                margin: 53px 0 0 148px
+                margin: 58px 0 0 148px
         &__top-info
             width: 413px
             height: 590px
@@ -617,13 +630,13 @@
             p
                 margin: 6px 0px 0px 255px
             h5 
-                margin: 82px 0px 0px 295px
+                margin: 85px 0px 0px 295px
             h6 
                 top: -13px
         &__h2
             margin-left: 255px
             font-size: 150px
-            line-height: 130px
+            line-height: 0.9
             width: 856px
             top: 238px
             span 
@@ -633,7 +646,7 @@
         &__h3
             margin-left: 255px
             font-size: 150px
-            line-height: 130px
+            line-height: 0.9
         &__slider 
             width: 1292px
             height: 250px
@@ -651,8 +664,6 @@
             width: 635px
             height: 782px
         &__ul 
-            margin-top: 111px
-            margin-left: 0px
             margin: 111px 0px 0px 0px
         &__li 
             font-size: 16px

@@ -1,271 +1,265 @@
 @import "mixins"
-
+@import "fonts"
+@import "vars"
 .main
     min-width: 360px
     width: 100%
-    height: 508px
     background: #151414
     margin-top: -64px
     .main-inner
         max-width: 360px
         width: 100%
         margin: 0 auto
+        padding-bottom: 56px
     &__top
         display: flex
         margin: 60px 0 0 29px
-        h4  
+        h4 
             display: block
             margin-top: 73px
-            font-family: Monument Extended
+            font-family: $Monument
             font-weight: 900
             font-size: 11px
             line-height: 16px
             letter-spacing: 0.05em
-            color: #FFFFFF
+            white-space: nowrap     
+            color: $white
         h3  
             display: block
             width: 127px
             margin: 119px 0 0 23px
-            font-family: Monument Extended
+            font-family: $Monument
             font-size: 16px
             line-height: 19px
             text-transform: uppercase
-            color: #FFFFFF
+            color: $white
     &__ul
         margin: 19px 0 0 52px
         padding: 0
         list-style: none
-        color: #A7A7A7
+        color: $gray
     &__li
         @include list()
         font-size: 11px
-        line-height: 18px        
+        line-height: 18px   
+        white-space: nowrap     
     &__li--last
         margin-top: 18px
-        color: #FFFFFF
+        color: $white
     &__bottom
         margin-left: 29px
         p   
             width: 248px
             display: block
-            font-family: Geometria
+            font-family: $Geometria
             font-size: 12px
             line-height: 15px
-            color: #A7A7A7
+            color: $gray
             margin: 30px 0 0 2px
         a   
             margin: 21px 0 0 72px
             display: block
 
-            font-family: Monument Extended
+            font-family: $Monument
             font-size: 12px
             line-height: 24px
             text-decoration-line: underline
-            color: #FFFFFF
+            color: $white
         span   
             margin: 10px 0 0 72px
             display: block
             width: 227px
-
-            font-family: Geometria
+            font-family: $Geometria
             font-size: 12px
             line-height: 15px
-            color: #A7A7A7
+            color: $gray
 
 @media ( min-width: 768px )
     .main
         width: 100%
-        height: 415px
         .main-inner
             max-width: 768px
             width: 100%
             margin: 0 auto
-            .main__top
-                margin-left: 100px
-                h4
-                    margin-top: 90px
-                h3
-                    margin-left: 59px
-                    margin-top: 91px
-                    text-align: right 
-            .main__ul
-                margin-left: 275px
-                margin-top: -17px
-                position: relative
-            .main__li--last 
-                margin-top: 37px
-            .main__li
-                    font-size: 12px
-            .main__bottom
-                display: flex
-                flex-direction: column
-                margin-left: 335px
-                p 
-                    order: 2
-                    margin-left: 0
-                    margin-top: 11px
-                    width: 285px
-                a
-                    order: 1
-                    font-family: Geometria
-                    font-style: normal
-                    font-weight: normal
-                    margin-left: 0
-                    margin-top: -16px
-                span 
-                    order: 3
-                    margin-left: 0
-                    margin-top: 3px
-                    width: 283px
+            padding: 0
+        &__top
+            margin-left: 100px
+            h4
+                margin-top: 90px
+            h3
+                margin: 91px 0 0 59px
+                text-align: right 
+        &__ul
+            margin: -17px 0 0 275px
+            position: relative
+        &__li--last 
+            margin-top: 37px
+        &__li
+            font-size: 12px
+        &__bottom
+            display: flex
+            flex-direction: column
+            margin-left: 335px
+            p 
+                order: 2
+                margin: 11px 0 0 0
+                width: 285px
+            a
+                order: 1
+                font-family: $Geometria
+                margin: 0
+            span 
+                order: 3
+                margin: 15px 0 56px 0px
+                width: 283px
 @media ( min-width: 960px )
     .main
         width: 100%
-        height: 402px
         .main-inner
             max-width: 960px
             width: 100%
             margin: 0 auto
-            .main__top
-                margin-left: 160px
-                h4
-                    margin-top: 79px
-                h3
-                    margin-left: 74px
-                    margin-top: 76px
-                .main__ul 
-                    margin-left: 370px
-                    margin-top: -30px
-            .main__bottom
-                margin-left: 410px
-                a
-                    margin-top: -21px
-                p
-                    margin-top: 14px
+        &__top
+            margin-left: 160px
+            h4
+                margin-top: 80px
+            h3
+                margin: 76px 0 0 74px
+        &__ul 
+            margin: -29px 0 0 370px
+        &__bottom
+            margin-left: 410px
+            a
+                margin-top: -4px
+            p
+                margin-top: 14px
+            span
+                margin: 15px 0 60px 0px
+@media ( min-width: 1024px )
+    .main
+        &__top 
+            margin-left: 158px
+        &__bottom 
+            margin-left: 408px
 @media ( min-width: 1280px )
     .main
-        height: 480px
-        margin-top: -93px
+        margin: 0
         padding-top: 0
         .main-inner
             max-width: 1366px
             width: 100%
             margin: 0 auto
-            .main__top
-                margin-left: 282px
-                padding-top: 96px
-                h3
-                    margin-left: 100px
-                    margin-top: 72px
-                    font-size: 20px
-                    line-height: 24px
-                .main__ul 
-                    margin-left: 504px
-                    margin-top: -57px
-                    position: relative 
-                .main__li
-                    font-size: 14px
-                    line-height: 22px
-                .main__li--last 
-                    margin-top: 44px
-            .main__bottom
-                margin-left: 558px
-                a
-                    margin-top: 0px
-                    font-size: 14px
-                    line-height: 24px
-                p
-                    width: 357px
-                span
-                    margin-top: 7px
-                    width: 355px
+        &__top
+            margin: 0px 0 0 282px
+            h3
+                margin: 75px 0 0 100px
+                font-size: 20px
+                line-height: 1.2
+            h4
+                margin-top: 82px
+        &__ul 
+            margin: -54px 0 0 502px
+            position: relative 
+        &__li
+            font-size: 14px
+            line-height: 1.6
+        &__li--last 
+            margin-top: 44px
+        &__bottom
+            margin-left: 558px
+            a
+                margin-top: 20px
+                font-size: 14px
+                line-height: 1.8
+            p
+                width: 357px
+                margin-top: 13px
+            span
+                margin: 20px 0 82px 0px
+                width: 355px
 @media ( min-width: 1366px )
     .main
-        height: 480px
-        margin-top: -93px
-        padding-top: 0
         .main-inner
             max-width: 1366px
             width: 100%
             margin: 0 auto
-            .main__top
-                margin-left: 282px
-                padding-top: 96px
-                h3
-                    margin-left: 100px
-                    margin-top: 72px
-                    font-size: 20px
-                    line-height: 24px
-                .main__ul 
-                    margin-left: 504px
-                    margin-top: -57px
-                .main__li
-                    font-size: 14px
-                    line-height: 22px
-                .main__li--last 
-                    margin-top: 44px
-            .main__bottom
-                margin-left: 558px
-                a
-                    margin-top: 0px
-                    font-size: 14px
-                    line-height: 24px
-                p
-                    width: 357px
-                span
-                    margin-top: 7px
-                    width: 355px
+        &__top
+            margin: 0px 0 0 282px 
+            h3
+                margin: 76px 0 0 100px
+                font-size: 20px
+                line-height: 1.2
+        &__ul 
+            margin: -54px 0 0 504px 
+        &__li
+            font-size: 14px
+            line-height: 1.6
+        &__li--last 
+            margin-top: 44px
+        &__bottom
+            margin-left: 558px
+            a
+                margin-top: 19px
+                font-size: 14px
+                line-height: 1.8
+            p
+                width: 357px
+                margin-top: 13px
+            span
+                margin-top: 20px
+                width: 355px
 @media ( min-width: 1400px )
     .main
         width: 100%
-        height: 480px
         .main-inner
             max-width: 1400px
             width: 100%
             margin: 0 auto
-            .main__top
-                margin-left: 298px
-                .main__ul
-                    margin-top: -7px
-            .main__bottom 
-                margin-left: 573px
-                a
-                    margin-top: -8px
+        &__top
+            margin: -1px 0 0 298px
+        &__ul
+            margin-top: -3px
+        &__bottom 
+            margin-left: 573px
+            a
+                margin-top: -8px
+            p
+                margin-top: 14px
 @media ( min-width: 1920px )   
     .main 
-        height: 605px
-        margin-top: -107px
+        margin-top: -1px
         .main-inner
             max-width: 1920px
             width: 100%
             margin: 0 auto
-            .main__top
-                margin-left: 455px
-                padding-top: 171px
-                h3
-                    font-size: 24px
-                    line-height: 26px
-                    margin-left: 224px
-                    margin-top: 72px
-                .main__ul 
-                    margin-top: -70px
-                    margin-left: 560px
-                .main__li
-                    font-size: 16px
-                    line-height: 24px
-                .main__li--last 
-                    margin-top: 48px
-            .main__bottom 
-                margin-left: 855px
-                a
-                    font-size: 16px
-                    line-height: 24px
-                p 
-                    font-size: 14px
-                    line-height: 18px
-                    width: 430px
-                    margin-top: 19px
-                span 
-                    width: 430px
-                    margin-top: 11px
-                    font-size: 14px
-                    line-height: 18px
+        &__top
+            margin: 0px 0 0 455px 
+            h3
+                font-size: 24px
+                line-height: 1.3
+                margin: 134px 0 0 229px
+            h4
+                margin-top: 144px
+        &__ul 
+            margin: -6px 560px 
+        &__li
+            font-size: 16px
+            line-height: 1.5
+        &__li--last 
+            margin-top: 48px
+        &__bottom 
+            margin-left: 855px
+            a
+                font-size: 16px
+                line-height: 1.6
+                margin-top: 9px
+            p 
+                font-size: 14px
+                line-height: 1.3
+                width: 430px
+                margin-top: 19px
+            span 
+                width: 430px
+                margin: 24px 0 101px 
+                font-size: 14px
+                line-height: 1.4
