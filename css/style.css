@@ -274,6 +274,7 @@
       background-color: #252222;
       display: block;
       position: absolute;
+      top: -1px;
       -webkit-animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
               animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both; }
   .header__box-2 {
@@ -289,6 +290,7 @@
       background-color: #252222;
       display: block;
       position: absolute;
+      top: -1px;
       -webkit-animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
               animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both; }
   .header__box-3 {

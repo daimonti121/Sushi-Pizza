@@ -40,9 +40,9 @@
 .header__box{width:37px;height:244px;position:absolute;right:15px;margin-top:20px;border-collapse:collapse}
 .header__box::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;left:-5px;top:-1px;-webkit-animation:push-left .9s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left .9s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__box-1{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
-.header__box-1::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;-webkit-animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both}
+.header__box-1::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;top:-1px;-webkit-animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__box-2{position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
-.header__box-2::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;-webkit-animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both}
+.header__box-2::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;top:-1px;-webkit-animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-1 .5s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__box-3{width:44px;height:240px;position:absolute;right:7px;margin-top:20px;display:none;border-collapse:collapse}
 .header__box-3::before{content:"";width:120%;height:105%;background-color:#252222;display:block;position:absolute;top:-1px;-webkit-animation:push-left-2 .5s cubic-bezier(.39,.575,.565,1) 2s both;animation:push-left-2 .5s cubic-bezier(.39,.575,.565,1) 2s both}
 .header__box-4{width:379px;height:109px;position:absolute;right:238px;margin-top:35px;display:none;border-collapse:collapse}
