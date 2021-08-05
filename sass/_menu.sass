@@ -829,6 +829,8 @@ body
                 width: 46px
                 height: 46px
                 margin: 15px 0 2px 
+                color: $white
+                fill: $red
             &__big-button--active
                 background: $red
                 color: $white
@@ -840,22 +842,24 @@ body
                 color: $white
             &__big-button:hover
                 background: $red
-                color: $white
-            &__big-button:hover svg path
-                fill: $black
-            &__big-button:hover svg circle
+                color: $white            
+            &__big-button:hover svg 
                 fill: $white
-            &__big-button--active svg path
-                fill: $black
-            &__big-button--active svg circle
+                color: $black
+            &__big-button--active svg 
+                color: $black
                 fill: $white
-            &__desk:hover .display__big-button--active svg path
+            &__big-button--active svg 
                 fill: $white
-            &__desk:hover .display__big-button--active svg circle
+            &__desk:hover .display__big-button--active svg 
+                fill: $white
+            &__desk:hover .display__big-button--active svg 
                 fill: $red
-            &__desk .display__big-button--active:hover svg path
-                fill: $black
-            &__desk .display__big-button--active:hover svg circle
+                color: $white
+            &__desk .display__big-button--active:hover svg 
+                color: $black
+                fill: $white
+            &__desk .display__big-button--active:hover svg 
                 fill: $white
             &__main 
                 width: 894px

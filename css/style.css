@@ -1834,7 +1834,9 @@ body {
       .menu .display__icon {
         width: 46px;
         height: 46px;
-        margin: 15px 0 2px; }
+        margin: 15px 0 2px;
+        color: #FFFFFF;
+        fill: #D1152E; }
       .menu .display__big-button--active {
         background: #D1152E;
         color: #FFFFFF; }
@@ -1847,21 +1849,23 @@ body {
       .menu .display__big-button:hover {
         background: #D1152E;
         color: #FFFFFF; }
-      .menu .display__big-button:hover svg path {
-        fill: #000000; }
-      .menu .display__big-button:hover svg circle {
+      .menu .display__big-button:hover svg {
+        fill: #FFFFFF;
+        color: #000000; }
+      .menu .display__big-button--active svg {
+        color: #000000;
         fill: #FFFFFF; }
-      .menu .display__big-button--active svg path {
-        fill: #000000; }
-      .menu .display__big-button--active svg circle {
+      .menu .display__big-button--active svg {
         fill: #FFFFFF; }
-      .menu .display__desk:hover .display__big-button--active svg path {
+      .menu .display__desk:hover .display__big-button--active svg {
         fill: #FFFFFF; }
-      .menu .display__desk:hover .display__big-button--active svg circle {
-        fill: #D1152E; }
-      .menu .display__desk .display__big-button--active:hover svg path {
-        fill: #000000; }
-      .menu .display__desk .display__big-button--active:hover svg circle {
+      .menu .display__desk:hover .display__big-button--active svg {
+        fill: #D1152E;
+        color: #FFFFFF; }
+      .menu .display__desk .display__big-button--active:hover svg {
+        color: #000000;
+        fill: #FFFFFF; }
+      .menu .display__desk .display__big-button--active:hover svg {
         fill: #FFFFFF; }
       .menu .display__main {
         width: 894px;

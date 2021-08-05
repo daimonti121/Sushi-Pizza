@@ -414,19 +414,18 @@ body{font-family:Geometria,montserrat,"Monument Extended"}
 .menu .display__laptop{display:none}
 .menu .display__desk{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .menu .display__big-button{width:90px;height:91px;border-radius:15px;border:none;background-color:transparent;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:700;font-size:11px;line-height:1.8;letter-spacing:-.08em;color:#000;font-family:Geometria,sans-serif;cursor:pointer;outline:0;-webkit-transition:.5s;transition:.5s}
-.menu .display__icon{width:46px;height:46px;margin:15px 0 2px}
+.menu .display__icon{width:46px;height:46px;margin:15px 0 2px;color:#fff;fill:#d1152e}
 .menu .display__big-button--active{background:#d1152e;color:#fff}
 .menu .display__desk:hover .display__big-button--active{background-color:#fff;color:#000}
 .menu .display__desk .display__big-button--active:hover{background:#d1152e;color:#fff}
 .menu .display__big-button:hover{background:#d1152e;color:#fff}
-.menu .display__big-button:hover svg path{fill:#000}
-.menu .display__big-button:hover svg circle{fill:#fff}
-.menu .display__big-button--active svg path{fill:#000}
-.menu .display__big-button--active svg circle{fill:#fff}
-.menu .display__desk:hover .display__big-button--active svg path{fill:#fff}
-.menu .display__desk:hover .display__big-button--active svg circle{fill:#d1152e}
-.menu .display__desk .display__big-button--active:hover svg path{fill:#000}
-.menu .display__desk .display__big-button--active:hover svg circle{fill:#fff}
+.menu .display__big-button:hover svg{fill:#fff;color:#000}
+.menu .display__big-button--active svg{color:#000;fill:#fff}
+.menu .display__big-button--active svg{fill:#fff}
+.menu .display__desk:hover .display__big-button--active svg{fill:#fff}
+.menu .display__desk:hover .display__big-button--active svg{fill:#d1152e;color:#fff}
+.menu .display__desk .display__big-button--active:hover svg{color:#000;fill:#fff}
+.menu .display__desk .display__big-button--active:hover svg{fill:#fff}
 .menu .display__main{width:894px;height:500px;border-radius:30px;top:-65px;left:6px}
 .menu .display__background-img{top:-170px;left:-237px;width:274px;height:246.77px}
 .menu .display .slick-dots{top:162px;left:14px}
