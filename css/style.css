@@ -275,8 +275,8 @@
       display: block;
       position: absolute;
       top: -1px;
-      -webkit-animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
-              animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both; }
+      -webkit-animation: push-left-table 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+              animation: push-left-table 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both; }
   .header__box-2 {
     position: absolute;
     right: 7px;
@@ -291,8 +291,8 @@
       display: block;
       position: absolute;
       top: -1px;
-      -webkit-animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
-              animation: push-left-1 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both; }
+      -webkit-animation: push-left-desk 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+              animation: push-left-desk 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both; }
   .header__box-3 {
     width: 44px;
     height: 240px;
@@ -2679,28 +2679,28 @@ body {
   100% {
     -webkit-transform: translateX(144px);
             transform: translateX(144px); } }
-@-webkit-keyframes push-left-1 {
+@-webkit-keyframes push-left-table {
   0% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px); }
   100% {
     -webkit-transform: translateX(244px);
             transform: translateX(244px); } }
-@keyframes push-left-1 {
+@keyframes push-left-table {
   0% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px); }
   100% {
     -webkit-transform: translateX(244px);
             transform: translateX(244px); } }
-@-webkit-keyframes push-left-2 {
+@-webkit-keyframes push-left-desk {
   0% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px); }
   100% {
     -webkit-transform: translateX(384px);
             transform: translateX(384px); } }
-@keyframes push-left-2 {
+@keyframes push-left-desk {
   0% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px); }
