@@ -57,7 +57,9 @@ $('.header__slider').slick({
     dots: false,
     prevArrow: false,
     nextArrow: false,
-    touchMove: true,
-    touchThreshold: 30,
-    speed: 500
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2800,
+    fade: true,
+    touchThreshold: 50
 }); 

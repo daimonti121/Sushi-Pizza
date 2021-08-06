@@ -17,7 +17,7 @@ body
         width: 100%
         margin: 0 auto
     &__block
-        border: 1px solid $darkGray
+        border: 1px solid $palette-table
         width: 6px
         height: 6px
         transition: .1s 
@@ -56,11 +56,11 @@ body
         line-height: 1.7 
     &__li--last
         margin-top: 36px
-        color: $white
+        color: $palette-primary
     .display
         width: 290px
         height: 520px
-        background: $black
+        background: $text-menu
         border-radius: 30px
         border: 10px solid black
         position: absolute
@@ -70,7 +70,7 @@ body
         &__header
             width: 290px
             height: 95px
-            background: $white
+            background: $palette-primary
             margin: 0 auto
             border-radius: 25px 25px 0px 0px
             overflow: hidden
@@ -91,7 +91,7 @@ body
                 height: 1px
                 background-color: #E4E4E4
         &__burger-span
-            background: $black
+            background: $text-menu
             width: 20px
             height: 1.75px
             display: block
@@ -112,7 +112,7 @@ body
                 content: ""
                 width: 20px
                 height: 20px
-                background-color: $red
+                background-color: $palette-secondary
                 position: absolute
                 right: -16px
                 top: 4px
@@ -123,14 +123,14 @@ body
                 z-index: 1
                 top: 2px
                 right: -12px
-                font-family: $Geometria
+                font-family: $font-family-primary
                 font-weight: bold
                 font-size: 11px
                 line-height: 1.8
                 display: flex
                 align-items: center
                 text-transform: uppercase
-                color: $white        
+                color: $palette-primary        
         &__icon
             display: block
             height: 28px
@@ -147,7 +147,7 @@ body
         &__call
             width: 30px
             height: 30px
-            background-color: $red
+            background-color: $palette-secondary
             border-radius: 30px
             position: relative
             left: -8px
@@ -174,12 +174,11 @@ body
         &__button
             border: none
             white-space: nowrap
-            background-color: $white
+            background-color: $palette-primary
             height: 17px
             padding: 1px 10px           
             border-radius: 100px
-            color: $whiteGray
-            font-family: $Geometria
+            color: $mini-block
             font-weight: bold
             font-size: 11px
             line-height: 1.5em
@@ -187,30 +186,30 @@ body
             box-shadow: none
             cursor: pointer
             &:hover
-                color: $white
-                background: $red
+                color: $palette-primary
+                background: $palette-secondary
         &__button--active
-            color: $white
-            background: $red
+            color: $palette-primary
+            background: $palette-secondary
             margin-left: 3px
         &__menu:hover .display__button--active
-            color: $whiteGray
-            background-color: $white
+            color: $mini-block
+            background-color: $palette-primary
         &__menu .display__button--active:hover
-            color: $white
-            background: $red      
+            color: $mini-block
+            background: $palette-secondary      
         &__table:hover .display__button--active
-            color: $whiteGray
-            background-color: $white
+            color: $mini-block
+            background-color: $palette-primary
         &__laptop:hover .display__button--active
-            color: $whiteGray
-            background-color: $white
+            color: $mini-block
+            background-color: $palette-primary
         &__table .display__button--active:hover
-            color: $white
-            background: $red
+            color: $palette-primary
+            background: $palette-secondary
         &__laptop .display__button--active:hover
-            color: $white
-            background: $red
+            color: $palette-primary
+            background: $palette-secondary
         &__main
             width: 100%
             height: 448px
@@ -225,44 +224,44 @@ body
             font-size: 30px
             line-height: 1.2
             text-transform: uppercase
-            color: $white
+            color: $palette-primary
             letter-spacing: 0.05em
             margin: 30px 8px 0 0px
         &__p
-            font-family: $Geometria
+            font-family: $font-family-primary
             font-weight: 500
             font-size: 12px
             line-height: 1.3
             text-align: center
-            color: $white
+            color: $palette-primary
             width: 181px
             margin: 15px 0 0 53px
         &__number
             display: none        
         &__p--red
-            color: $red
+            color: $palette-secondary
             font-weight: 500
             font-size: 12px
             line-height: 1.3
         &__proposition
-            font-family: $Geometria
+            font-family: $font-family-primary
             font-weight: bold
             font-size: 18px
             line-height: 1           
             letter-spacing: 0.03em
-            color: $white
+            color: $palette-primary
             margin: 5px 0 0 32px
             width: 227px    
         &__slider-button
-            background: $red
+            background: $palette-secondary
             border-radius: 100px
             padding: 6px 50px
             border: none
-            font-family: $Geometria
+            font-family: $font-family-primary
             font-weight: 500
             font-size: 14px
-            line-height: 1.3
-            color: $white
+            line-height: 1.37
+            color: $palette-primary
             margin: 16px 0 0 -3px
         &__background-img
             object-fit: cover
@@ -293,28 +292,28 @@ body
             width: 8px
             height: 8px
         .slick-dots li[class="slick-active"] button
-            background: $red
+            background: $palette-secondary
         .slick-dots li button:before
             color: transparent
     &__center
         width: 100%
         margin: 250px 0 0 30px
     &__center-title
-        font-family: $Monument
+        font-family: $font-family-secondary
         font-size: 16px
         line-height: 1.2
         text-transform: uppercase
-        color: $white
+        color: $palette-primary
         margin: 34px 0 0 71px 
         position: relative
         &::before
             content: "03 /10"
-            font-family: $Monument
+            font-family: $font-family-secondary
             font-weight: 900
             font-size: 11px
             line-height: 1.5
             letter-spacing: 0.05em
-            color: $white
+            color: $palette-primary
             position: absolute
             top: -52px
             left: -71px
@@ -342,7 +341,7 @@ body
         transition: 0.1s
         outline: none
     &__center-block--active
-        background: $red
+        background: $palette-secondary
     &__center-table:hover .menu__center-block--active
         background: transparent
     &__center-table-1:hover .menu__center-block--active
@@ -354,23 +353,23 @@ body
     &__center-table-4:hover .menu__center-block--active
         background: transparent
     &__center-block:hover
-        background: $red
+        background: $palette-secondary
     &__center-block:focus
-        background: $red
+        background: $palette-secondary
     &__center-block--active:hover
-        background: $red
+        background: $palette-secondary
         outline: none
     &__center-description
-        font-family: $Geometria
+        font-family: $font-family-primary
         font-size: 12px
         line-height: 1.3
-        color: $liteGray
+        color: $palette-paragraph
         width: 233px
         margin-top: 49px
     &__grey-block
         width: 330px
         height: 15px
-        background: $whiteGray
+        background: $palette-primary
         margin: 29px 0 0 -15px 
         position: relative
         &::before
@@ -381,10 +380,10 @@ body
         margin: 52px 0 0 86px 
     &__colors-description
         width: 248px
-        font-family: $Geometria
+        font-family: $font-family-primary
         font-size: 12px
         line-height: 1.3
-        color: $liteGray
+        color: $palette-paragraph
         margin-left: -15px
     &__red-block
         width: 245px
@@ -401,7 +400,7 @@ body
         width: 245px
         height: 15px
         margin: 70px 0 75px -15px
-        background: $darkWhite
+        background: $big-block
         position: relative
         &::before
             content: "#4B4B4B"
@@ -435,7 +434,7 @@ body
         .display
             width: 561px
             height: 298px
-            background: $black
+            background: $text-menu
             border-radius: 40px
             border: 10px solid black
             position: absolute
@@ -504,7 +503,7 @@ body
                 display: block
                 position: absolute
                 bottom: 142px
-                font-family: $Geometria
+                font-family: $font-family-primary
                 font-weight: 500
                 font-size: 10px
                 line-height: 1.3
@@ -568,7 +567,7 @@ body
         &__grey-block
             width: 120px
             height: 170px
-            background: $darkWhite
+            background: $big-block
             top: -150px
             right: -106px
             &::before
@@ -734,7 +733,7 @@ body
             height: 20px
             bottom: 257px
             left: 293px
-            background: #808080
+            background: $mini-block
             &::before
                 top: 36px
 @media ( min-width: 1024px )
@@ -820,8 +819,8 @@ body
                 font-size: 11px
                 line-height: 1.8
                 letter-spacing: -0.08em
-                color: $black
-                font-family: $Geometria
+                color: $text-menu
+                font-family: $font-family-primary
                 cursor: pointer
                 outline: none    
                 transition: .5s        
@@ -829,38 +828,38 @@ body
                 width: 46px
                 height: 46px
                 margin: 15px 0 2px 
-                color: $white
-                fill: $red
+                color: $palette-primary
+                fill: $palette-secondary
             &__big-button--active
-                background: $red
-                color: $white
+                background: $palette-secondary
+                color: $palette-primary
             &__desk:hover .display__big-button--active
-                background-color: $white
-                color: $black
+                background-color: $palette-primary
+                color: $text-menu
             &__desk .display__big-button--active:hover
-                background: $red
-                color: $white
+                background: $palette-secondary
+                color: $palette-primary
             &__big-button:hover
-                background: $red
-                color: $white            
+                background: $palette-secondary
+                color: $palette-primary            
             &__big-button:hover svg 
-                fill: $white
-                color: $black
+                fill: $palette-primary
+                color: $text-menu
             &__big-button--active svg 
-                color: $black
-                fill: $white
+                color: $text-menu
+                fill: $palette-primary
             &__big-button--active svg 
-                fill: $white
+                fill: $palette-primary
             &__desk:hover .display__big-button--active svg 
-                fill: $white
+                fill: $palette-primary
             &__desk:hover .display__big-button--active svg 
-                fill: $red
-                color: $white
+                fill: $palette-secondary
+                color: $palette-primary
             &__desk .display__big-button--active:hover svg 
-                color: $black
-                fill: $white
+                color: $text-menu
+                fill: $palette-primary
             &__desk .display__big-button--active:hover svg 
-                fill: $white
+                fill: $palette-primary
             &__main 
                 width: 894px
                 height: 500px
@@ -884,7 +883,7 @@ body
                 font-size: 35px
                 line-height: 1.3
             &__p 
-                font-family: $Geometria
+                font-family: $font-family-primary
                 width: 370px
                 top: 43px
                 font-size: 13px
@@ -1078,6 +1077,9 @@ body
             width: 783px
         .display
             right: 176px
+            &__slider-button 
+                left: 60px
+                top: 43px
         &__list 
             margin: 27px 0 0 75px
         &__center-title 
@@ -1131,7 +1133,7 @@ body
                 line-height: 1.2
                 letter-spacing: 0.08em
             &__p 
-                font-family: $Geometria
+                font-family: $font-family-primary
                 width: 465px
                 top: 93px
                 font-size: 15px
@@ -1153,7 +1155,7 @@ body
                 left: 116px
                 width: 163px
                 height: 39px
-                top: 107px
+                top: 92px
             &__big-button
                 width: 110px
                 height: 110px
@@ -1172,7 +1174,7 @@ body
                 width: 1110px
                 height: 740px
             &__background-img 
-                top: -162px
+                top: -175px
                 left: -242px
                 width: 332px
                 height: 299px
