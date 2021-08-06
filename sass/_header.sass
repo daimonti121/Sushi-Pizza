@@ -152,20 +152,16 @@
     &__box
         width: 37px
         height: 244px
-        position: absolute
-        right: 15px
-        margin-top: 20px
+        margin: 20px 0 0 44px
         border-collapse: collapse  
         &::before
             @include table-dark-block
             left: -5px
             top: -1px
             animation: push-left .9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both      
-    &__box-1
+    &__box-phone
         width: 44px
         height: 240px
-        position: absolute
-        right: 7px
         margin-top: 20px
         display: none
         border-collapse: collapse  
@@ -173,9 +169,7 @@
             @include table-dark-block
             top: -1px
             animation: push-left-table .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both       
-    &__box-2
-        position: absolute
-        right: 7px
+    &__box-table
         margin-top: 20px
         display: none
         border-collapse: collapse    
@@ -183,11 +177,9 @@
             @include table-dark-block
             top: -1px
             animation: push-left-table .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both          
-    &__box-3
+    &__box-laptop
         width: 44px
         height: 240px
-        position: absolute
-        right: 7px
         margin-top: 20px
         display: none
         border-collapse: collapse   
@@ -195,10 +187,9 @@
             @include table-dark-block
             top: -1px
             animation: push-left-desk .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both               
-    &__box-4
+    &__box-desk
         width: 379px
         height: 109px
-        position: absolute
         right: 238px
         margin-top: 35px
         display: none
@@ -223,16 +214,16 @@
 .header__box:hover .header__block--red
     background-color: transparent
     transition: .3s  
-.header__box-1:hover .header__block--red
+.header__box-phone:hover .header__block--red
     background-color: transparent
     transition: .3s  
-.header__box-2:hover .header__block--red
+.header__box-table:hover .header__block--red
     background-color: transparent
     transition: .3s  
-.header__box-3:hover .header__block--red
+.header__box-laptop:hover .header__block--red
     background-color: transparent
     transition: .3s  
-.header__box-4:hover .header__block--red
+.header__box-desk:hover .header__block--red
     background-color: transparent
     transition: .3s  
 .header__block--red:hover
@@ -243,10 +234,14 @@
     .header
         &__shadow-block-year 
             width: 92px
+        &__box
+            margin: 20px 0 0 53px
 @media ( min-width: 425px ) 
     .header
         &__shadow-block-year 
             width: 117px
+        &__box 
+            margin: 20px 0 0 78px
 @media ( min-width: 768px )
     .header
         min-width: 768px
@@ -303,8 +298,7 @@
             line-height: 1.5             
         &__year
             margin: 17px 2px 0 0     
-        &__box-1
-            left: 0px
+        &__box-phone
             margin-top: -32px
             width: 181px
             height: 46px
@@ -356,9 +350,8 @@
         &__li
             font-size: 0.78rem
             line-height: 1.5   
-        &__box-2
+        &__box-table
             margin-top: -30px
-            left: 0px 
         &__shadow-block-h2
             top: -13px
         &__shadow-block-h2
@@ -377,10 +370,9 @@
         &__ul
             margin-top: 39px
             margin-left: -16px
-        &__box-1
+        &__box-phone
             display: none   
-            left: 0px
-        &__box-2
+        &__box-table
             display: block        
         &__shadow-block-h4 
             width: 160px
@@ -392,12 +384,11 @@
             height: 80px
 @media ( min-width: 1024px )
     .header
-        &__box-1
+        &__box-phone
             display: none
-        &__box-2
+        &__box-table
             display: flex
             width: 244px
-            left: 0px 
         &__shadow-block-h6 
             right: -625px
             bottom: 90px
@@ -489,16 +480,14 @@
         &__li
             font-size: 14px
             line-height: 1.6
-        .header__box-1
+        .header__box-phone
             display: none
-        .header__box-2
+        .header__box-table
             display: none
-            left: 0px 
-        &__box-3
+        &__box-laptop
             display: flex
             width: 316px
             height: 82px
-            left: 0px 
             margin-top: 13px
         &__shadow-block-h6 
             right: -771px
@@ -511,7 +500,7 @@
             height: 590px
             flex-grow: 1
             h4
-                margin: 118px ​0 0 131px
+                margin: 118px 0 0 131px 
                 font-size: 14px
                 line-height: 1.1
             p
@@ -556,15 +545,14 @@
         &__li
             font-size: 14px
             line-height: 1.6
-        &__box-1
+        &__box-phone
             display: none
-        &__box-2
+        &__box-table
             display: none
-        &__box-3
+        &__box-laptop
             display: flex
             width: 316px
             height: 82px
-            left: 0px 
             margin-top: 13px
 @media ( min-width: 1400px )
     .header
@@ -585,7 +573,7 @@
             height: 590px
         &__year
             margin: 33px 5px 0 0
-        &__box-3
+        &__box-laptop
             left: 0px 
         &__shadow-block-h5 
             width: 235px
@@ -648,9 +636,8 @@
             width: 387px
         &__year 
             margin: 60px 6px 0 0 
-        &__box-3
+        &__box-laptop
             display: none
-        &__box-4
+        &__box-desk
             display: flex
-            left: 0px 
             margin-top: 31px
