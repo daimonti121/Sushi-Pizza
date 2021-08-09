@@ -2193,10 +2193,13 @@ body {
       width: 1110px;
       height: 740px; }
     .menu .display__background-img {
-      top: -175px;
-      left: -242px;
+      bottom: 175px;
+      right: 241px;
       width: 332px;
       height: 299px; }
+    .menu .display__background-img--size {
+      bottom: 103px;
+      right: 219px; }
     .menu .display .slick-dots {
       top: 281px;
       left: -8px; }
