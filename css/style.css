@@ -684,7 +684,6 @@
               flex-grow: 0; }
     .header__top-info {
       width: 413px;
-      height: 590px;
       -webkit-box-flex: 1;
           -ms-flex-positive: 1;
               flex-grow: 1; }
@@ -726,8 +725,7 @@
     .header__title h5 {
       margin: 58px 0 0 148px; }
     .header__top-info {
-      width: 413px;
-      height: 590px; }
+      width: 413px; }
     .header__year {
       margin: 33px 5px 0 0; }
     .header__box-laptop {
@@ -1290,8 +1288,9 @@ body {
     height: 15px;
     margin-left: -15px;
     margin-top: 31px;
-    background: #D1152E;
-    position: relative; }
+    margin: 31px 0 0 -15px;
+    position: relative;
+    background: #D1152E; }
     .menu__red-block::before {
       content: "#D1152E";
       font-family: Monument Extended;
