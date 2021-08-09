@@ -202,7 +202,7 @@
     overflow: hidden;
     height: 300px;
     position: absolute;
-    top: -36px; }
+    bottom: 216px; }
   .header__background-img {
     height: 520px;
     -o-object-fit: cover;
@@ -411,7 +411,7 @@
     .header__slider {
       width: 600px;
       height: 88px;
-      top: 257px; }
+      top: 261px; }
     .header__h3 {
       font-size: 80px;
       line-height: 1;
@@ -454,8 +454,8 @@
       top: 190px;
       left: 0px; }
     .header__shadow-block-h6 {
-      right: -480px;
-      bottom: 69px; }
+      left: 440px;
+      bottom: 83px; }
     .header__shadow-block-h2 {
       top: -40px; } }
 @media (min-width: 960px) {
@@ -500,7 +500,7 @@
       height: 290px; }
     .header__shadow-block-h6 {
       right: -624px;
-      bottom: 76px; }
+      bottom: 89px; }
     .header__background-img {
       height: 540px; }
     .header__top-info {
@@ -611,7 +611,6 @@
       line-height: 1.3;
       margin: 33px 3px 0 0; }
     .header__background-img {
-      width: 673px;
       height: 680px; }
     .header__picture {
       -webkit-box-flex: 0;
@@ -676,7 +675,6 @@
     .header__shadow-block-h5 {
       width: 220px; }
     .header__background-img {
-      width: 673px;
       height: 680px; }
     .header__picture {
       -webkit-box-flex: 0;
@@ -776,7 +774,6 @@
     right: -934px;
     bottom: 160px; }
   .header__background-img {
-    width: 830px;
     height: 883px; }
   .header__top-info {
     width: 635px;
@@ -898,7 +895,9 @@ body {
     -o-object-fit: cover;
        object-fit: cover; }
   .menu__list {
-    margin: -82px 0 0 -24px; }
+    position: relative;
+    bottom: 81px;
+    right: 24px; }
   .menu__ul {
     list-style-type: none; }
   .menu__li {
@@ -992,8 +991,8 @@ body {
         position: absolute;
         content: "35";
         z-index: 1;
-        top: 2px;
-        right: -12px;
+        top: 5px;
+        left: 29px;
         font-family: "Geometria", sans-serif;
         font-weight: bold;
         font-size: 11px;
@@ -1147,7 +1146,7 @@ body {
       font-size: 14px;
       line-height: 1.37;
       color: #FFFFFF;
-      margin: 16px 0 0 -3px; }
+      margin: 16px 3px 0 0px; }
     .menu .display__background-img {
       -o-object-fit: cover;
          object-fit: cover;
@@ -1187,7 +1186,7 @@ body {
       color: transparent; }
   .menu__center {
     width: 100%;
-    margin: 250px 0 0 30px; }
+    margin: 169px 0 0 30px; }
   .menu__center-title {
     font-family: "Monument Extended", sans-serif;
     font-size: 16px;
@@ -1205,7 +1204,7 @@ body {
       letter-spacing: 0.05em;
       color: #FFFFFF;
       position: absolute;
-      top: -52px;
+      bottom: 72px;
       left: -71px; }
   .menu__center-table {
     width: 37px;
@@ -1261,7 +1260,8 @@ body {
     width: 330px;
     height: 15px;
     background: #808080;
-    margin: 29px 0 0 -15px;
+    margin: 29px 0 0 0px;
+    right: 14px;
     position: relative; }
     .menu__grey-block::before {
       content: "#808080";
@@ -1286,9 +1286,8 @@ body {
   .menu__red-block {
     width: 245px;
     height: 15px;
-    margin-left: -15px;
-    margin-top: 31px;
-    margin: 31px 0 0 -15px;
+    margin: 31px 0 0;
+    right: 15px;
     position: relative;
     background: #D1152E; }
     .menu__red-block::before {
@@ -1305,7 +1304,8 @@ body {
   .menu__black-grey-block {
     width: 245px;
     height: 15px;
-    margin: 70px 0 75px -15px;
+    margin: 70px 0 75px;
+    right: 15px;
     background: #4B4B4B;
     position: relative; }
     .menu__black-grey-block::before {
@@ -1390,7 +1390,7 @@ body {
       .menu .display__main {
         width: 558px;
         height: 285px;
-        background: #232121;
+        background: #151414;
         text-align: center;
         border-radius: 25px;
         overflow: visible;
@@ -1430,8 +1430,8 @@ body {
         height: 176px;
         margin: 0 auto;
         position: relative;
-        top: -151px;
-        left: -117px; }
+        bottom: 151px;
+        right: 117px; }
       .menu .display__h2 {
         top: 34px;
         left: 73px;
@@ -1440,7 +1440,7 @@ body {
       .menu .display__number {
         display: block;
         position: absolute;
-        bottom: 142px;
+        bottom: 148px;
         font-family: "Geometria", sans-serif;
         font-weight: 500;
         font-size: 10px;
@@ -1466,7 +1466,7 @@ body {
       .menu .display__slider-button {
         position: relative;
         left: 97px;
-        top: 42px;
+        top: 25px;
         cursor: pointer; }
       .menu .display__background-img--size {
         -o-object-fit: contain;
@@ -1475,26 +1475,30 @@ body {
         height: 204px;
         margin: 0 auto;
         position: relative;
-        top: -134px;
-        left: -139px; }
+        bottom: 120px;
+        right: 117px; }
       .menu .display__button {
         font-size: 12px;
         height: 20px;
         -webkit-transition: 1s;
         transition: 1s; }
       .menu .display .slick-slide, .menu .display .slick-initialized {
-        height: 280px; }
+        height: 286px; }
     .menu__list {
-      margin: -167px 0 0 20px; }
+      bottom: 168px;
+      left: 20px; }
     .menu__li {
       font-size: 12px;
       line-height: 1.5; }
+    .menu__center {
+      margin: 82px 0 0 30px; }
     .menu__center-info {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
     .menu__center-title {
-      margin: -122px 0 0 56px;
+      margin: 0px 0 0 56px;
+      bottom: 121px;
       position: relative;
       width: 135px; }
       .menu__center-title::before {
@@ -1504,14 +1508,14 @@ body {
       width: 234px;
       position: relative;
       left: 51px;
-      top: -100px;
+      bottom: 100px;
       margin-top: 0px; }
     .menu__grey-block {
       width: 120px;
       height: 170px;
       background: #4B4B4B;
-      top: -150px;
-      right: -106px; }
+      bottom: 150px;
+      left: 91px; }
       .menu__grey-block::before {
         content: "address";
         position: absolute;
@@ -1540,13 +1544,13 @@ body {
     .menu__colors-description {
       width: 273px;
       position: relative;
-      top: -228px;
+      bottom: 227px;
       left: 49px; }
     .menu__red-block {
       width: 89px;
       position: relative;
       bottom: 161px;
-      left: -55px;
+      right: 55px;
       margin: 0; }
       .menu__red-block::before {
         top: 30px; }
@@ -1582,11 +1586,12 @@ body {
         left: 1px;
         left: 0px;
         top: 78px; }
+    .menu__list {
+      bottom: 143px;
+      left: 0px; }
     .menu__background-img {
       width: 582px;
       height: 422px; }
-    .menu__list {
-      margin: -145px 0 0 0px; }
     .menu .display {
       width: 680px;
       height: 330px;
@@ -1640,15 +1645,16 @@ body {
         line-height: 1.1;
         width: 284px; }
       .menu .display__slider-button {
-        left: 96px;
-        top: 19px; }
+        left: 98px;
+        top: 3px; }
       .menu .display__background-img {
         width: 257px;
         height: 208px;
-        top: -174px;
-        left: -144px; }
+        bottom: 191px;
+        right: 145px; }
       .menu .display__number {
-        bottom: 148px; }
+        bottom: 153px;
+        margin-left: 12px; }
       .menu .display .slick-dots {
         top: 138px;
         left: 9px; }
@@ -1657,25 +1663,30 @@ body {
       .menu .display .slick-dots button {
         position: relative;
         top: -14px; }
-      .menu .display .display__background-img--size {
-        top: -139px; }
+      .menu .display__background-img--size {
+        bottom: 140px;
+        right: 145px; }
     .menu__center-title {
-      margin: -134px 48px; }
+      margin: 0px 48px;
+      bottom: 133px;
+      position: relative; }
+    .menu__center {
+      margin: 105px 0 0 30px; }
     .menu__grey-block {
       width: 165px;
       height: 196px;
-      top: -194px;
-      right: -163px; }
+      bottom: 194px;
+      left: 148px; }
       .menu__grey-block::before {
         top: 215px;
         left: 90px; }
     .menu__center-description {
       width: 289px;
       left: 66px;
-      top: -81px; }
+      bottom: 81px; }
     .menu__colors-description {
       width: 256px;
-      top: -288px;
+      bottom: 288px;
       left: 59px; }
     .menu__center-table-1 {
       display: none; }
@@ -1691,7 +1702,7 @@ body {
       width: 145px;
       height: 20px;
       bottom: 237px;
-      left: -101px; }
+      right: 101px; }
       .menu__red-block::before {
         top: 35px; }
     .menu__black-grey-block {
@@ -1704,22 +1715,30 @@ body {
         top: 36px; } }
 @media (min-width: 1024px) {
   .menu__grey-block {
-    left: 163px; }
+    left: 148px; }
   .menu__red-block {
     right: 101px; }
   .menu__table-1 {
     margin: 38px 0 0 38px; }
   .menu__list {
-    margin: -144px 0 0 -2px; }
+    bottom: 144px;
+    left: 0px; }
   .menu__center-title {
-    margin: -134px 47px; }
+    margin: 0px 47px; }
   .menu__center-description {
     left: 66px;
     top: -82px; }
   .menu__colors-description {
     left: 57px; }
+  .menu__center {
+    margin: 250px 0 0 30px; }
   .menu .display {
-    right: 134px; } }
+    right: 134px; }
+  .menu__center {
+    margin: 106px 0 0 30px; }
+    .menu__center__background-img--size {
+      bottom: 140px;
+      right: 145px; } }
 @media (min-width: 1280px) {
   .menu {
     min-width: 1280px; }
@@ -1727,9 +1746,6 @@ body {
       max-width: 1280px;
       width: 100%;
       margin: 0 auto; }
-    .menu__background-img {
-      width: 767px;
-      height: 572px; }
     .menu__table-1 {
       display: none; }
     .menu__table-2 {
@@ -1756,8 +1772,11 @@ body {
         font-size: 12px;
         left: 0px;
         top: 97px; }
+    .menu__background-img {
+      width: 681px;
+      height: 571px; }
     .menu__list {
-      margin: 27px 0 0 58px; }
+      margin: 171px 0 0 58px; }
     .menu__li {
       font-size: 14px;
       line-height: 1.6; }
@@ -1856,8 +1875,8 @@ body {
         top: -65px;
         left: 6px; }
       .menu .display__background-img {
-        top: -170px;
-        left: -237px;
+        bottom: 175px;
+        right: 235px;
         width: 274px;
         height: 246.77px; }
       .menu .display .slick-dots {
@@ -1898,18 +1917,18 @@ body {
         height: 355px; }
       .menu .display__slider-button {
         left: 57px;
-        top: 60px; }
+        top: 43px; }
       .menu .display__background-img--size {
         width: 412.25px;
         height: 330px;
         position: relative;
         z-index: -1;
-        bottom: 210px;
-        right: 157px; }
+        bottom: 201px;
+        right: 169px; }
     .menu__center {
       margin-left: -15px; }
     .menu__center-title {
-      margin: -21px 0 0 205px;
+      margin: 113px 0 0 205px;
       font-size: 20px;
       line-height: 1.2;
       width: 174px; }
@@ -1923,14 +1942,14 @@ body {
     .menu__grey-block {
       width: 207px;
       height: 226px;
-      left: 230px;
-      top: -119px; }
+      left: 215px;
+      bottom: 119px; }
       .menu__grey-block::before {
         top: 238px;
         left: 132px; }
     .menu__colors-description {
       width: 256px;
-      top: -205px;
+      bottom: 204px;
       left: 226px; }
     .menu__center-table-2 {
       display: none; }
@@ -1946,7 +1965,7 @@ body {
       width: 183px;
       height: 25px;
       bottom: 159px;
-      left: 28px; }
+      right: -28px; }
     .menu__black-grey-block {
       width: 395px;
       height: 25px;
@@ -1991,7 +2010,7 @@ body {
         left: 0px;
         top: 97px; }
     .menu__list {
-      margin: 28px 0 0 59px; }
+      margin: 171px 0 0 59px; }
     .menu__li {
       font-size: 14px;
       line-height: 1.6; }
@@ -2013,12 +2032,16 @@ body {
       .menu .display .slick-dots button {
         top: -71px;
         left: 15px; }
-      .menu .display__background-img {
-        top: -158px; }
+      .menu .display__background-img--size {
+        bottom: 211px;
+        right: 162px; }
+      .menu .display__slider-button {
+        left: 60px;
+        top: 43px; }
     .menu__center {
       margin-left: 30px; }
     .menu__center-title {
-      margin: -21px 0 0 160px;
+      margin: 113px 0 0 160px;
       font-size: 20px;
       line-height: 1.2;
       width: 174px; }
@@ -2031,15 +2054,13 @@ body {
       top: 46px; }
     .menu__grey-block {
       width: 207px;
-      height: 226px;
-      top: -120px;
-      right: -230px; }
+      height: 226px; }
       .menu__grey-block::before {
         top: 238px;
         left: 132px; }
     .menu__colors-description {
       width: 256px;
-      top: -205px;
+      bottom: 204px;
       left: 181px; }
     .menu__center-table-2 {
       display: none; }
@@ -2055,7 +2076,7 @@ body {
       width: 183px;
       height: 25px;
       bottom: 159px;
-      left: -17px; }
+      right: 17px; }
     .menu__black-grey-block {
       width: 395px;
       height: 25px;
@@ -2080,12 +2101,11 @@ body {
         left: 60px;
         top: 43px; }
     .menu__list {
-      margin: 27px 0 0 75px; }
+      margin: 171px 0 0 75px; }
     .menu__center-title {
-      margin: -20px 0 0 176px; }
+      margin: 113px 0 0 176px; }
     .menu__colors-description {
       width: 256px;
-      top: -204px;
       left: 197px; }
     .menu__center-table-3 {
       left: 118px;
@@ -2096,8 +2116,6 @@ body {
     .menu__center-description {
       left: 103px;
       top: 47px; }
-    .menu__grey-block {
-      top: -119px; }
     .menu__black-grey-block {
       bottom: 183px;
       left: 460px; }
@@ -2109,6 +2127,9 @@ body {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto; }
+  .menu__background-img {
+    width: 1064px;
+    height: 690px; }
   .menu .display {
     width: 1120px;
     height: 630px;
@@ -2193,9 +2214,6 @@ body {
     left: -148px;
     width: 489px;
     height: 391px; }
-  .menu__background-img {
-    width: 1064px;
-    height: 690px; }
   .menu__table-2 {
     display: none; }
   .menu__table-3 {
@@ -2223,7 +2241,7 @@ body {
       left: 0px;
       top: 124px; }
   .menu__list {
-    margin: 136px 0 0 215px; }
+    margin: 280px 0 0 215px; }
   .menu__li {
     font-size: 16px;
     line-height: 1.5; }
@@ -2240,7 +2258,7 @@ body {
     left: 265px;
     top: 205px; }
   .menu__center-title {
-    margin: 54px 0 0 325px;
+    margin: 187px 0 0 325px;
     font-size: 24px;
     line-height: 1.21;
     width: 204px; }
@@ -2248,7 +2266,7 @@ body {
       top: -75px; }
   .menu__colors-description {
     width: 361px;
-    top: -152px;
+    bottom: 152px;
     left: 354px;
     font-size: 14px;
     line-height: 1.3; }
@@ -2261,8 +2279,8 @@ body {
   .menu__grey-block {
     width: 250px;
     height: 275px;
-    top: -49px;
-    left: 343px; }
+    left: 328px;
+    bottom: 49px; }
     .menu__grey-block::before {
       top: 292px;
       left: 175px; }

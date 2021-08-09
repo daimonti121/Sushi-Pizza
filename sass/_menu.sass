@@ -47,7 +47,9 @@ body
     &__background-img
         object-fit: cover
     &__list
-        margin: -82px 0 0 -24px
+        position: relative
+        bottom: 81px
+        right: 24px
     &__ul
         list-style-type: none
     &__li
@@ -121,8 +123,8 @@ body
                 position: absolute
                 content: "35" 
                 z-index: 1
-                top: 2px
-                right: -12px
+                top: 5px
+                left: 29px
                 font-family: $font-family-primary
                 font-weight: bold
                 font-size: 11px
@@ -262,7 +264,7 @@ body
             font-size: 14px
             line-height: 1.37
             color: $palette-primary
-            margin: 16px 0 0 -3px
+            margin: 16px 3px 0 0px
         &__background-img
             object-fit: cover
             max-width: 100%
@@ -297,7 +299,7 @@ body
             color: transparent
     &__center
         width: 100%
-        margin: 250px 0 0 30px
+        margin: 169px 0 0 30px
     &__center-title
         font-family: $font-family-secondary
         font-size: 16px
@@ -315,7 +317,7 @@ body
             letter-spacing: 0.05em
             color: $palette-primary
             position: absolute
-            top: -52px
+            bottom: 72px
             left: -71px
     &__center-table
         width: 37px
@@ -370,7 +372,8 @@ body
         width: 330px
         height: 15px
         background: $mini-block
-        margin: 29px 0 0 -15px 
+        margin: 29px 0 0 0px 
+        right: 14px
         position: relative
         &::before
             content: "#808080"
@@ -388,9 +391,8 @@ body
     &__red-block
         width: 245px
         height: 15px
-        margin-left: -15px
-        margin-top: 31px
-        margin: 31px 0 0 -15px 
+        margin: 31px 0 0
+        right: 15px
         position: relative
         background: #D1152E
         &::before
@@ -400,7 +402,8 @@ body
     &__black-grey-block
         width: 245px
         height: 15px
-        margin: 70px 0 75px -15px
+        margin: 70px 0 75px 
+        right: 15px
         background: $big-block
         position: relative
         &::before
@@ -431,7 +434,7 @@ body
                 top: 78px
         &__background-img
             width: 432px
-            height: 387px
+            height: 387px                
         .display
             width: 561px
             height: 298px
@@ -464,7 +467,7 @@ body
             &__main
                 width: 558px
                 height: 285px
-                background: #232121
+                background: #151414
                 text-align: center
                 border-radius: 25px
                 overflow: visible
@@ -493,8 +496,8 @@ body
                 height: 176px
                 margin: 0 auto
                 position: relative
-                top: -151px
-                left: -117px                
+                bottom: 151px
+                right: 117px        
             &__h2
                 top: 34px
                 left: 73px
@@ -503,7 +506,7 @@ body
             &__number
                 display: block
                 position: absolute
-                bottom: 142px
+                bottom: 148px
                 font-family: $font-family-primary
                 font-weight: 500
                 font-size: 10px
@@ -529,7 +532,7 @@ body
             &__slider-button
                 position: relative
                 left: 97px
-                top: 42px
+                top: 25px
                 cursor: pointer
             &__background-img--size
                 object-fit: contain
@@ -537,23 +540,27 @@ body
                 height: 204px
                 margin: 0 auto
                 position: relative
-                top: -134px
-                left: -139px
+                bottom: 120px
+                right: 117px
             &__button
                 font-size: 12px
                 height: 20px
                 transition: 1s
             .slick-slide, .slick-initialized
-                height: 280px
+                height: 286px
         &__list 
-            margin: -167px 0 0 20px
+            bottom: 168px
+            left: 20px
         &__li
             font-size: 12px
             line-height: 1.5
+        &__center
+            margin: 82px 0 0 30px
         &__center-info
             display: flex
         &__center-title
-            margin: -122px 0 0 56px 
+            margin: 0px 0 0 56px
+            bottom: 121px
             position: relative
             width: 135px
             &::before
@@ -563,14 +570,14 @@ body
             width: 234px
             position: relative
             left: 51px
-            top: -100px
+            bottom: 100px
             margin-top: 0px
         &__grey-block
             width: 120px
             height: 170px
             background: $big-block
-            top: -150px
-            right: -106px
+            bottom: 150px
+            left: 91px
             &::before
                 @include table-before 
                 content: '#4B4B4B'
@@ -589,13 +596,13 @@ body
         &__colors-description
             width: 273px
             position: relative
-            top: -228px
+            bottom: 227px
             left: 49px
         &__red-block
             width: 89px
             position: relative
             bottom: 161px
-            left: -55px
+            right: 55px
             margin: 0
             &::before
                 top: 30px
@@ -621,11 +628,12 @@ body
                 @include table-before
                 left: 0px
                 top: 78px
+        &__list
+            bottom: 143px
+            left: 0px
         &__background-img
             width: 582px
             height: 422px
-        &__list
-            margin: -145px 0 0 0px
         .display
             width: 680px
             height: 330px
@@ -675,15 +683,16 @@ body
                 line-height: 1.1
                 width: 284px
             &__slider-button
-                left: 96px
-                top: 19px
+                left: 98px
+                top: 3px
             &__background-img
                 width: 257px
                 height: 208px
-                top: -174px
-                left: -144px
+                bottom: 191px
+                right: 145px
             &__number
-                bottom: 148px
+                bottom: 153px
+                margin-left: 12px
             .slick-dots
                 top: 138px
                 left: 9px
@@ -692,25 +701,30 @@ body
             .slick-dots button 
                 position: relative
                 top: -14px
-            .display__background-img--size
-                top: -139px
+            &__background-img--size
+                bottom: 140px
+                right: 145px
         &__center-title
-            margin: -134px 48px 
+            margin: 0px 48px
+            bottom: 133px
+            position: relative
+        &__center  
+            margin: 105px 0 0 30px
         &__grey-block
             width: 165px
             height: 196px
-            top: -194px
-            right: -163px
+            bottom: 194px
+            left: 148px
             &::before 
                 top: 215px
                 left: 90px
         &__center-description
             width: 289px
             left: 66px
-            top: -81px
+            bottom: 81px
         &__colors-description
             width: 256px
-            top: -288px
+            bottom: 288px
             left: 59px
         &__center-table-1
             display: none
@@ -726,7 +740,7 @@ body
             width: 145px
             height: 20px
             bottom: 237px
-            left: -101px
+            right: 101px
             &::before
                 top: 35px
         &__black-grey-block
@@ -740,22 +754,30 @@ body
 @media ( min-width: 1024px )
     .menu
         &__grey-block
-            left: 163px
+            left: 148px
         &__red-block
             right: 101px
         &__table-1
             margin: 38px 0 0 38px
         &__list 
-            margin: -144px 0 0 -2px
+            bottom: 144px
+            left: 0px
         &__center-title 
-            margin: -134px 47px
+            margin: 0px 47px
         &__center-description 
             left: 66px
             top: -82px
         &__colors-description
             left: 57px
+        &__center
+            margin: 250px 0 0 30px
         .display
             right: 134px
+        &__center
+            margin: 106px 0 0 30px 
+            &__background-img--size
+                bottom: 140px
+                right: 145px
 @media ( min-width: 1280px )
     .menu
         min-width: 1280px
@@ -763,9 +785,6 @@ body
             max-width: 1280px
             width: 100%
             margin: 0 auto
-        &__background-img
-            width: 767px
-            height: 572px
         &__table-1
             display: none
         &__table-2
@@ -782,8 +801,11 @@ body
                 font-size: 12px
                 left: 0px
                 top: 97px
+        &__background-img 
+            width: 681px
+            height: 571px 
         &__list
-            margin: 27px 0 0 58px
+            margin: 171px 0 0 58px
         &__li 
             font-size: 14px
             line-height: 1.6
@@ -868,8 +890,8 @@ body
                 top: -65px
                 left: 6px
             &__background-img 
-                top: -170px
-                left: -237px
+                bottom: 175px
+                right: 235px
                 width: 274px
                 height: 246.77px       
             .slick-dots 
@@ -910,18 +932,18 @@ body
                 height: 355px
             &__slider-button 
                 left: 57px
-                top: 60px
+                top: 43px
             &__background-img--size
                 width: 412.25px
                 height: 330px
                 position: relative
                 z-index: -1
-                bottom: 210px
-                right: 157px
+                bottom: 201px
+                right: 169px
         &__center
             margin-left: -15px
         &__center-title 
-            margin: -21px 0 0 205px
+            margin: 113px 0 0 205px
             font-size: 20px
             line-height: 1.2
             width: 174px 
@@ -935,14 +957,14 @@ body
         &__grey-block
             width: 207px
             height: 226px
-            left: 230px
-            top: -119px
+            left: 215px
+            bottom: 119px
             &::before
                 top: 238px
                 left: 132px
         &__colors-description 
             width: 256px
-            top: -205px
+            bottom: 204px
             left: 226px
         &__center-table-2
             display: none
@@ -958,7 +980,7 @@ body
             width: 183px
             height: 25px
             bottom: 159px
-            left: 28px
+            right: -28px
         &__black-grey-block
             width: 395px
             height: 25px
@@ -972,10 +994,10 @@ body
         .menu-inner
             max-width: 1366px
             width: 100%
-            margin: 0 auto        
+            margin: 0 auto 
         &__background-img
             width: 767px
-            height: 572px
+            height: 572px       
         &__table-1
             display: none
         &__table-2
@@ -993,7 +1015,7 @@ body
                 left: 0px
                 top: 97px
         &__list 
-            margin: 28px 0 0 59px 
+            margin: 171px 0 0 59px
         &__li 
             font-size: 14px
             line-height: 1.6
@@ -1005,7 +1027,7 @@ body
             top: 111px
             right: 158px
             &__header
-                left: -14px
+                left: -14px            
             .slick-dots 
                 top: 220px
                 left: 0px
@@ -1014,13 +1036,17 @@ body
                 width: 891px
             .slick-dots button 
                 top: -71px
-                left: 15px
-            &__background-img
-                top: -158px
+                left: 15px         
+            &__background-img--size 
+                bottom: 211px
+                right: 162px   
+            &__slider-button 
+                left: 60px
+                top: 43px
         &__center
             margin-left: 30px
         &__center-title 
-            margin: -21px 0 0 160px 
+            margin: 113px 0 0 160px 
             font-size: 20px
             line-height: 1.2
             width: 174px 
@@ -1034,14 +1060,12 @@ body
         &__grey-block
             width: 207px
             height: 226px
-            top: -120px
-            right: -230px
             &::before
                 top: 238px
                 left: 132px
         &__colors-description 
             width: 256px
-            top: -205px
+            bottom: 204px
             left: 181px
         &__center-table-2
             display: none
@@ -1057,7 +1081,7 @@ body
             width: 183px
             height: 25px
             bottom: 159px
-            left: -17px
+            right: 17px
         &__black-grey-block
             width: 395px
             height: 25px
@@ -1082,12 +1106,11 @@ body
                 left: 60px
                 top: 43px
         &__list 
-            margin: 27px 0 0 75px
+            margin: 171px 0 0 75px
         &__center-title 
-            margin: -20px 0 0 176px
+            margin: 113px 0 0 176px
         &__colors-description 
             width: 256px
-            top: -204px
             left: 197px
         &__center-table-3
             left: 118px
@@ -1098,8 +1121,6 @@ body
         &__center-description 
             left: 103px
             top: 47px
-        &__grey-block 
-            top: -119px
         &__black-grey-block 
             bottom: 183px
             left: 460px
@@ -1112,6 +1133,9 @@ body
             max-width: 1920px
             width: 100%
             margin: 0 auto
+        &__background-img 
+            width: 1064px
+            height: 690px
         .display 
             width: 1120px
             height: 630px
@@ -1196,9 +1220,6 @@ body
             left: -148px
             width: 489px
             height: 391px
-        &__background-img 
-            width: 1064px
-            height: 690px
         &__table-2
             display: none
         &__table-3
@@ -1216,7 +1237,7 @@ body
                 left: 0px
                 top: 124px
         &__list 
-            margin: 136px 0 0 215px 
+            margin: 280px 0 0 215px
         &__li 
             font-size: 16px
             line-height: 1.5
@@ -1233,7 +1254,7 @@ body
             left: 265px
             top: 205px
         &__center-title 
-            margin: 54px 0 0 325px 
+            margin: 187px 0 0 325px
             font-size: 24px
             line-height: 1.21
             width: 204px
@@ -1241,7 +1262,7 @@ body
                 top: -75px
         &__colors-description 
             width: 361px
-            top: -152px
+            bottom: 152px
             left: 354px
             font-size: 14px
             line-height: 1.3
@@ -1254,8 +1275,8 @@ body
         &__grey-block 
             width: 250px
             height: 275px
-            top: -49px
-            left: 343px
+            left: 328px
+            bottom: 49px
             &::before 
                 top: 292px
                 left: 175px
