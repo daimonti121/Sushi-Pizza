@@ -63,3 +63,4 @@ $('.header__slider').slick({
     fade: true,
     touchThreshold: 50
 }); 
+new WOW().init();
