@@ -866,7 +866,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 390px; }
-  .menu__table {
+  .menu__phone {
     margin: 50px 0 0 30px;
     position: relative;
     z-index: 5;
@@ -874,7 +874,7 @@ body {
     height: 55px;
     border-spacing: 0px;
     border-collapse: collapse; }
-    .menu__table::before {
+    .menu__phone::before {
       content: "address";
       position: absolute;
       font-family: Monument Extended;
@@ -886,11 +886,11 @@ body {
       color: #787878;
       top: 69px;
       left: 1px; }
-  .menu__table-1 {
+  .menu__tablet {
     display: none; }
-  .menu__table-2 {
+  .menu__laptop {
     display: none; }
-  .menu__table-3 {
+  .menu__desk {
     display: none; }
   .menu__picture {
     position: absolute;
@@ -1331,9 +1331,9 @@ body {
       max-width: 768px;
       width: 100%;
       margin: 0 auto; }
-    .menu__table {
+    .menu__phone {
       display: none; }
-    .menu__table-1 {
+    .menu__tablet {
       display: block;
       position: relative;
       z-index: 5;
@@ -1342,7 +1342,7 @@ body {
       border-spacing: 0px;
       border-collapse: collapse;
       margin: 37px 0 0 60px; }
-      .menu__table-1::before {
+      .menu__tablet::before {
         content: "address";
         position: absolute;
         font-family: Monument Extended;
@@ -1574,9 +1574,9 @@ body {
       max-width: 960px;
       width: 100%;
       margin: 0 auto; }
-    .menu__table-1 {
+    .menu__tablet {
       margin: 36px 0 0 40px; }
-      .menu__table-1::before {
+      .menu__tablet::before {
         content: "address";
         position: absolute;
         font-family: Monument Extended;
@@ -1722,7 +1722,7 @@ body {
     left: 148px; }
   .menu__red-block {
     right: 101px; }
-  .menu__table-1 {
+  .menu__tablet {
     margin: 38px 0 0 38px; }
   .menu__list {
     bottom: 144px;
@@ -1750,9 +1750,9 @@ body {
       max-width: 1280px;
       width: 100%;
       margin: 0 auto; }
-    .menu__table-1 {
+    .menu__tablet {
       display: none; }
-    .menu__table-2 {
+    .menu__laptop {
       display: block;
       position: relative;
       z-index: 5;
@@ -1761,7 +1761,7 @@ body {
       border-spacing: 0px;
       border-collapse: collapse;
       margin: 84px 0 0 132px; }
-      .menu__table-2::before {
+      .menu__laptop::before {
         content: "address";
         position: absolute;
         font-family: Monument Extended;
@@ -1987,9 +1987,9 @@ body {
     .menu__background-img {
       width: 767px;
       height: 572px; }
-    .menu__table-1 {
+    .menu__tablet {
       display: none; }
-    .menu__table-2 {
+    .menu__laptop {
       display: block;
       position: relative;
       z-index: 5;
@@ -1998,7 +1998,7 @@ body {
       border-spacing: 0px;
       border-collapse: collapse;
       margin: 85px 0 0 132px; }
-      .menu__table-2::before {
+      .menu__laptop::before {
         content: "address";
         position: absolute;
         font-family: Monument Extended;
@@ -2095,7 +2095,7 @@ body {
       max-width: 1400px;
       width: 100%;
       margin: 0 auto; }
-    .menu__table-2 {
+    .menu__laptop {
       margin: 84px 0 0 148px; }
     .menu__background-img {
       width: 783px; }
@@ -2221,9 +2221,9 @@ body {
     left: -148px;
     width: 489px;
     height: 391px; }
-  .menu__table-2 {
+  .menu__laptop {
     display: none; }
-  .menu__table-3 {
+  .menu__desk {
     display: block;
     position: absolute;
     z-index: 5;
@@ -2232,7 +2232,7 @@ body {
     border-spacing: 0px;
     border-collapse: collapse;
     margin: 97px 0 0 295px; }
-    .menu__table-3::before {
+    .menu__desk::before {
       content: "address";
       position: absolute;
       font-family: Monument Extended;
