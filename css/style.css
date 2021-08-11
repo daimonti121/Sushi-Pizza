@@ -1210,20 +1210,20 @@ body {
       position: absolute;
       bottom: 72px;
       left: -71px; }
-  .menu__center-table {
+  .menu__center-phone {
     width: 37px;
     height: 19px;
     border-spacing: 0px;
     border-collapse: collapse;
     position: relative;
     top: 87px; }
-  .menu__center-table-1 {
+  .menu__center-tablet {
     display: none; }
-  .menu__center-table-2 {
+  .menu__center-laptop {
     display: none; }
-  .menu__center-table-3 {
+  .menu__center-desk {
     display: none; }
-  .menu__center-table-4 {
+  .menu__center-lgDesk {
     display: none;
     position: relative;
     z-index: 50; }
@@ -1236,15 +1236,15 @@ body {
     outline: none; }
   .menu__center-block--active {
     background: #D1152E; }
-  .menu__center-table:hover .menu__center-block--active {
+  .menu__center-phone:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-1:hover .menu__center-block--active {
+  .menu__center-tablet:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-2:hover .menu__center-block--active {
+  .menu__center-laptop:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-3:hover .menu__center-block--active {
+  .menu__center-desk:hover .menu__center-block--active {
     background: transparent; }
-  .menu__center-table-4:hover .menu__center-block--active {
+  .menu__center-lgDesk:hover .menu__center-block--active {
     background: transparent; }
   .menu__center-block:hover {
     background: #D1152E; }
@@ -1535,7 +1535,7 @@ body {
         content: "#4B4B4B";
         top: 187px;
         left: 46px; }
-    .menu__center-table-1 {
+    .menu__center-tablet {
       display: block;
       border-collapse: collapse;
       position: relative;
@@ -1543,7 +1543,7 @@ body {
       height: 19px;
       left: 31px;
       top: 5px; }
-    .menu__center-table {
+    .menu__center-phone {
       display: none; }
     .menu__colors-description {
       width: 273px;
@@ -1692,9 +1692,9 @@ body {
       width: 256px;
       bottom: 288px;
       left: 59px; }
-    .menu__center-table-1 {
+    .menu__center-tablet {
       display: none; }
-    .menu__center-table-2 {
+    .menu__center-laptop {
       display: block;
       border-collapse: collapse;
       position: relative;
@@ -1955,9 +1955,9 @@ body {
       width: 256px;
       bottom: 204px;
       left: 226px; }
-    .menu__center-table-2 {
+    .menu__center-laptop {
       display: none; }
-    .menu__center-table-3 {
+    .menu__center-desk {
       display: block;
       border-collapse: collapse;
       position: relative;
@@ -2066,9 +2066,9 @@ body {
       width: 256px;
       bottom: 204px;
       left: 181px; }
-    .menu__center-table-2 {
+    .menu__center-laptop {
       display: none; }
-    .menu__center-table-3 {
+    .menu__center-desk {
       display: block;
       border-collapse: collapse;
       position: relative;
@@ -2111,7 +2111,7 @@ body {
     .menu__colors-description {
       width: 256px;
       left: 197px; }
-    .menu__center-table-3 {
+    .menu__center-desk {
       left: 118px;
       top: 104px; }
     .menu__red-block {
@@ -2254,9 +2254,9 @@ body {
     line-height: 1.5; }
   .menu__li--last {
     margin-top: 48px; }
-  .menu__center-table-3 {
+  .menu__center-desk {
     display: none; }
-  .menu__center-table-4 {
+  .menu__center-lgDesk {
     display: block;
     border-collapse: collapse;
     position: relative;
